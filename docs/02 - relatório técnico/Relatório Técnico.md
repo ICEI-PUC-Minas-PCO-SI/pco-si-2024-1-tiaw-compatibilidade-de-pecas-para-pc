@@ -255,23 +255,7 @@ Cada página está devidamente detalhada no Figma, o qual pode ser acessado clic
 
 # Metodologia
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Nesta parte do documento, você deve apresentar a metodologia 
-> adotada pelo grupo, descrevendo o processo de trabalho baseado nas metodologias ágeis, 
-> a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a
-> gestão de configuração do projeto via GitHub.
->
-> Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido
-> pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar
-> o andamento do projeto, a execução das tarefas e o status de desenvolvimento
-> da solução.
-> 
-> **Links Úteis**:
-> - [Tutorial Trello](https://trello.com/b/8AygzjUA/tutorial-trello)
-> - [Gestão ágil de projetos com o Trello](https://www.youtube.com/watch?v=1o9BOMAKBRE)
-> - [Gerência de projetos - Trello com Scrum](https://www.youtube.com/watch?v=DHLA8X_ujwo)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+Scrum é uma abordagem ágil para desenvolvimento de software, enfatizando a colaboração, entrega contínua e adaptação rápida às mudanças. As equipes no Scrum são auto-organizadas e multifuncionais, com papéis definidos: o Product Owner, que representa os interesses dos clientes; o Scrum Master, que facilita o processo; e o Time Scrum, responsável pela entrega do produto (nossa parte do projeto). O trabalho é dividido em Sprints, iterações curtas e fixas de uma a quatro semanas, durante as quais o time se concentra em entregar um incremento do produto. No início de cada Sprint, o time seleciona as tarefas mais importantes e as realiza durante a Sprint. Reuniões diárias de sincronização (Daily Standup) ajudam a manter todos alinhados. No final de cada Sprint, há uma revisão do produto com os stakeholders e uma retrospectiva para identificar melhorias no processo. O Scrum promove transparência, inspeção e adaptação contínua, permitindo que as equipes entreguem valor ao cliente de forma eficaz e flexível.
 
 ## Divisão de Papéis
 
