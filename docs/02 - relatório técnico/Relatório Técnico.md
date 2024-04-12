@@ -106,39 +106,67 @@ O projeto tem como objetivo geral a criação de uma plataforma de compatibilida
  
 # Especificações do Projeto
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Apresente uma visão geral do que será abordado nesta parte do
-> documento, enumerando as técnicas e/ou ferramentas utilizadas para
-> realizar a especificações do projeto
+A partir da entrevista pessoal dos usuários, composta por seis blocos de perguntas direcionadas ao tema, os membros deste projeto consolidaram a definição do problema principal. Além disso, por meio da comparação e observação baseada nas respostas dos usuários, surgiram curiosidades e pontos interessantes a serem tratados neste trabalho. Para atingir tais objetivos foi utilizado personas e histórias de usuários como ferramentas para entender as necessidades, motivações, comportamentos e objetivos dos usuários finais. 
 
 ## Personas e Mapas de Empatia
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Personas
+
+As personas levantadas durante o processo de entendimento do problema são apresentadas nas figuras que se seguem.
+ 
+<div align="center">
+<img src="./images/Laís Alves.jpg" alt="Persona1">
+</div>
+
+Laís Alves:
+Idade 17 anos;
+Ocupação: estudante. Terminando o 3° Ano do Ensino Médio.
+Estado Civil: solteira.
+Aplicativos usados: TikTok, Youtube, Instagram, Tinder, Spotify e X (Twitter).
+Motivações: socialização, entretenimento, curiosidades e amizades.
+Frustrações: preços altos, travamentos, falta de conhecimento e insegurança.
+Hobbies: assistir TikTok, Tinder, se maquiar e correr na rua.
 
 
-> Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que 
-> você deve ser enumerar e descrever precisamente e de forma
-> personalizada todos os principais envolvidos com a solução almeja. 
-> 
-> Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina
-> e/ou nos seguintes links:
->
-> **Links Úteis**:
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Como fazer um mapa de empatia - Vídeo](https://www.youtube.com/watch?v=JlKHGpVoA2Y)
-> 
-> 
-> **Exemplo de Persona**
-> 
-> ![Exemplo de Persona](imaages/../images/persona.png)
-> 
-> Fonte: [Como criar uma persona para o seu negócio](https://raissaviegas.com.br/como-criar-uma-persona/)
+<div align="center">
+<img src="./images/Fernando Souza.jpg" alt="Persona2">
+</div>
 
+Fernando Souza:
+Idade 27 anos;
+Ocupação: CMO (Chief Marketing Officer);
+Estado Civil: solteiro.
+Aplicativos usados: TikTok, Youtube, Instagram, Hotmart, Facebook Ads, Google Ads, WhatsApp, Steam, Epic Games e Netflix.
+Motivações: sucesso financeiro, desenvolvimento pessoal e namoro.
+Frustrações: pressão do trabalho, adaptações forçadas, constantes e rápidas.
+Hobbies: assistir Netflix, sair com a namorada e jogar video game.
+
+
+<div align="center">
+<img src="./images/Miguel Santos.jpg" alt="Persona3">
+</div>
+
+Miguel Santos:
+Idade 18 anos;
+Ocupação: Estudante. Iniciando a Faculdade;
+Estado Civil: Solteiro;
+Aplicativos usados: Youtube, Instagram, WhatsApp, Spotify e Twitch.
+Motivações: novas tecnologias, amizades e privacidade.
+Frustrações: falta de conhecimento, incertezas sobre o futuro, não ter uma renda mensal, sem autonomia.
+Hobbies: tocar teclado, assistir séries, fazer musculação e jogar com os amigos.
+
+<div align="center">
+<img src="./images/Jorge de Almeida.jpg" alt="Persona4">
+</div>
+
+Jorge de Almeida:
+Idade 35 anos;
+Ocupação: Professor de Física;
+Estado Civil: Casado;
+Aplicativos usados: Youtube, Instagram, WhatsApp, Spotify e PlayStation Plus.
+Motivações: felicidade dos filhos, estabilidade financeira e esposa.
+Frustrações: Preocupação com a saúde física.
+Hobbies: jogar video game, escutar música clássica e caminhar com a família.
 
 ## Histórias de Usuários
 
@@ -146,19 +174,47 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Laís Alves          | Montar um computador               | Para acessar as redes sociais, ver vídeos e principalmente jogar com as amigas |
+|Fernando Souza      | Comprar um computador pronto       | Necessidade para o trabalho e relaxar jogando nas horas vagas |
+|Miguel Santos       | Entender o funcionamento das peças de um computador para poder montar o seu focado em jogos | Realizar as tarefas da faculdade, curtir alguns jogos com os amigos, acompanhar lives e vídeos. |
+|Jorge  de Almeida   | Gostaria de um aplicativo que ensinasse sobre as melhores peças de computador para jogar. | Presentear os filhos que gostam de jogar com um computador gamer |
+|Jorge de Almeida    | Adquirir um computador seja capaz de lidar com os jogos mais recentes e exigentes, e que dure por muitos anos | Para experimentar jogos com experiência imersiva, onde possa escapar da rotina diária. |
 
-> Apresente aqui as histórias de usuário que são relevantes para o
-> projeto de sua solução. As Histórias de Usuário consistem em uma
-> ferramenta poderosa para a compreensão e elicitação dos requisitos
-> funcionais e não funcionais da sua aplicação. Se possível, agrupe as
-> histórias de usuário por contexto, para facilitar consultas
-> recorrentes à essa parte do documento.
->
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
+Um pouco sobre Laís Alves
+
+Laís é uma jovem extrovertida e socialmente ativa, que gosta de se conectar com amigos e compartilhar experiências online. Ela é uma usuária ávida do aplicativo TikTok, onde passa uma quantidade significativa de tempo assistindo a vídeos engraçados, tutoriais de beleza e danças virais. Laís também está interessada em moda, maquiagem e cultura pop, e segue influenciadores e criadores de conteúdo que compartilham seu estilo de vida. Dentre os vídeos que visualizou, alguns são gameplays, cujo youtubers famosos se divertem, o que fez se interessar pelo mundo dos jogos.
+
+Surgiu daí o seu interesse pelos videogames, um tipo de entretenimento que pode servir como uma forma de escapismo, permitindo que Laís se desconecte das pressões e preocupações do dia-a-dia. Os jogos oferecem um ambiente virtual onde ela pode relaxar, se divertir e se envolver em atividades desafiadoras e gratificantes com os amigos. 
+Como estudante do último ano do Ensino Médio, Laís enfrenta pressão acadêmica.
+Ela também lida com a pressão social de seus colegas e a expectativa de alcançar sucesso acadêmico, ao mesmo tempo em que mantém uma presença ativa nas redes sociais. Deseja comprar um computador mas não sabe nem por onde começar. 
+
+Um pouco sobre Fernando Souza
+
+Fernando tem 27 anos de idade e está a 9 anos no mercado do marketing digital. É apaixonado por tecnologia, e está sempre buscando maneiras de inovar e se destacar no campo.
+Ele é um líder motivador e visionário, que inspira sua equipe a alcançar resultados excepcionais por meio de criatividade, colaboração e estratégia.
+Fernando é ávido por conhecimento e está constantemente se atualizando sobre as últimas tendências e melhores práticas em marketing digital.
+Além disso, Fernando pode enfrentar pressões e expectativas elevadas da alta administração para produzir resultados tangíveis e demonstrar o ROI (retorno sobre o investimento) das iniciativas de marketing digital da empresa.
+Ele valoriza o suporte e a colaboração de colegas e líderes da indústria, bem como o acesso a redes profissionais e eventos de networking onde possa compartilhar conhecimentos, trocar ideias e aprender com os outros.
+Seu dia a dia é focado no trabalho, por isso não dispensa um bom computador. Em seus finais de semana busca relaxar, por isso pretende adquirir um computador para jogar, mas não tem tempo nem deseja entender como montar um.
+
+Um pouco sobre Miguel Santos
+
+Miguel é um jovem entusiasta de tecnologia e jogos, que adora passar tempo com seus amigos jogando videogames online.
+Ele é curioso e gosta de aprender sobre computadores e hardware, e está animado para montar seu próprio computador para jogos.
+Além dos jogos, Miguel também está interessado em música, filmes e esportes.
+Miguel pode enfrentar o desafio de encontrar o equilíbrio certo entre suas obrigações acadêmicas e sua vida social, especialmente enquanto navega pela transição para a vida universitária.
+Ele também pode ter preocupações sobre o custo e a complexidade de montar seu próprio computador, bem como garantir que ele faça as escolhas certas de hardware para atender às suas necessidades de jogo e orçamento.
+
+Um pouco sobre Jorge de Almeida
+
+Jorge é um professor apaixonado por física, que dedica grande parte de seu tempo ao ensino e à educação de seus alunos.
+Nos momentos de lazer, Jorge gosta de relaxar jogando videogames. Ele é um entusiasta de longa data dos jogos e cresceu jogando clássicos dos anos 80 e 90.
+Como pai de família, Jorge valoriza o tempo de qualidade com sua esposa e filhos, mas também aprecia os momentos de lazer para se divertir e recarregar as energias.
+Ele procura jogos que ofereçam uma experiência imersiva e envolvente, onde possa escapar da rotina diária e se aventurar em mundos virtuais emocionantes.
+Além disso, Jorge valoriza jogos que possam ser facilmente integrados à sua agenda ocupada, permitindo que ele jogue em sessões curtas durante seus momentos de folga.
+Jorge precisa de orientação e recursos que o ajudem a escolher as peças certas para montar o computador de seus filhos, levando em consideração suas necessidades de jogo, idade e nível de habilidade.
+Ele valoriza a qualidade e a durabilidade das peças, procurando garantir que o computador seja capaz de lidar com os jogos mais recentes e exigentes, e que dure por muitos anos.
+Além disso, Jorge pode se beneficiar de recursos educacionais que o ajudem a ensinar seus filhos sobre tecnologia e hardware de computador, preparando-os para um futuro cada vez mais digital.
 
 ## Requisitos
 
@@ -433,11 +489,16 @@ Cada página está devidamente detalhada no Figma, o qual pode ser acessado clic
 
 # Referências
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Pontifícia Universidade Católica de Minas Gerais - Canvas disciplina TIAL -  Disponível em: https://pucminas.instructure.com/courses/188910. Acesso em: abril de 2024; 
 
-> Inclua todas as referências (livros, artigos, sites, etc) utilizados
-> no desenvolvimento do trabalho.
-> 
+Miro. Disponível em: https://miro.com/app/board/uXjVNjO3GYA=/. Acesso em: abril de 2024;
+
+Trello. Disponível em: https://trello.com/c/gyPOBrZ9/1-especifica%C3%A7%C3%A3o-do-projeto. Acesso em: abril de 2024;
+
+GitHub. Disponível em: https://github.com/. Acesso em: abril de 2024;
+
+Figma. Disponível em: https://www.figma.com/file/Xql8McGAjdJcrYDj9NYZ1A/Compatibilidade-de-Pe%C3%A7as-para-PC---Wireframe?type=design&node-id=0-1&mode=design. Acesso em: abril de 2024.
+
 > **Links Úteis**:
 > - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
 > - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
