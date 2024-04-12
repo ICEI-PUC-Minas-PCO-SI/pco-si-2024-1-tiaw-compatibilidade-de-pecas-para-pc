@@ -211,30 +211,26 @@ Restrições como o próprio nome diz marca a delimitação de campo do no proje
 
 # Projeto de Interface
 
-......  COLOQUE AQUI O SEU TEXTO DE INTRODUÇÃO ......
+Na elaboração da interface do sistema, estamos priorizando elementos cruciais como acessibilidade, eficiência e facilidade na navegação entre páginas. Nosso objetivo é garantir uma experiência completa e intuitiva para os usuários.
 
-> Apresente as principais interfaces da solução. Discuta como 
-> foram elaboradas de forma a atender os requisitos funcionais, não
-> funcionais e histórias de usuário abordados nas [Especificações do
-> Projeto](#especificações-do-projeto).
+Para alcançar esse objetivo, estamos desenvolvendo uma identidade visual simples e unificada que será aplicada em todas as páginas. Isso significa que os usuários irão encontrar uma interface eficiente e familiar em cada etapa de sua interação com o sistema.
+
 
 ## User Flow
 
-......  INCLUA AQUI O DIAGRAMA COM O FLUXO DO USUÁRIO NA APLICAÇÃO ......
+O Fluxo do Usuário irá ser primariamente feito utilizando um cabeçalho presente em todas as páginas. Ele contém o link de acesso para todas as outras páginas da aplicação.
+
+Cada página está devidamente detalhada no Figma, o qual pode ser acessado clicando [neste link (Link do Figma)](https://www.figma.com/file/Xql8McGAjdJcrYDj9NYZ1A/Compatibilidade-de-Pe%C3%A7as-para-PC---Wireframe?type=design&node-id=0%3A1&mode=design&t=l6GPea7nrdTdGoXU-1).
+
+<div align="center">
+  <img src="./images/User Flow.png" alt="User Flow">
+</div>
+
 
 > Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor
 > mapear todo fluxo de telas do site ou app. Essa técnica funciona
 > para alinhar os caminhos e as possíveis ações que o usuário pode
 > fazer junto com os membros de sua equipe.
->
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
->
-> **Exemplo**:
-> 
-> ![Exemplo de UserFlow](images/userflow.jpg)
 
 
 ## Wireframes
