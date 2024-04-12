@@ -1,21 +1,22 @@
 # Informações do Projeto
 `TÍTULO DO PROJETO`  
 
-......  COLOQUE AQUI O SEU TEXTO ......
+**PC Match**
 
 `CURSO` 
 
-......  COLOQUE AQUI O SEU TEXTO ......
+**Análise e Desenvolvimento de Sistemas & Sistemas de Informação**
 
 ## Participantes
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Os membros do grupo são:
 
-> Inclua a lista dos membros da equipe com seus nomes completos.
->
-> Os membros do grupo são: 
-> - Fulano da Silva
-> - Ciclano Albuquerque
+- Abner Augusto Monteiro
+- Andry Marques Pereira da Silveira
+- Isaac Souza Fernandes
+- João Paulo Oliveira Serra
+- Luiz Fernando Versiani de Melo Penna
+- Samuel Andrade Neto
 
 # Estrutura do Documento
 
@@ -41,7 +42,7 @@
   - [Divisão de Papéis](#divisão-de-papéis)
   - [Ferramentas](#ferramentas)
   - [Controle de Versão](#controle-de-versão)
-- [**############## SPRINT 1 ACABA AQUI #############**](#-sprint-1-acaba-aqui-)
+<!-- - [**############## SPRINT 1 ACABA AQUI #############**](#-sprint-1-acaba-aqui-)
 - [Projeto da Solução](#projeto-da-solução)
   - [Tecnologias Utilizadas](#tecnologias-utilizadas)
   - [Arquitetura da solução](#arquitetura-da-solução)
@@ -50,7 +51,7 @@
   - [Ferramentas de Testes (Opcional)](#ferramentas-de-testes-opcional)
   - [Registros de Testes](#registros-de-testes)
 - [Referências](#referências)
-
+-->
 
 # Introdução
 
