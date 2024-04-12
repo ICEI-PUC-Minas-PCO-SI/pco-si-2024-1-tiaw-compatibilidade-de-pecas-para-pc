@@ -309,19 +309,32 @@ Cada página está devidamente detalhada no Figma, o qual pode ser acessado clic
 > ![Exemplo de Wireframe](images/wireframe-example.png)
 
 
-# Metodologia
+# Metodologia 
 
 Scrum é uma abordagem ágil para desenvolvimento de software, enfatizando a colaboração, entrega contínua e adaptação rápida às mudanças. As equipes no Scrum são auto-organizadas e multifuncionais, com papéis definidos: o Product Owner, que representa os interesses dos clientes; o Scrum Master, que facilita o processo; e o Time Scrum, responsável pela entrega do produto (nossa parte do projeto). O trabalho é dividido em Sprints, iterações curtas e fixas de uma a quatro semanas, durante as quais o time se concentra em entregar um incremento do produto. No início de cada Sprint, o time seleciona as tarefas mais importantes e as realiza durante a Sprint. Reuniões diárias de sincronização (Daily Standup) ajudam a manter todos alinhados. No final de cada Sprint, há uma revisão do produto com os stakeholders e uma retrospectiva para identificar melhorias no processo. O Scrum promove transparência, inspeção e adaptação contínua, permitindo que as equipes entreguem valor ao cliente de forma eficaz e flexível.
 
 ## Divisão de Papéis
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Na equipe utilizaremos a Metodologia Scrum como a base da definição do nosso processo de desenvolvimento.
 
-> Apresente a divisão de papéis e tarefas entre os membros do grupo.
->
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+A equipe foi organizada da seguinte maneira:
+- Isaac: Projeto de Interface: Fluxo do Usuário e wireframes.
+- Andry: Especificação do Projeto: Requisitos funcionais e  não funcionais e restrições.
+- João P: Introdução: Justificativa e público alvo.
+- Luiz: Especificação do Projeto: Personas e histórias de usuários.
+- Abner: Introdução: Problemas e objetivos.
+- Samuel A: Metodologia: Relação de ambiente de trabalho, gestão de código fonte e gerenciamento do projeto.
+
+Para a separação de tarefas da equipe usamos o Trello deixando assim organizado e tendo assim um claro entendimento das partes de cada um, podendo criar uma autonomia para declarar cada tarefa e definir o que começou, terminou ou está em implementação, temos também alguns exemplos e links úteis caso queira acessar algum processo do nosso desenvolvimento de maneira mais prática.
+
+- **To do**: Esta separação de listas representa Sprint Backlog. Esse projeto Sprint 1 atual que estamos  trabalhando.
+
+- **Implementing**: Verificando a qualidade do projeto quando as tarefas estão concluídas e organizadas,nisso a equipe verifica tudo para ter uma aprovação .
+
+- **Done**: Quando a equipe estiver com dificuldade de planejar  uma tarefa ela é movida da lista com juntamente um comentário do por que esta travando a lista .
+
+<div align="center"><img src="./images/Trello.png" /></div>
+
 
 
 ## Ferramentas
@@ -330,68 +343,18 @@ Scrum é uma abordagem ágil para desenvolvimento de software, enfatizando a col
 
 | Ambiente  | Plataforma              |Link de Acesso |
 |-----------|-------------------------|---------------|
-|Processo de Design Thinkgin  | Miro |  https://miro.com/XXXXXXX | 
-|Repositório de código | GitHub | https://github.com/XXXXXXX | 
-|Hospedagem do site | Heroku |  https://XXXXXXX.herokuapp.com | 
-|Protótipo Interativo | MavelApp ou Figma | https://figma.com/XXXXXXX | 
+|Processo de Design Thinkgin  | Miro |  https://miro.com/app/board/uXjVNjO3GYA=/ | 
+|Repositório de código | GitHub | https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-compatibilidade-de-pecas-para-pc | 
+|Organização da Equipe | Trello |https://trello.com/b/pJsyeukE/sprint-1 | 
+|Protótipo Interativo |  Figma | https://www.figma.com/proto/Xql8McGAjdJcrYDj9NYZ1A/Compatibilidade-de-Peças-para-PC---Wireframe?type=design&node-id=1-2&t=8gCaafBjCPBi0rGJ-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2 | 
+|Documentos Importantes | Google Drive |https://drive.google.com/drive/folders/1mS30r-FUSoIeCa-2xbO0jKg0D9bvHPX1  | 
+|Interface De Desenvolvimento |Visual Studio Code |https://code.visualstudio.com/  | 
 
->
-> Liste as ferramentas empregadas no desenvolvimento do
-> projeto, justificando a escolha delas, sempre que possível.
-> 
-> As ferramentas empregadas no projeto são:
-> 
-> - Editor de código.
-> - Ferramentas de comunicação
-> - Ferramentas de diagramação
-> - Plataforma de hospedagem
-> 
-> O editor de código foi escolhido porque ele possui uma integração com o
-> sistema de versão. As ferramentas de comunicação utilizadas possuem
-> integração semelhante e por isso foram selecionadas. Por fim, para criar
-> diagramas utilizamos essa ferramenta por melhor captar as
-> necessidades da nossa solução.
-> 
-> **Links Úteis - Hospedagem**:
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Crie seu Site com o HostGator](https://www.hostgator.com.br/como-publicar-seu-site)
-> - [GoDady](https://br.godaddy.com/how-to)
-> - [GitHub Pages](https://pages.github.com/)
+
 
 ## Controle de Versão
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Discuta como a configuração do projeto foi feita na ferramenta de
-> versionamento escolhida. Exponha como a gerência de tags, merges,
-> commits e branchs é realizada. Discuta como a gerência de issues foi
-> realizada.
-> A ferramenta de controle de versão adotada no projeto foi o
-> [Git](https://git-scm.com/), sendo que o [Github](https://github.com)
-> foi utilizado para hospedagem do repositório `upstream`.
-> 
-> O projeto segue a seguinte convenção para o nome de branchs:
-> 
-> - `master`: versão estável já testada do software
-> - `unstable`: versão já testada do software, porém instável
-> - `testing`: versão em testes do software
-> - `dev`: versão de desenvolvimento do software
-> 
-> Quanto à gerência de issues, o projeto adota a seguinte convenção para
-> etiquetas:
-> 
-> - `bugfix`: uma funcionalidade encontra-se com problemas
-> - `enhancement`: uma funcionalidade precisa ser melhorada
-> - `feature`: uma nova funcionalidade precisa ser introduzida
->
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
-> - [5 Git Workflows & Branching Strategy to deliver better code](https://zepel.io/blog/5-git-workflows-to-improve-development/)
->
-> **Exemplo - GitHub Feature Branch Workflow**:
->
-> ![Exemplo de Wireframe](images/Github-Workflow.png)
+Na Gestão de Código Fonte vamos utilizar o GitHub para ter um livre acesso pelos integrantes do projeto e os professores, além disso, teremos uma clareza de cada versão e os updates relacionados ao trabalho, criando assim uma organização e clareza do projeto.
 
 # **############## SPRINT 1 ACABA AQUI #############**
 
