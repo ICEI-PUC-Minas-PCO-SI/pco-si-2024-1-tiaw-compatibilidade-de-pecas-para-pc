@@ -54,38 +54,19 @@
 
 # Introdução
 
+No mundo contemporâneo, com os avanços e popularização de novas tecnologias cada vez mais modernas, a crescente acessibilidade de aquisição de computadores de uso pessoal, chamados _desktop_, possibilitou o uso dessas máquinas em espaços cada vez mais diversificados, abrangendo situações no âmbito profissional e pessoal.
+
+Com isso em mente, o projeto PC Match tem como objetivo solucionar os problemas comuns às pessoas que desejam adquirir um novo computador de uso pessoal, como a falta de informação de utilidade das peças e compatibilidade, por exemplo. Esses problemas se intensificam especialmente quando o _hardware_, ou parte física do computador, deve atender um uso direcionado, como é o caso do público _gamer_, que precisam de peças com qualificações específicas para atender os níveis de processamento e renderização que uma aplicação tão complexa como um jogo exige para entregar a experiência para o usuário de maneira apropriada e sem preocupações.
+
+Através de uma plataforma que explica e disponibiliza a opção de montar uma máquina e testar a compatibilidade de diferentes componentes, permitindo que o usuário saiba quais são as peças compatíveis com a sua necessidade específica.
+
 ## Problema
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Nesse momento você deve apresentar o problema que a sua aplicação deve
-> resolver. No entanto, não é a hora de comentar sobre a aplicação.
-> Descreva também o contexto em que essa aplicação será usada, se
-> houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de
-> fato existir, pois ainda não é a hora de apresentar requisitos
-> detalhados ou projetos.
->
-> Nesse momento, o grupo pode optar por fazer uso
-> de ferramentas como Design Thinking, que permite um olhar de ponta a
-> ponta para o problema.
->
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Conforme exposto, o problema que o projeto visa resolver é a dificuldade que as pessoas encontram quando precisam montar uma máquina pessoal para jogos ou aplicações que exigem um direcionamento específico de hardware, como a falta de informação sobre o papel a se desempenhar por cada parte do micro, a qualidade de desempenho e a compatibilidade com cada componente do microcomputador.
 
 ## Objetivos
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Aqui você deve descrever os objetivos do trabalho indicando que o
-> objetivo geral é desenvolver um software para solucionar o problema
-> apresentado acima. Apresente também alguns (pelo menos 2) objetivos
-> específicos dependendo de onde você vai querer concentrar a sua
-> prática investigativa, ou como você vai aprofundar no seu trabalho.
-> 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+O projeto tem como objetivo geral a criação de uma plataforma de compatibilidade de componentes, de uso dinâmico e facilitador, que permita o usuário a elaborar uma máquina completamente personalizada que atenda às suas necessidades como jogador.
 
 ## Justificativa
 
@@ -180,61 +161,51 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+Os requisitos e restrições são partes fundamentais para a elaboração do projeto, explicitando as ideias de modo claro e objetivo para a equipe, organizando a prioridade de cada requisito sendo elas alta, média e baixa. Os requisitos são divididos em duas partes, os funcionais e não funcionais, já as restrições é composta por ela mesma e são apenas as limitações que o projeto deve ter.
 
 ### Requisitos Funcionais
 
+Requisitos que determinam as possíveis interação do usuário com o sistema, a tabela a seguir demonstra os requisitos do nosso projeto e o grau de prioridade para cada um.
+
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF.01| O site deve testar compatibilidade de peças de acordo com a escolha do usuário na montagem do pc. | ALTA | 
+|RF.02| O site deve conter uma página home com direcionamento claro para o usuário de o que ele quer fazer. | ALTA |
+|RF.03| O site deve conter 4 páginas principais sendo elas home, monte seu pc, setup recomendados e como montar um pc. | MÉDIA | 
+|RF.04| O site deve oferecer alguns setups pré definidos para cada tipo de jogador. | MÉDIA |
+|RF.05| O site deve fornecer uma página explicativa sobre cada componente do pc e de maneira didática explicando como montá-lo, incluindo vídeos para um melhor entendimento. | MÉDIA | 
+|RF.06| O site deve conter média de preço de cada componente  | BAIXA |
+|RF.07| O site deve mostrar informações técnicas de cada componente selecionado na área de montagem de pc. | BAIXA | 
+|RF.08| O site deve permitir a comparação de componentes de mesma funcionalidade mas de marcas ou gerações diferentes. | BAIXA |
+|RF.09| O site deve permitir o salvamento de pcs montados virtualmente no site por usuários. | BAIXA | 
+|RF.10| O site deve ter um sistema de avaliação interna de diversos componentes. | BIAXA |
 
 
 ### Requisitos não Funcionais
 
+Requisitos que determinam as especificações gerais do sistema, a tabela a seguir demonstra os requisitos não funcionais do nosso projeto e o grau de prioridade para cada um.
+
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-> Com base nas Histórias de Usuário, enumere os requisitos da sua
-> solução. Classifique esses requisitos em dois grupos:
->
-> - [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
->   correspondem a uma funcionalidade que deve estar presente na
->   plataforma (ex: cadastro de usuário).
->
-> - [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
->   correspondem a uma característica técnica, seja de usabilidade,
->   desempenho, confiabilidade, segurança ou outro (ex: suporte a
->   dispositivos iOS e Android).
->
-> Lembre-se que cada requisito deve corresponder à uma e somente uma
-> característica alvo da sua solução. Além disso, certifique-se de que
-> todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-> 
-> **Links Úteis**:
-> 
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|RnF.01| O site deve ser publicado em um ambiente acessível publicamente na Internet (Repl.it, GitHub Pages, Heroku);  | ALTA | 
+|RnF.02| O site deverá ser responsivo permitindo a visualização em qualquer plataforma de forma adequada. | ALTA | 
+|RnF.03| O site deve ter coerência entre informações de componentes. | ALTA | 
+|RnF.04| O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge). | ALTA | 
+|RnF.05| O site deve fornecer dados de preços compatíveis com os preços no atual mercado. | MÉDIA | 
+|RnF.06| O site deve permitir o login de cada usuário (que quiser) tendo assim um salvamento de dados seguro. | ALTA | 
+|RnF.07| O site deve ter uma estabilidade de conexão. | MÉDIA | 
+|RnF.08| O site deve conter um somatório de média de preços do componentes de maneira compatível com o mercado. | MÉDIA | 
 
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+Restrições como o próprio nome diz marca a delimitação de campo do no projeto, deixando de maneira objetiva e clara as obrigações para o desenvolvimento, na tabela a seguir demonstra as restrições do nosso projeto.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-
-> Enumere as restrições à sua solução. Lembre-se de que as restrições
-> geralmente limitam a solução candidata.
-> 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|RE.01| O projeto deverá ser entregue no final do semestre, até a data de 30/06/2024. |
+|RE.02| O aplicativo deve ser feito com o conhecimento básico da matéria de Desenvolvimento Interface WEB (DIW), podendo usar apenas WEB no Frontend.        |
+|RE.03| Apenas os integrantes da equipe podem desenvolver o projeto, sendo assim não permitindo passar a ninguém além da equipe afazeres do projeto.       |
 
 
 # Projeto de Interface
