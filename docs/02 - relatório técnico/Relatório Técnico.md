@@ -356,7 +356,7 @@ Para a separação de tarefas da equipe usamos o Trello deixando assim organizad
 
 Na Gestão de Código Fonte vamos utilizar o GitHub para ter um livre acesso pelos integrantes do projeto e os professores, além disso, teremos uma clareza de cada versão e os updates relacionados ao trabalho, criando assim uma organização e clareza do projeto.
 
-# **############## SPRINT 1 ACABA AQUI #############**
+<!-- # **############## SPRINT 1 ACABA AQUI #############**
 
 
 # Projeto da Solução
@@ -448,4 +448,4 @@ Figma. Disponível em: https://www.figma.com/file/Xql8McGAjdJcrYDj9NYZ1A/Compati
 
 > **Links Úteis**:
 > - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/) -->
