@@ -362,7 +362,7 @@ Esta página apresenta ao usuário setups pré-configurados separados em níveis
 Guia para o usuário interessado em montar seu próprio PC. A página irá alertar desde a seleção e compatibilidade de peças até a montagem final.
 
 <div align="center">
-  <img src="./images/wireframe/Setup Recomendado.png" alt="Setups Prontos" />
+  <img src="./images/wireframe/Como Montar um PC.png" alt="Como Montar meu PC" />
 </div>
 
 &nbsp;
