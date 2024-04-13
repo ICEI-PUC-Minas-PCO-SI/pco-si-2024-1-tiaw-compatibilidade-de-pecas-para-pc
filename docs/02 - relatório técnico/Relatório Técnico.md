@@ -1,7 +1,12 @@
 # Informações do Projeto
 `TÍTULO DO PROJETO`  
 
+<div align="center">
+<img src="./images/logo/Pin (fundo branco).png" alt="Logo" width="200px">
+
 **PC Match**
+
+</div>
 
 `CURSO` 
 
@@ -110,63 +115,59 @@ A partir da entrevista pessoal dos usuários, composta por seis blocos de pergun
 
 ## Personas e Mapas de Empatia
 
-Personas
+**Personas**
 
 As personas levantadas durante o processo de entendimento do problema são apresentadas nas figuras que se seguem.
  
-<div align="center">
-<img src="./images/Laís Alves.jpg" alt="Persona1">
-</div>
+|**Laís Alves**|
+|--------------|
+|<img src="./images/personas/Laís Alves.jpg" alt="Persona1" width="200px">|
+**Idade**: 17 anos
+**Ocupação**: Estudante. Terminando o 3° Ano do Ensino Médio.
+**Estado Civil**: Solteira.
+**Aplicativos usados**: TikTok, Youtube, Instagram, Tinder, Spotify e X (Twitter).
+**Motivações**: Socialização, entretenimento, curiosidades e amizades.
+**Frustrações**: Preços altos, travamentos, falta de conhecimento e insegurança.
+**Hobbies**: Assistir TikTok, Tinder, se maquiar e correr na rua.|
 
-Laís Alves:
-Idade 17 anos;
-Ocupação: estudante. Terminando o 3° Ano do Ensino Médio.
-Estado Civil: solteira.
-Aplicativos usados: TikTok, Youtube, Instagram, Tinder, Spotify e X (Twitter).
-Motivações: socialização, entretenimento, curiosidades e amizades.
-Frustrações: preços altos, travamentos, falta de conhecimento e insegurança.
-Hobbies: assistir TikTok, Tinder, se maquiar e correr na rua.
+&nbsp;
 
+|**Fernando Souza**|
+|--------------|
+|<img src="./images/personas/Fernando Souza.jpg" alt="Persona2" width="200px">|
+**Idade**: 27 anos
+**Ocupação**: CMO (Chief Marketing Officer);
+**Estado Civil**: Solteiro.
+**Aplicativos usados**: TikTok, Youtube, Instagram, Hotmart, Facebook Ads, Google Ads, WhatsApp, Steam, Epic Games e Netflix.
+**Motivações**: Sucesso financeiro, desenvolvimento pessoal e namoro.
+**Frustrações**: Pressão do trabalho, adaptações forçadas, constantes e rápidas.
+**Hobbies**: Assistir Netflix, sair com a namorada e jogar video game.
 
-<div align="center">
-<img src="./images/Fernando Souza.jpg" alt="Persona2">
-</div>
+&nbsp;
 
-Fernando Souza:
-Idade 27 anos;
-Ocupação: CMO (Chief Marketing Officer);
-Estado Civil: solteiro.
-Aplicativos usados: TikTok, Youtube, Instagram, Hotmart, Facebook Ads, Google Ads, WhatsApp, Steam, Epic Games e Netflix.
-Motivações: sucesso financeiro, desenvolvimento pessoal e namoro.
-Frustrações: pressão do trabalho, adaptações forçadas, constantes e rápidas.
-Hobbies: assistir Netflix, sair com a namorada e jogar video game.
+|**Miguel Santos**|
+|--------------|
+|<img src="./images/personas/Miguel Santos.jpg" alt="Persona3" width="200px">|
+**Idade**: 18 anos
+**Ocupação**: Estudante. Iniciando a Faculdade.
+**Estado Civil**: Solteiro.
+**Aplicativos usados**: Youtube, Instagram, WhatsApp, Spotify e Twitch.
+**Motivações**: Novas tecnologias, amizades e privacidade.
+**Frustrações**: Falta de conhecimento, incertezas sobre o futuro, não ter uma renda mensal, sem autonomia.
+**Hobbies**: Tocar teclado, assistir séries, fazer musculação e jogar com os amigos.
 
+&nbsp;
 
-<div align="center">
-<img src="./images/Miguel Santos.jpg" alt="Persona3">
-</div>
-
-Miguel Santos:
-Idade 18 anos;
-Ocupação: Estudante. Iniciando a Faculdade;
-Estado Civil: Solteiro;
-Aplicativos usados: Youtube, Instagram, WhatsApp, Spotify e Twitch.
-Motivações: novas tecnologias, amizades e privacidade.
-Frustrações: falta de conhecimento, incertezas sobre o futuro, não ter uma renda mensal, sem autonomia.
-Hobbies: tocar teclado, assistir séries, fazer musculação e jogar com os amigos.
-
-<div align="center">
-<img src="./images/Jorge de Almeida.jpg" alt="Persona4">
-</div>
-
-Jorge de Almeida:
-Idade 35 anos;
-Ocupação: Professor de Física;
-Estado Civil: Casado;
-Aplicativos usados: Youtube, Instagram, WhatsApp, Spotify e PlayStation Plus.
-Motivações: felicidade dos filhos, estabilidade financeira e esposa.
-Frustrações: Preocupação com a saúde física.
-Hobbies: jogar video game, escutar música clássica e caminhar com a família.
+|**Jorge de Almeida**|
+|--------------|
+|<img src="./images/personas/Jorge de Almeida.jpg" alt="Persona4" width="200px">|
+**Idade**: 35 anos
+**Ocupação**: Professor de Física.
+**Estado Civil**: Casado.
+**Aplicativos usados**: Youtube, Instagram, WhatsApp, Spotify e PlayStation Plus.
+**Motivações**: Felicidade dos filhos, estabilidade financeira e esposa.
+**Frustrações**: Preocupação com a saúde física.
+**Hobbies**: Jogar video game, escutar música clássica e caminhar com a família.
 
 ## Histórias de Usuários
 
@@ -385,19 +386,17 @@ A equipe foi organizada da seguinte maneira:
 
 Para a separação de tarefas da equipe usamos o Trello deixando assim organizado e tendo assim um claro entendimento das partes de cada um, podendo criar uma autonomia para declarar cada tarefa e definir o que começou, terminou ou está em implementação, temos também alguns exemplos e links úteis caso queira acessar algum processo do nosso desenvolvimento de maneira mais prática.
 
-- **To do**: Esta separação de listas representa Sprint Backlog. Esse projeto Sprint 1 atual que estamos  trabalhando.
+- **To do**: Lista de tarefas para fazer, organizada com nomes de cada integrante destinado a fazer tal tarefa.
 
-- **Implementing**: Verificando a qualidade do projeto quando as tarefas estão concluídas e organizadas,nisso a equipe verifica tudo para ter uma aprovação .
+- **Implementing**: Tarefas que estão sendo no momento desenvolvidas e implementadas no projeto e com seu nivél de progresso.
 
-- **Done**: Quando a equipe estiver com dificuldade de planejar  uma tarefa ela é movida da lista com juntamente um comentário do por que esta travando a lista .
+- **Done**: Tarefas concluidas.
 
-<div align="center"><img src="./images/Trello.png" /></div>
+<div align="center"><img src="./images/metodologia/Trello.png" /></div>
 
 
 
 ## Ferramentas
-
-......  COLOQUE AQUI O SEU TEXTO - SIGA O EXEMPLO DA TABELA ABAIXO  ......
 
 | Ambiente  | Plataforma              |Link de Acesso |
 |-----------|-------------------------|---------------|
