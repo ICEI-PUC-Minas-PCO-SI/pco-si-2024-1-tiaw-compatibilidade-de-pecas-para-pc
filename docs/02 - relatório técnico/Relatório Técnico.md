@@ -264,6 +264,7 @@ Restrições como o próprio nome diz marca a delimitação de campo do no proje
 |RE.02| O aplicativo deve ser feito com o conhecimento básico da matéria de Desenvolvimento Interface WEB (DIW), podendo usar apenas WEB no Frontend.        |
 |RE.03| Apenas os integrantes da equipe podem desenvolver o projeto, sendo assim não permitindo passar a ninguém além da equipe afazeres do projeto.       |
 
+&nbsp; 
 
 # Projeto de Interface
 
@@ -291,23 +292,80 @@ Cada página está devidamente detalhada no Figma, o qual pode ser acessado clic
 
 ## Wireframes
 
-......  INCLUA AQUI OS WIREFRAMES DAS TELAS DA APLICAÇÃO COM UM BREVE DESCRITIVO ......
+Em sua maioria, as telas da aplicação apresentam uma estrutura em comum que é apresentada na imagem a seguir. Na nossa estrutura, existem apenas 2 grandes blocos, que são:
 
-> Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a
-> estrutura de um site web e seu relacionamentos entre suas
-> páginas. Um wireframe web é uma ilustração semelhante ao
-> layout de elementos fundamentais na interface.
-> 
-> **Links Úteis**:
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> 
-> **Exemplo**:
-> 
-> ![Exemplo de Wireframe](images/wireframe-example.png)
+- **Cabeçalho**: Componente que contém os links para as outras páginas (navegação) e a logo do nosso trabalho;
+- **Conteúdo**: local onde todo o conteúdo será apresentado.
 
+<div align="center">
+  <img src="./images/wireframe/prot.png" alt="Protótipo" width="300px" height="300px" />
+</div>
+
+### Página - Landing Page
+
+A **landing-page** será a primeira página que o usuário irá se deparar ao entrar em nosso site. Nela, apresentaremos de forma atrativa um resumo de cada página da aplicação separados em seções. Cada seção irá destacar os principais pontos de cada página.
+
+<div align="center">
+  <img src="./images/wireframe/Landing.png" alt="Landing" />
+</div>
+
+&nbsp;
+
+### Página - Montar PC
+
+A página de “Montar PC” apresenta a principal funcionalidade do site. Nela, o usuário será capaz de montar o seu próprio computador selecionando peças a partir de uma lista. A seleção de peças terá uma ordem específica, sendo ela:
+
+> *Processador -> Placa de Vídeo -> Memória RAM -> Fonte -> HD ou SSD -> Placa-Mãe*
+
+Isso foi feito para facilitar a filtragem de peças compatíveis com as futuras escolhas.
+
+<div align="center">
+  <img src="./images/wireframe/Montar PC.png" alt="Montar PC" />
+</div>
+
+&nbsp;
+
+#### Modal - Seleção de Peças
+
+Ao clicar para adicionar ou alterar uma peça, um modal irá aparecer na tela do usuário. Nele, teremos uma lista de componentes que o usuário poderá escolher.
+
+Cada item da lista irá conter as seguintes informações:
+
+- Nome do componente;
+- Preço;
+- Link de sua respectiva loja;
+- Algumas informações técnicas referente à peça;
+- Botão para selecionar.
+
+<div align="center">
+  <img src="./images/wireframe/Peças - Modal.png" alt="Modal" />
+</div>
+
+&nbsp;
+
+### Página - Setups Recomendados
+
+Esta página apresenta ao usuário setups pré-configurados separados em níveis, sendo eles:
+- **Low**: mais barato e recomendado para jogos e programas mais leves;
+- **Médio**: setup com um equilíbrio entre preço e desempenho em jogos e apps; 
+- **High**: alto desempenho, adequado para jogos mais exigentes;
+- **Ultra**: oferece o máximo desempenho possível, ideal para os usuários que buscam a mais alta qualidade nos jogos e aplicativos de alta demanda.
+
+<div align="center">
+  <img src="./images/wireframe/Setup Recomendado.png" alt="Setups Prontos" />
+</div>
+
+&nbsp;
+
+### Página - Como Montar meu PC
+
+Guia para o usuário interessado em montar seu próprio PC. A página irá alertar desde a seleção e compatibilidade de peças até a montagem final.
+
+<div align="center">
+  <img src="./images/wireframe/Setup Recomendado.png" alt="Setups Prontos" />
+</div>
+
+&nbsp;
 
 # Metodologia 
 
