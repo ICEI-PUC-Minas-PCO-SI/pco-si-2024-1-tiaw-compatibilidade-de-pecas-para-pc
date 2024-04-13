@@ -2,7 +2,7 @@
 `TÍTULO DO PROJETO`  
 
 <div align="center">
-<img src="./images/logo/Pin (fundo branco).png" alt="Logo" width="200px">
+<img src="./images/logos/pinft.png" alt="Logo" width="200px">
 
 **PC Match**
 

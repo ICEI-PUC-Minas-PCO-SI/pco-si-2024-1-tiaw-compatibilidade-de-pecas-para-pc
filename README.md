@@ -1,6 +1,8 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=14413188&assignment_repo_type=AssignmentRepo)
 # PC Match
 
+<img src="./docs/02 - relatório técnico/images/logos/logoft.png" width="200px">
+
 O projeto tem como objetivo geral a criação de uma plataforma de compatibilidade de componentes, de uso dinâmico e facilitador, que permita o usuário a elaborar uma máquina completamente personalizada que atenda às suas necessidades como jogador.
 
 Como objetivos específicos, podemos ressaltar:
