@@ -76,38 +76,19 @@ O projeto tem como objetivo geral a criação de uma plataforma de compatibilida
 
 ## Justificativa
 
-......  COLOQUE AQUI O SEU TEXTO ......
 
-> Descreva a importância ou a motivação para trabalhar com esta aplicação
-> que você escolheu. Indique as razões pelas quais você escolheu seus
-> objetivos específicos ou as razões para aprofundar em certos aspectos
-> do software.
-> 
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e
-> dados estatísticos, que podem ser apresentados, com o objetivo de
-> esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Montar um computador, pode ser complicado para pessoas que não tem conhecimento comum sobre a área, ou que não possuem experiência em hardware ou software, e que, às vezes, só necessitam de um desktop para jogar, estudar, ou trabalhar, de forma simples e prática, dentre outras funcionalidades. 
+
+Quanto à compatibilidade de hardware, que é o nosso foco, em grupo de pessoas que querem montar um computador para jogar, podem encontrar problemas quanto escolher as peças necessárias e, dentre elas, causar a compatibilidade correta, e portanto, funcional para o bom funcionamento da sua máquina. Por exemplo, a placa mãe precisa ser conivente com o processador, a memória RAM, e a placa de vídeo, ou também, a fonte precisa ser adequada para suportar demais funcionalidades, dentre outros aspectos que vão ser decorridos e explicados durante a apresentação desta sprint.
+
+
 
 ## Público-Alvo
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Embora vários grupos de pessoas precisem de computador para vários assuntos, este trabalho foi focado para as pessoas que, independente da idade, necessitam de uma máquina para jogar, desde o jogo com software mais pesado, ao mais leve, que, de modo geral, influencia na escolha do hardware adequado para um bom funcionamento.
 
-> Descreva quem serão as pessoas que usarão a sua aplicação indicando os
-> diferentes perfis. O objetivo aqui não é definir quem serão os
-> clientes ou quais serão os papéis dos usuários na aplicação. A ideia
-> é, dentro do possível, conhecer um pouco mais sobre o perfil dos
-> usuários: conhecimentos prévios, relação com a tecnologia, relações
-> hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição
-> textual, ou diagramas de personas, mapa de stakeholders, ou como o
-> grupo achar mais conveniente.
-> 
-> **Links Úteis**:
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Dentro deste grupo, inclui pessoas, como dito anteriormente, de várias idades, e também que querem determinada fluidez e qualidade gráfica, visando ou não, o seu custo benefício, em que se inclui, consequentemente, do mínimo necessário de determinados hardwares, para a sua potência por sequência dos jogos.   
+
  
 # Especificações do Projeto
 
