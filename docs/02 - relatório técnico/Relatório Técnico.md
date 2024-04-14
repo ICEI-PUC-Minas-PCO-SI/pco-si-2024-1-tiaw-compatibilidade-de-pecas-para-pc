@@ -355,23 +355,38 @@ Scrum é uma abordagem ágil para desenvolvimento de software, enfatizando a col
 
 ## Divisão de Papéis
 
-Na equipe utilizaremos a Metodologia Scrum como a base da definição do nosso processo de desenvolvimento.
+Na equipe utilizaremos a Metodologia Scrum como a base da definição do nosso processo de desenvolvimento. A equipe foi organizada da seguinte maneira:
 
-A equipe foi organizada da seguinte maneira:
-- Isaac: Projeto de Interface: Fluxo do Usuário e wireframes.
-- Andry: Especificação do Projeto: Requisitos funcionais e  não funcionais e restrições.
-- João P: Introdução: Justificativa e público alvo.
-- Luiz: Especificação do Projeto: Personas e histórias de usuários.
-- Abner: Introdução: Problemas e objetivos.
-- Samuel A: Metodologia: Relação de ambiente de trabalho, gestão de código fonte e gerenciamento do projeto.
+- Abner - Introdução 
+  - Problemas
+  - Objetivos
+- Andry - Especificação do Projeto
+  - Requisitos funcionais 
+  - Requisitos não funcionais
+  - Restrições
+- Isaac - Projeto de Interface 
+  - Fluxo do Usuário
+  - Wireframes
+- João P. - Introdução 
+  - Justificativa 
+  - Público alvo
+- Luiz - Especificação do Projeto 
+  - Personas
+  - Histórias de usuários
+- Samuel A - Metodologia 
+  - Relação de ambiente de trabalho
+  - Gestão de código fonte
+  - Gerenciamento do projeto
 
-Para a separação de tarefas da equipe usamos o Trello deixando assim organizado e tendo assim um claro entendimento das partes de cada um, podendo criar uma autonomia para declarar cada tarefa e definir o que começou, terminou ou está em implementação, temos também alguns exemplos e links úteis caso queira acessar algum processo do nosso desenvolvimento de maneira mais prática.
 
-- **To do**: Lista de tarefas para fazer, organizada com nomes de cada integrante destinado a fazer tal tarefa.
 
-- **Implementing**: Tarefas que estão sendo no momento desenvolvidas e implementadas no projeto e com seu nivél de progresso.
+Para a separação de tarefas e organização da equipe, utilizamos o Trello com a seguinte estrutura:
 
-- **Done**: Tarefas concluidas.
+- **To-Do**: Lista de tarefas para fazer, organizada com nomes de cada integrante destinado a fazer tal tarefa.
+
+- **Implementing**: Tarefas que estão sendo desenvolvidas e implementadas no projeto e com seu nível de progresso.
+
+- **Done**: Tarefas concluídas.
 
 <div align="center"><img src="./images/metodologia/Trello.png" /></div>
 
@@ -392,7 +407,10 @@ Para a separação de tarefas da equipe usamos o Trello deixando assim organizad
 
 ## Controle de Versão
 
-Na Gestão de Código Fonte vamos utilizar o GitHub para ter um livre acesso pelos integrantes do projeto e os professores, além disso, teremos uma clareza de cada versão e os updates relacionados ao trabalho, criando assim uma organização e clareza do projeto.
+Na Gestão de Código Fonte, utilizamos o GitHub para termos um livre acesso pelas *branchs* de cada integrante do grupo. Além disso, é possível ver cada update relacionados ao trabalho, criando assim uma organização e clareza do projeto.
+
+A estrutura das *branches* foi organizada com uma *branch* dedicada a cada membro do grupo, permitindo que a branch principal permaneça receptiva a mudanças através de *pull requests* dos integrantes.
+
 
 <!-- # **############## SPRINT 1 ACABA AQUI #############**
 
