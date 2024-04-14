@@ -384,7 +384,7 @@ Para a separação de tarefas da equipe usamos o Trello deixando assim organizad
 |Processo de Design Thinkgin  | Miro |  https://miro.com/app/board/uXjVNjO3GYA=/ | 
 |Repositório de código | GitHub | https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-compatibilidade-de-pecas-para-pc | 
 |Organização da Equipe | Trello |https://trello.com/b/pJsyeukE/sprint-1 | 
-|Protótipo Interativo |  Figma | https://www.figma.com/proto/Xql8McGAjdJcrYDj9NYZ1A/Compatibilidade-de-Peças-para-PC---Wireframe?type=design&node-id=1-2&t=8gCaafBjCPBi0rGJ-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2 | 
+|Protótipo Interativo |  Figma | https://www.figma.com/proto/Xql8McGAjdJcrYDj9NYZ1A/Compatibilidade-de-Pe%C3%A7as-para-PC---Wireframe?type=design&node-id=160-287&t=eWtg3ALiJVZiGeh1-1&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=160%3A287&mode=design | 
 |Documentos Importantes | Google Drive |https://drive.google.com/drive/folders/1mS30r-FUSoIeCa-2xbO0jKg0D9bvHPX1  | 
 |Interface De Desenvolvimento |Visual Studio Code |https://code.visualstudio.com/  | 
 
