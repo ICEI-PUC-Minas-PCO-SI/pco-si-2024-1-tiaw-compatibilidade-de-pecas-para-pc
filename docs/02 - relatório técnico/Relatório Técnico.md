@@ -211,7 +211,7 @@ Requisitos que determinam as possíveis interação do usuário com o sistema, a
 |RF.01| O site deve testar compatibilidade de peças de acordo com a escolha do usuário na montagem do pc. | ALTA | 
 |RF.02| O site deve conter uma página home com direcionamento claro para o usuário de o que ele quer fazer. | ALTA |
 |RF.03| O site deve conter 4 páginas principais sendo elas home, monte seu pc, setup recomendados e como montar um pc. | MÉDIA | 
-|RF.04| O site deve oferecer alguns setups pré definidos para cada tipo de jogador. | MÉDIA |
+|RF.04| O site deve oferecer alguns setups predefinidos para cada tipo de jogador. | MÉDIA |
 |RF.05| O site deve fornecer uma página explicativa sobre cada componente do pc e de maneira didática explicando como montá-lo, incluindo vídeos para um melhor entendimento. | MÉDIA | 
 |RF.06| O site deve conter média de preço de cada componente  | BAIXA |
 |RF.07| O site deve mostrar informações técnicas de cada componente selecionado na área de montagem de pc. | BAIXA | 
