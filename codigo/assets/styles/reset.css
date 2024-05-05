@@ -3,3 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.fix-width {
+    max-width: 1196px;
+    margin: 0 auto;
+}
+
+:root {
+    --logo-color: #40170B;
+    --primary-color: #EDB74C;
+}
