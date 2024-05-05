@@ -1,0 +1,8 @@
+.game{
+    display: flex;
+    margin: 0px auto;
+    border-radius: 10px;
+    max-width: 1196px;
+    margin: 0 auto;
+}
+

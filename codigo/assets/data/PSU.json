@@ -1,0 +1,14 @@
+{
+    "PSUs":[
+        {
+            "id": "null",
+            "nome": "600W",
+            "image_url":"https://images.kabum.com.br/produtos/fotos/369655/fonte-msi-mag-a600dn-atx-600w-80-plus-pfc-ativo-entrada-bivolt-preto-306-7zp6b22-809_1667475815_gg.jpg"
+        },
+        {
+            "id":"null",
+            "nome":"750W",
+            "image_url":"https://images.kabum.com.br/produtos/fotos/471344/fonte-xpg-kyber-750w-80-plus-gold-bivolt-preto-kyber750g-bkcbr_1698676190_gg.jpg"
+        }
+    ]
+}
