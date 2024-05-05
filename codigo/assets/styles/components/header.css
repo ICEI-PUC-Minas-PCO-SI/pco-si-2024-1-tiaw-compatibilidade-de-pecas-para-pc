@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    font-family: 'Fredoka', sans-serif;
+    
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+.logo h2 {
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 29px;
+    color: var(--logo-color);
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+}
+
+.logo-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hamburger, .mobile-links {
+    display: none;
+}
+
+.invisible {
+    display: none !important;
+}
+
+/* Links */
+.links {
+    display: flex;
+    gap: 40px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    color: #000;
+
+    transition: color 250ms ease;
+}
+
+.link:hover {
+    color: var(--primary-color);
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@keyframes slidein {
+    from {
+      transform: translateX(100%);
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+  }
+
+@media (max-width: 970px) {
+    .content {
+        position: relative;
+    }
+
+    .logo-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .logo h2 {
+        font-size: 26px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .mobile-links {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 999;
+        
+        height: 100vh;
+        
+        background-color: #fff;
+        
+        display: flex;
+        flex-direction: column;
+        
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        animation: slidein 400ms;
+    }
+
+    .mobile-links a {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+        padding: 12px;
+
+        text-align: right;
+        font-size: 20px;
+
+        text-decoration: none;
+        color: #000;
+    }
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+        padding: 12px;
+        font-size: 20px;
+    }
+
+    .title h3 {
+        font-weight: 500;
+    }
+}
