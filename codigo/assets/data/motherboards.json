@@ -1,17 +1,17 @@
 {
     "mainboard":[
         {
-            "id": "null",
+            
             "nome": "A520",
             "image_url":"https://images.kabum.com.br/produtos/fotos/280890/placa-mae-msi-a520m-a-pro-amd-am4-matx-ddr4_1646852577_gg.jpg"
         },
         {
-            "id":"null",
+            
             "nome":"H610",
             "image_url":"https://images.kabum.com.br/produtos/fotos/sync_mirakl/317535/Placa-M-e-Gigabyte-H610M-H-Intel-1700-2x-DDR4-M-2-HDMI-VGA-12-Gera-o_1710425288_gg.jpg"
         },
         {
-            "id":"null",
+            
             "nome":"B660",
             "image_url":"https://images.kabum.com.br/produtos/fotos/276321/placa-mae-gigabyte-b660m-aorus-pro-intel-lga-1700-matx-ddr4-m-2-nvme-b660m-aorus-pro-ddr4_1643917278_gg.jpg"
         }
