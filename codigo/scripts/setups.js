@@ -1,45 +1,38 @@
-const carregarProdutosBtn = document.getElementById('setup-low');
+document.getElementById("setup-low").addEventListener("click", function() {
+    const cpuList = document.getElementById("cpu-list");
 
-if (carregarProdutosBtn) {
-    // Evento de clique para carregar produtos
-    carregarProdutosBtn.addEventListener('click', () => {
-        // Usar Fetch para carregar o arquivo JSON com produtos
-        fetch('codigo/assets/data/cpus.json') // Caminho para o JSON
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Erro ao carregar o JSON');
-                }
-                return response.json(); // Converte para objeto JavaScript
-            })
-            .then(data => {
-                // Processar e adicionar produtos ao HTML
-                const produtoLista = document.querySelector('.produto-lista'); // Referência à lista
-                if (produtoLista) {
-                    data.forEach(produto => {
-                        const produtoItem = document.createElement('li'); // Criar item para a lista
-                        produtoItem.className = 'produto-item'; // Classe para estilizar
+    // Limpa a lista antes de adicionar os elementos
+    cpuList.innerHTML = "";
 
-                        // Preencher conteúdo do item
-                        produtoItem.innerHTML = `
-                            <img src="${produto.imagem_url}" alt="${produto.nome}" class="produto-imagem">
-                            <div>
-                                <h6>${produto.nome}</h6>
-                                <p>${produto.descricao}</p>
-                            </div>
-                            <div class="produto-acoes">
-                                <h6 class="text-success">${produto.preco}</h6>
-                            </div>
-                        `;
+    json.cpus.forEach(cpu => {
+        const listItem = document.createElement("li");
+        listItem.className = "cpu-item";
 
-                        // Adicionar o item à lista
-                        produtoLista.appendChild(produtoItem);
-                    });
-                }
-            })
-            .catch(error => {
-                console.error('Erro ao carregar o JSON:', error); // Tratamento de erro
-            });
+        const image = document.createElement("img");
+        image.src = cpu.image_url;
+
+        const content = document.createElement("div");
+
+        const title = document.createElement("h3");
+        title.textContent = cpu.nome;
+
+        content.appendChild(title);
+
+        if (cpu.descrição) {
+            const description = document.createElement("p");
+            description.textContent = cpu.descrição;
+            content.appendChild(description);
+        }
+
+        if (cpu.preco) {
+            const price = document.createElement("p");
+            price.textContent = "Preço: " + cpu.preco;
+            content.appendChild(price);
+        }
+
+        listItem.appendChild(image);
+        listItem.appendChild(content);
+
+        cpuList.appendChild(listItem);
     });
-} else {
-    console.error("O botão com ID 'setup-low' não foi encontrado");
-}
+});
