@@ -5,4 +5,41 @@
     margin-top: 20px;
 }
 
+ 
+ .container {
+    width: 100%; 
+    margin: 0 auto; 
+}
 
+
+.produto-lista {
+    list-style-type: none; 
+    padding: 0;
+    background-color: #EDB74C; 
+    border-radius: 10px; 
+    padding: 20px; 
+}
+
+
+.produto-item {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+}
+
+
+.produto-imagem {
+    width: 100px; 
+    border-radius: 10px; 
+}
+
+
+.conteudo{
+    padding-right: 300px;
+    padding-left:  20px;
+}
+
+.produto-acoes {
+    text-align: right; 
+}

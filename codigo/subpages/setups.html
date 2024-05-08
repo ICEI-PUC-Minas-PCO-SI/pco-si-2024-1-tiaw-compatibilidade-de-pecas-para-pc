@@ -15,6 +15,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <!--JavaScript-->
+        <script src="/codigo/scripts/setups.js"></script>
 </head>
 
 <body>
@@ -74,7 +76,7 @@
             <div class="low d-flex bg-danger rounded-3">
                 <img src="/codigo/assets/images/setups/crowns 2.png" alt="" width="40%" height="auto"
                     class="rounded-circle bg-danger p-2">
-                    <button type="button" class="btn btn-danger">
+                    <button type="button" class="btn btn-danger" id="setup-low">
                     <h3 class="text-light">Setup<br>Low</h3>
                 </button>
             </div>
@@ -100,8 +102,29 @@
                 </button>
             </div>
         </div>
-    </main>
 
+        <div class="container" id="reset"> 
+            <ul class="produto-lista">
+                <li class="produto-item" id="produto-lista">
+                    <!-- Imagem do produto -->
+                    <img src="https://images.kabum.com.br/produtos/fotos/248205/water-cooler-gamer-rise-mode-argb-intel-e-amd-240mm-preto-rm-wcb-04-argb_1663778106_gg.jpg " 
+                         alt="Produto 1" class="produto-imagem">
+    
+                    <!-- Texto ao lado da imagem -->
+                    <div class="conteudo">
+                        <h6>Nome do Produto 1</h6>
+                        <p>Uma breve descrição do produto 1.</p>
+                    </div>
+    
+                    <!-- Preço e botão à direita -->
+                    <div class="produto-acoes">
+                        <h6 class="text-success">R$ 299,90</h6> <!-- Cor verde para o preço -->
+                        <button>Comprar</button>
+                    </div>
+                </li>
+            </ul>
+            </div>
+    </main>
     <script src="../scripts/menu-hamburger.js"></script>
 </body>
 
