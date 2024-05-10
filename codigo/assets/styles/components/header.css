@@ -6,10 +6,8 @@
     justify-content: space-between;
     
     font-family: 'Fredoka', sans-serif;
-    
-    padding-top: 12px;
-    padding-left: 10px;
-    padding-right: 10px;
+
+    padding: 12px 20px;
 }
 
 .logo {
@@ -23,13 +21,13 @@
 .logo h2 {
     margin-left: 20px;
     font-weight: 600;
-    font-size: 29px;
+    font-size: 22px;
     color: var(--logo-color);
 }
 
 .logo-img {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 }
 
 .logo-img img {
@@ -57,7 +55,7 @@
     align-items: center;
 
     text-decoration: none;
-    color: #000;
+    color: #545454;
 
     transition: color 250ms ease;
 }
@@ -67,9 +65,12 @@
 }
 
 .icon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
     margin-right: 10px;
+
+    border-right: 1px solid rgba(149, 157, 165, 0.2);
 }
 
 .icon img {
