@@ -2,11 +2,13 @@ import cpus from "../assets/data/cpus.json" with { type: 'json' }
 import gpus from "../assets/data/gpus.json" with { type: 'json' }
 
 const section = document.querySelector(".presentation-container")
+const total = document.querySelector(".total")
 
 const cpuBtn = document.querySelector("#cpu");
 const gpuBtn = document.querySelector("#gpu");
 
 let setup = {
+    totalPrice: 0,
     cpu: null,
     gpu: null,
 }
@@ -90,6 +92,9 @@ function handleSelection(item, title) {
 
             break
     }
+
+    setup.totalPrice += item.price
+    total.innerHTML = `Total: R$ ${priceParser(Math.round(setup.totalPrice))}`
 }
 
 // Helpers
