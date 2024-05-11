@@ -4,33 +4,33 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.presentation-container{
+.presentation-container {
     padding: 0 20px;
 }
 
 .presentation-info {
-    margin-top: 20px ;
+    margin-top: 20px;
 }
 
-.monte-info{
+.monte-info {
     margin-top: 15px;
     background-color: var(--secondary-color);
     border-radius: 10px;
     padding: 10px 25px;
 }
 
-.table-components{
+.table-components {
     margin-top: 50px;
     width: 100%;
 }
 
-.table-components tbody td{
+.table-components tbody td {
     padding: 9px;
     border-bottom: 1px solid #ddd;
     font-weight: 600;
 }
 
-.table-components button{
+.table-components button {
     padding: 3px 10px;
     font-weight: 600;
     width: 150px;
@@ -51,7 +51,7 @@ body {
     cursor: not-allowed;
 }
 
-.total{
+.total {
     margin-top: 30px;
     padding-left: 10px;
     font-weight: 600;
@@ -70,4 +70,32 @@ body {
 
     border: 2px solid #b1b1b1;
     border-radius: 10px;
+}
+
+@media (max-width: 675px) {
+
+
+    .table-components tr {
+        margin-bottom: 10px;
+    }
+
+
+    .table-components tr td {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tr-info {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .tr-info img {
+        width: 75%;
+        height: 75%;
+    }
+
 }
