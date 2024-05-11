@@ -1,0 +1,10 @@
+[
+    {
+        "ID": 1,
+        "name": "Kingston SSD Nv2",
+        "price": 689.99,
+        "img": "https://static.meupc.net/produto/ssd-kingston-nv1-nv22tb-r2L88f-L.jpg",
+        "interface": "M2",
+        "wats": 10
+    }
+]

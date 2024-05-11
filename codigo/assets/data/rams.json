@@ -1,0 +1,11 @@
+[
+    {
+        "ID": 1,
+        "name": "Kingston Fury Beast RGB 32 GB (2x16 GB)",
+        "price": 589.99,
+        "img": "https://static.meupc.net/produto/memoria-kingston-fury-beast-rgb-kf432c16bb12ak232-xSz89Q-L.jpg",
+        "type": "DDR4",
+        "velocity": 3200,
+        "wats": 1.35
+    }
+]
