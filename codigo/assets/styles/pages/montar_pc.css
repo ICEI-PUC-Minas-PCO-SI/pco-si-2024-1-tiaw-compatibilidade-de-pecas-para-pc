@@ -37,7 +37,18 @@ body {
     background-color: var(--primary-color);
     border-radius: 50px;
     border: none;
-    color: #ffffff
+    color: #ffffff;
+
+    cursor: pointer;
+}
+
+.table-components button:hover {
+    filter: brightness(80%);
+}
+
+.table-components button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 .total{
@@ -46,3 +57,17 @@ body {
     font-weight: 600;
 }
 
+.tr-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.tr-info img {
+    width: 46px;
+    height: 46px;
+    padding: 6px;
+
+    border: 2px solid #b1b1b1;
+    border-radius: 10px;
+}

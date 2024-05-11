@@ -40,10 +40,6 @@
     display: none;
 }
 
-.invisible {
-    display: none !important;
-}
-
 /* Links */
 .links {
     display: flex;

@@ -1,0 +1,18 @@
+[
+    {
+        "ID": 1,
+        "name": "Intel Core i5-11600KF",
+        "price": 1163.50,
+        "img": "https://static.meupc.net/produto/processador-intel-core-i5-11600kf-bx8070811600kf-dZ6w2U-L.jpg",
+        "socket": "LGA 1200",
+        "wats": 125
+    },
+    {
+        "ID": 2,
+        "name": "Intel Core i7-14700KF",
+        "price": 3058.81,
+        "img": "https://static.meupc.net/produto/processador-intel-core-i7-14700kf-bx8071514700kf-o2k5Fa-L.jpg",
+        "socket": "LGA 1700",
+        "wats": 125
+    }
+]

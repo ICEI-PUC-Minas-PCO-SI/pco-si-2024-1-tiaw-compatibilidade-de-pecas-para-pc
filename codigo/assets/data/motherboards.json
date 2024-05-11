@@ -1,0 +1,14 @@
+[
+    {
+        "ID": 1,
+        "name": "Gigabyte B550M Aorus Elite",
+        "price": 720.00,
+        "img": "https://static.meupc.net/produto/placa-mae-gigabyte-b550m-aorus-elite-bZd7k5-L.jpg",
+        "socket": "AM4",
+        "gpuInterface": "PCIe x16",
+        "storageInterface": ["M2", "SATA"],
+        "ramMinVelocity": 2133,
+        "ramMaxVelocity": 4266,
+        "wats": 0
+    }
+]

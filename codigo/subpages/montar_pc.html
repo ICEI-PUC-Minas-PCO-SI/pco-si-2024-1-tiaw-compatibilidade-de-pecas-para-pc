@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="../assets/styles/reset.css">
     <link rel="stylesheet" href="../assets/styles/components/header.css">
+    <link rel="stylesheet" href="../assets/styles/components/modal.css">
     <link rel="stylesheet" href="../assets/styles/pages/montar_pc.css">
 </head>
 
@@ -74,43 +75,41 @@
 
         <table class="table-components">
             <tbody>
-                <tr>
-                    <td>CPU</td>
+                <tr class="cpu-tr table-row">
+                    <td colspan="2">CPU</td>
                     <td><button id="cpu">Adicionar</button></td>
                 </tr>
-                <tr>
-                    <td>Placa de Vídeo</td>
-                    <td><button id="cpu">Adicionar</button></td>
+                <tr class="gpu-tr table-row">
+                    <td colspan="2">Placa de Vídeo</td>
+                    <td><button id="gpu" disabled>Adicionar</button></td>
                 </tr>
-                <tr>
-                    <td>RAM</td>
-                    <td><button id="cpu">Adicionar</button></td>
+                <tr class="ram-tr table-row">
+                    <td colspan="2">RAM</td>
+                    <td><button id="ram" disabled>Adicionar</button></td>
                 </tr>
-                <tr>
-                    <td>HD/SSD</td>
-                    <td><button id="cpu">Adicionar</button></td>
+                <tr class="storage-tr table-row">
+                    <td colspan="2">HD/SSD</td>
+                    <td><button id="storage" disabled>Adicionar</button></td>
                 </tr>
-                <tr>
-                    <td>Placa Mãe</td>
-                    <td><button id="cpu">Adicionar</button></td>
+                <tr class="motherboard-tr table-row">
+                    <td colspan="2">Placa Mãe</td>
+                    <td><button id="motherboard" disabled>Adicionar</button></td>
                 </tr>
-                <tr>
-                    <td>Fonte</td>
-                    <td><button id="cpu">Adicionar</button></td>
+                <tr class="psu-tr table-row">
+                    <td colspan="2">Fonte</td>
+                    <td><button id="psu" disabled>Adicionar</button></td>
                 </tr>
             </tbody>
 
         </table>
 
-        <p class="total">Total</p>
+        <p class="total">Total: </p>
 
         </div>
     </section>
-
-
-
-
+    
     <script src="../scripts/menu_hamburger.js"></script>
+    <script type="module" src="../scripts/filtragem_pecas.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,165 @@
+.modal {
+    position: fixed;
+    z-index: 1500;
+    bottom: 0;
+    left: 0;
+    top: 0;
+
+    overflow-y: initial !important;
+    overflow-x:hidden;
+
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 10px;
+    padding-bottom: 20px;
+}
+
+.modal-content {
+    height: 90vh;
+    overflow-y: auto;
+
+    background: #fff;
+
+    width: 800px;
+
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.modal-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-bottom: 33px;
+}
+
+.close {
+    font-size: 22px;
+    font-weight: 600;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 12px;
+    background-color: #f0f0f0;
+
+    padding: 10px;
+}
+
+.component-all {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.component-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.component img {
+    width: 100px;
+    height: 100px;
+
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.component-name {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.component-wats {
+    margin-top: 6px;
+}
+
+.component-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    background: var(--primary-color);
+}
+
+.component-price {
+    margin-top: 30px;
+
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.component-selector {
+    padding: 10px;
+    width: 210px;
+
+    background: var(--primary-color);
+    border: none;
+    border-radius: 13px;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    color: #fff;
+    cursor: pointer;
+}
+
+.component-selector:hover {
+    filter: brightness(80%);
+}
+
+@media (max-width: 675px) {
+    .component-circle {
+        display: none;
+    }
+
+    .component, .component-all {
+        flex-direction: column;
+    }
+
+    .component-all, .component-info {
+        width: 100%;
+    }
+
+    .component-all img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .component-info {
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+
+    .component-selector {
+        width: 100%;
+    }
+
+    .component-price {
+        font-size: 28px;
+    }
+}

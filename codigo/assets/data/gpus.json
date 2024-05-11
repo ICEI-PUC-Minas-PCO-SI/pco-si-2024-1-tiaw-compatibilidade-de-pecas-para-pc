@@ -1,0 +1,10 @@
+[
+    {
+        "ID": 1,
+        "name": "Asus GeForce RTX 4090 24GB",
+        "price": 28235.20,
+        "img": "https://static.meupc.net/produto/placa-video-asus-geforce-rtx-4090-geforcertx409024gb-A8w4oe-L.jpg",
+        "interface": "PCIe x16",
+        "wats": 450
+    }
+]
