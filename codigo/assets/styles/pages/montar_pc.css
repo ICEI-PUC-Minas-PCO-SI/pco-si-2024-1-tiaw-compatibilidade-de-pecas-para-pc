@@ -64,6 +64,8 @@ body {
     margin-top: 30px;
     padding-left: 10px;
     font-weight: 600;
+
+    display: flex;
 }
 
 .tr-info {
@@ -79,6 +81,30 @@ body {
 
     border: 2px solid #b1b1b1;
     border-radius: 10px;
+}
+
+button#clean-setup{
+    padding: 3px 10px;
+    font-weight: 600;
+    margin-top: 10px;
+    width: 150px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    border: none;
+    color: #ffffff;
+
+    cursor: pointer;
+
+    width: 100%;
+}
+
+button:disabled#clean-setup{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+button:hover#clean-setup{
+    filter: brightness(80%);
 }
 
 @media (max-width: 675px) {

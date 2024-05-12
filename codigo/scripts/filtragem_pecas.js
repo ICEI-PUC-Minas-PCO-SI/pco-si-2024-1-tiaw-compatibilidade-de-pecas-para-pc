@@ -4,9 +4,9 @@ import gpus from "../assets/data/gpus.json" with { type: 'json' }
 const section = document.querySelector(".presentation-container")
 const total = document.querySelector(".total")
 
+const cleanBtn = document.querySelector("#clean-setup")
 const cpuBtn = document.querySelector("#cpu");
 const gpuBtn = document.querySelector("#gpu");
-
 let setup = recoverSetupLS() || {
     totalPrice: 0,
     cpu: null,
@@ -54,8 +54,7 @@ function buildModal(title, items) {
                         </div>
 
                         <button class="component-selector">SELECIONAR</button>
-                    </div>`
-    ).join('')}
+                    </div>`                 ).join('')}
             </div>
         </div>
     `
@@ -122,6 +121,22 @@ function handleSelection(item, title) {
 function saveSetupLS() {
     localStorage.setItem('setup', JSON.stringify(setup));
 }
+
+cleanBtn.addEventListener("click", () => {
+
+    setup.cpu = null;
+    setup.gpu = null;
+    setup.totalPrice = 0;
+
+    gpuBtn.setAttribute('disabled', 'disabled');
+
+    cpuBtn.removeAttribute('disabled');
+    gpuBtn.removeAttribute('disabled');
+
+    total.innerHTML = `Total: R$ 0,00`;
+    saveSetupLS();
+    location.reload();
+});
 
 // Helpers
 function priceParser(price) {
