@@ -6,9 +6,9 @@
 O projeto tem como objetivo geral a criação de uma plataforma de compatibilidade de componentes, de uso dinâmico e facilitador, que permita o usuário a elaborar uma máquina completamente personalizada que atenda às suas necessidades como jogador.
 
 Como objetivos específicos, podemos ressaltar:
-Fornecer funcionalidades que permitam o usuário saber quais são as peças compatíveis com o hardware desejado, durante todas as etapas de montagem do microcomputador;
+Fornecer funcionalidades que permitam o usuário saber quais são as peças compatíveis com o hardware desejado, durante todas as etapas de montagem do computador;
 Integrar informações básicas de funcionalidade de cada peça;
-Permitir a criação fictícia de microcomputadores, desde a placa mãe até o gabinete.
+Permitir a criação fictícia de computadores.
 
 ## Alunos integrantes da equipe
 
