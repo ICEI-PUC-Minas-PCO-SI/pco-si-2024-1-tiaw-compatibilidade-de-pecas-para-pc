@@ -29,7 +29,7 @@ body {
 }
 
 .table-components {
-    margin-top: 50px;
+    margin-top: 20px;
     width: 100%;
 }
 
@@ -83,19 +83,29 @@ body {
     border-radius: 10px;
 }
 
+button#clean-setup svg{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 button#clean-setup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     padding: 3px 10px;
     font-weight: 600;
     margin-top: 10px;
-    width: 150px;
+    width: 200px;
     background-color: var(--primary-color);
     border-radius: 50px;
     border: none;
     color: #ffffff;
 
     cursor: pointer;
-
-    width: 100%;
 }
 
 button:disabled#clean-setup{
