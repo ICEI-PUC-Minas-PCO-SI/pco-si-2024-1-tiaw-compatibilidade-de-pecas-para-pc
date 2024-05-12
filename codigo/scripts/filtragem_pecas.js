@@ -4,13 +4,33 @@ import gpus from "../assets/data/gpus.json" with { type: 'json' }
 const section = document.querySelector(".presentation-container")
 const total = document.querySelector(".total")
 
+const cleanBtn = document.querySelector("#clean-setup")
 const cpuBtn = document.querySelector("#cpu");
 const gpuBtn = document.querySelector("#gpu");
-
-let setup = {
+let setup = recoverSetupLS() || {
     totalPrice: 0,
     cpu: null,
     gpu: null,
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    updateSetup();
+});
+
+function recoverSetupLS() {
+    const setupString = localStorage.getItem('setup');
+    return setupString ? JSON.parse(setupString) : null;
+}
+
+function updateSetup() {
+    if (setup.cpu) {
+        document.querySelector('.cpu-tr').innerHTML = buildInfoAboutComponent(setup.cpu, "CPU");
+        gpuBtn.removeAttribute('disabled');
+    }
+    if (setup.gpu) {
+        document.querySelector('.gpu-tr').innerHTML = buildInfoAboutComponent(setup.gpu, "Placa de Vídeo");
+    }
+    total.innerHTML = `Total: R$ ${priceParser(Math.round(setup.totalPrice))}`;
 }
 
 function buildModal(title, items) {
@@ -34,8 +54,7 @@ function buildModal(title, items) {
                         </div>
 
                         <button class="component-selector">SELECIONAR</button>
-                    </div>` 
-                ).join('')}
+                    </div>`                 ).join('')}
             </div>
         </div>
     `
@@ -95,13 +114,35 @@ function handleSelection(item, title) {
 
     setup.totalPrice += item.price
     total.innerHTML = `Total: R$ ${priceParser(Math.round(setup.totalPrice))}`
+
+    saveSetupLS()
 }
+
+function saveSetupLS() {
+    localStorage.setItem('setup', JSON.stringify(setup));
+}
+
+cleanBtn.addEventListener("click", () => {
+
+    setup.cpu = null;
+    setup.gpu = null;
+    setup.totalPrice = 0;
+
+    gpuBtn.setAttribute('disabled', 'disabled');
+
+    cpuBtn.removeAttribute('disabled');
+    gpuBtn.removeAttribute('disabled');
+
+    total.innerHTML = `Total: R$ 0,00`;
+    saveSetupLS();
+    location.reload();
+});
 
 // Helpers
 function priceParser(price) {
     const [integerPart, decimalPart] = price.toString().split('.')
     const formattedIntegerPart = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, '.')
-    
+
     return `${formattedIntegerPart},${decimalPart || '0'}`
 }
 

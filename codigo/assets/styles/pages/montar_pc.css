@@ -29,7 +29,7 @@ body {
 }
 
 .table-components {
-    margin-top: 50px;
+    margin-top: 20px;
     width: 100%;
 }
 
@@ -64,6 +64,8 @@ body {
     margin-top: 30px;
     padding-left: 10px;
     font-weight: 600;
+
+    display: flex;
 }
 
 .tr-info {
@@ -79,6 +81,40 @@ body {
 
     border: 2px solid #b1b1b1;
     border-radius: 10px;
+}
+
+button#clean-setup svg{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button#clean-setup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 3px 10px;
+    font-weight: 600;
+    margin-top: 10px;
+    width: 200px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    border: none;
+    color: #ffffff;
+
+    cursor: pointer;
+}
+
+button:disabled#clean-setup{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+button:hover#clean-setup{
+    filter: brightness(80%);
 }
 
 @media (max-width: 675px) {
