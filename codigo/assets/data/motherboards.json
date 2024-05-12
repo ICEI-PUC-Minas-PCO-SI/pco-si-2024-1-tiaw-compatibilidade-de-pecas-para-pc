@@ -5,11 +5,10 @@
         "price": 720.00,
         "img": "https://static.meupc.net/produto/placa-mae-gigabyte-b550m-aorus-elite-bZd7k5-L.jpg",
         "socket": "AM4",
-        "gpuInterface": "PCIe x16",
+        "gpuInterface": "PCI-Express x16",
         "storageInterface": ["M2", "SATA"],
         "ramMinVelocity": 2133,
-        "ramMaxVelocity": 4266,
-        "wats": 0
+        "ramMaxVelocity": 4266
     },
     {
         "ID": 2,
@@ -20,8 +19,7 @@
         "gpuInterface": "PCI-Express x16",
         "storageInterface": ["M2", "SATA"],
         "ramMinVelocity": 1866,
-        "ramMaxVelocity": 4400,
-        "wats": 0 
+        "ramMaxVelocity": 4400 
     },
     {
         "ID": 3,
@@ -32,8 +30,7 @@
         "gpuInterface": "PCI-Express x16",
         "storageInterface": ["M2", "SATA"],
         "ramMinVelocity": 2133,
-        "ramMaxVelocity": 4000,
-        "wats": 0
+        "ramMaxVelocity": 4000
     },
     {
         "ID": 4,
@@ -68,8 +65,7 @@
         "gpuInterface": "PCI-Express x16",
         "storageInterface": ["M2", "SATA"],
         "ramMinVelocity": 2133,
-        "ramMaxVelocity": 2400,
-        "wats": 0
+        "ramMaxVelocity": 2400
     },
     {
         "ID": 7,
@@ -80,8 +76,7 @@
         "gpuInterface": "PCI-Express x16",
         "storageInterface": ["M2", "SATA"],
         "ramMinVelocity": 2133,
-        "ramMaxVelocity": 5333,
-        "wats": 0
+        "ramMaxVelocity": 5333
     },
     {
         "ID": 8,
@@ -92,8 +87,7 @@
         "gpuInterface": "PCI-Express x16",
         "storageInterface": ["M2", "SATA"],
         "ramMinVelocity": 2133,
-        "ramMaxVelocity": 5000,
-        "wats": 0
+        "ramMaxVelocity": 5000
     },
     {
         "ID": 9,
@@ -104,7 +98,6 @@
         "gpuInterface": "PCI-Express x16",
         "storageInterface": ["M2", "SATA"],
         "ramMinVelocity": 2133,
-        "ramMaxVelocity": 4266,
-        "wats": 0
+        "ramMaxVelocity": 4266
     }
 ]
