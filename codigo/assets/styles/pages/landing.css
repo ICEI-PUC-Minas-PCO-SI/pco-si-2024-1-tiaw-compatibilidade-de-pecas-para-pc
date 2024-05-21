@@ -99,7 +99,6 @@ body {
     flex: 1;
     gap: 20px;
     justify-content: space-between;
-
     padding: 30px 20px;
 }
 
@@ -147,7 +146,34 @@ body {
     align-items: center;
     gap: 5px;
 }
+.botao-css{
+    border-radius: 8px;
+    border: 3px solid rgb(44, 44, 44);
+}
 
+.cssMod{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5000px;
+    background-color: rgba(255, 136, 0, 0.301);
+    text-align: justify;
+    z-index: 1000;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
 .component span {
     font-weight: 600;
     color: #202020;
