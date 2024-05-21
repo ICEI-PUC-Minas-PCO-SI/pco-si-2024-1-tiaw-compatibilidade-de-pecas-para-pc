@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.disclaimer {
+    margin-top: 30px;
+
+    font-size: 12px;
+    color: rgb(3, 11, 121);
+}
+
+.presentation-container {
+    padding: 0 20px;
+
+    padding-bottom: 80px;
+}
+
+.presentation-info {
+    margin-top: 20px;
+}
+
+.monte-info {
+    margin-top: 15px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px 25px;
+}
+
+.table-components {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.table-components tbody td {
+    padding: 9px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+}
+
+.table-components button {
+    padding: 3px 10px;
+    font-weight: 600;
+    width: 150px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    border: none;
+    color: #ffffff;
+
+    cursor: pointer;
+}
+
+.table-components button:hover {
+    filter: brightness(80%);
+}
+
+.table-components button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.total {
+    margin-top: 30px;
+    padding-left: 10px;
+    font-weight: 600;
+
+    display: flex;
+}
+
+.tr-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.tr-info img {
+    width: 46px;
+    height: 46px;
+    padding: 6px;
+
+    border: 2px solid #b1b1b1;
+    border-radius: 10px;
+}
+
+button#clean-setup svg{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button#clean-setup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 3px 10px;
+    font-weight: 600;
+    margin-top: 10px;
+    width: 200px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    border: none;
+    color: #ffffff;
+
+    cursor: pointer;
+}
+
+button:disabled#clean-setup{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+button:hover#clean-setup{
+    filter: brightness(80%);
+}
+
+@media (max-width: 675px) {
+
+
+    .table-components tr {
+        margin-bottom: 10px;
+    }
+
+
+    .table-components tr td {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tr-info {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .tr-info img {
+        width: 75%;
+        height: 75%;
+    }
+
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "ID": 1,
+        "name": "Kingston SSD Nv2",
+        "price": 689.99,
+        "img": "https://static.meupc.net/produto/ssd-kingston-nv1-nv22tb-r2L88f-L.jpg",
+        "interface": "M2",
+        "storage": 2000
+    },
+    {
+        "ID": 2,
+        "name": "Kingston SSD A400 2.5",
+        "price": 148.99,
+        "img": "https://static.meupc.net/produto/ssd-seagate-surveillance-hdd-sa400s37240g-BL47SR-L.jpg",
+        "interface": "SATA",
+        "storage": 240
+    },
+    {
+        "ID": 3,
+        "name": "SanDisk SSD Plus 2.5",
+        "price": 399.99,
+        "img": "https://static.meupc.net/produto/ssd-sandisk-plus-plus1tb-j26JAu-L.jpg",
+        "interface": "SATA",
+        "storage": 1000
+    },
+    {
+        "ID": 4,
+        "name": "Kingston SSD A400 2.5",
+        "price": 358.99,
+        "img": "https://static.meupc.net/produto/ssd-kingston-a400-a400480gb-fPr69v-L.jpg",
+        "interface": "SATA",
+        "storage": 480
+    },
+    {
+        "ID": 5,
+        "name": "Kingston SSD A400 M.2-2280",
+        "price": 150.49,
+        "img": "https://static.meupc.net/produto/ssd-kingston-a400-a400120gb-e5n3Sd-L.jpg",
+        "interface": "M2",
+        "storage": 120
+    },
+    {
+        "ID": 6,
+        "name": "Western Digital SSD WD Blue M.2-2280",
+        "price": 408.62,
+        "img": "https://static.meupc.net/produto/ssd-western-digital-wd-blue-wdblueblue500gbm22280-mQ3Mw7-L.jpg",
+        "interface": "M2",
+        "storage": 500
+    }
+]

@@ -9,7 +9,12 @@
     margin: 0 auto;
 }
 
+.invisible {
+    display: none !important;
+}
+
 :root {
     --logo-color: #40170B;
-    --primary-color: #EDB74C;
+    --primary-color: #EF8F00;
+    --secondary-color: #edb74c;
 }
