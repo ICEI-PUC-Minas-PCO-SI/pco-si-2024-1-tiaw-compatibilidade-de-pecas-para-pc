@@ -6,7 +6,7 @@
                     "nome": "Ryzen-5500",
                     "descrição": "Processador AMD Ryzen 5 5500 com 6 núcleos e 12 threads.",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/356695/Processador-AMD-Ryzen-5-5500-3-6GHz-Cache-16MB-Hexa-Core-12-Threads-AM4-100-100000457BOX_1711489687_gg.jpg",
-                    "preço": "R$ 648,99"
+                    "preço": 648.99
                 }
             ],
             "motherboards": [
@@ -14,7 +14,7 @@
                     "nome": "A520",
                     "descrição": "Placa Mãe A520M-A PRO socket AM4.",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/280890/placa-mae-msi-a520m-a-pro-amd-am4-matx-ddr4_1646852577_gg.jpg",
-                    "preço": "R$ 318,99"
+                    "preço": 318.99
                 }
             ],
             "rams": [
@@ -22,7 +22,7 @@
                     "nome": "2x 8GB DDR4 @3200MHz",
                     "descrição": "Memória RAM 2 pentes de 8GB DDR4 de 3200MHz.",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/480526/memoria-kingston-fury-beast-rgb-8gb-3200mhz-ddr4-cl16-preto-kf432c16bb2a-8_1698351395_gg.jpg",
-                    "preço": "R$ 337,98"
+                    "preço": 337.98
                 }
             ],
             "gpus": [
@@ -30,7 +30,7 @@
                     "nome": "RTX-3060",
                     "descrição": "Placa de Video NVIDIA RTX 3060 de 12GB GDDR6",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/511042/placa-de-video-rtx-3060-dual-oc-palit-nvidia-geforce-12gb-gddr6-rgb-192bit-g-sync-ray-tracing-dlss-ne63060t19k9-190ad_1701199931_gg.jpg",
-                    "preço": "1.799,99"
+                    "preço": 1799.99
                 }
             ],
             "storages": [
@@ -38,7 +38,7 @@
                     "nome": "SSD NVMe 1TB Kingston NV2",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/380745/ssd-kingston-nv2-1-tb-m-2-2280-pcie-nvme-leitura-2-100-mb-s-e-gravacao-1-700-mb-s-snv2s-1000g_1666033119_gg.jpg",
                     "descrição": "Armazenamento SSD NVMe de 1TB",
-                    "preço": "368,99"
+                    "preço": 368.99
                 }
             ],
             "psu": [
@@ -46,7 +46,7 @@
                     "nome": "Fonte-650W",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/369658/fonte-msi-mag-a650bn-atx-650w-80-plus-bronze-pfc-ativo-entrada-bivolt-preto-306-7zp2b22-ce0_1665770996_gg.jpg",
                     "descrição": "Fonte 650W, 80 Plus Bronze, PFC Ativo",
-                    "preço": "259,99"
+                    "preço": 259.99
                 }
             ]
         }
@@ -58,7 +58,7 @@
                     "nome": "Ryzen-5500",
                     "descrição": "Processador AMD Ryzen 5 5500 com 6 núcleos e 12 threads.",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/356695/Processador-AMD-Ryzen-5-5500-3-6GHz-Cache-16MB-Hexa-Core-12-Threads-AM4-100-100000457BOX_1711489687_gg.jpg",
-                    "preço": "R$ 648,99"
+                    "preço": 648.99
                 }
             ],
             "motherboards": [
@@ -66,7 +66,7 @@
                     "nome": "A520",
                     "descrição": "Placa Mãe A520M-A PRO socket AM4.",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/280890/placa-mae-msi-a520m-a-pro-amd-am4-matx-ddr4_1646852577_gg.jpg",
-                    "preço": "R$ 318,99"
+                    "preço": 318.99
                 }
             ],
             "rams": [
@@ -74,7 +74,7 @@
                     "nome": "2x 8GB DDR4 @3200MHz",
                     "descrição": "Memória RAM 2 pentes de 8GB DDR4 de 3200MHz.",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/480526/memoria-kingston-fury-beast-rgb-8gb-3200mhz-ddr4-cl16-preto-kf432c16bb2a-8_1698351395_gg.jpg",
-                    "preço": "R$ 337,98"
+                    "preço": 337.98
                 }
             ],
             "gpus": [
@@ -82,7 +82,7 @@
                     "nome": "RTX-4060",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/496012/placa-de-video-rtx-4060-1-click-oc-1x-galax-nvidia-geforce-8gb-gddr6-dlss-ray-trancing-g-sync_1700256902_gg.jpg",
                     "descrição": "Placa de Video NVIDIA RTX 4060 de 8GB GDDR6",
-                    "preço": "R$ 1.689,99"
+                    "preço": 1689.99
                 }
             ],
             "storages": [
@@ -90,7 +90,7 @@
                     "nome": "SSD NVMe 1TB Kingston NV2",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/380745/ssd-kingston-nv2-1-tb-m-2-2280-pcie-nvme-leitura-2-100-mb-s-e-gravacao-1-700-mb-s-snv2s-1000g_1666033119_gg.jpg",
                     "descrição": "Armazenamento SSD NVMe de 1TB",
-                    "preço": "R$ 368,99"
+                    "preço": 368.99
                 }
             ],
             "psu": [
@@ -98,7 +98,7 @@
                     "nome": "Fonte-650W",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/369658/fonte-msi-mag-a650bn-atx-650w-80-plus-bronze-pfc-ativo-entrada-bivolt-preto-306-7zp2b22-ce0_1665770996_gg.jpg",
                     "descrição": "Fonte 650W, 80 Plus Bronze, PFC Ativo",
-                    "preço": "R$ 259,99"
+                    "preço": 259.99
                 }
             ]
         }
@@ -110,7 +110,7 @@
                     "nome": "I5-12400f",
                     "descrição": "Processador Intel Core i5-12400F com 6 núcleos e 12 threads.",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/283718/processador-intel-core-i5-12400f-cache-xmb-xghz-xghz-max-turbo-lga-1700-bx8071512400f_1640094446_gg.jpg",
-                    "preço": "R$ 865,54"
+                    "preço": 865.54
                 }
             ],
             "motherboards": [
@@ -118,7 +118,7 @@
                     "nome": "H610",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/317535/Placa-M-e-Gigabyte-H610M-H-Intel-1700-2x-DDR4-M-2-HDMI-VGA-12-Gera-o_1710425288_gg.jpg",
                     "descrição": "Placa Mãe H610M, socket intel LGA1700",
-                    "preço": "R$ 474,99"
+                    "preço": 474.99
                 }
             ],
             "rams": [
@@ -126,7 +126,7 @@
                     "nome": "2x 8GB DDR4 @3200MHz",
                     "descrição": "Memória RAM 2 pentes de 8GB DDR4 de 3200MHz.",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/480526/memoria-kingston-fury-beast-rgb-8gb-3200mhz-ddr4-cl16-preto-kf432c16bb2a-8_1698351395_gg.jpg",
-                    "preço": "R$ 337,98"
+                    "preço": 337.98
                 }
             ],
             "gpus": [
@@ -134,7 +134,7 @@
                     "nome": "RX-7700 XT",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/484962/placa-de-video-rx-7700-xt-fighter-powercolor-amd-radeon-12gb-gddr6-ray-tracing-rx7700xt-12g-f-oc_1701192896_gg.jpg",
                     "descrição": "Placa de Video AMD Radeon RX 7700 XT de 12GB GDDR6",
-                    "preço": "R$ 2.999,99"
+                    "preço": 2999.99
                 }
             ],
             "storages": [
@@ -142,7 +142,7 @@
                     "nome": "SSD NVMe 1TB Kingston NV2",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/380745/ssd-kingston-nv2-1-tb-m-2-2280-pcie-nvme-leitura-2-100-mb-s-e-gravacao-1-700-mb-s-snv2s-1000g_1666033119_gg.jpg",
                     "descrição": "Armazenamento SSD NVMe de 1TB",
-                    "preço": "R$ 368,99"
+                    "preço": 368.99
                 }
             ],
             "psu": [
@@ -150,7 +150,7 @@
                     "nome": "Fonte-650W",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/369658/fonte-msi-mag-a650bn-atx-650w-80-plus-bronze-pfc-ativo-entrada-bivolt-preto-306-7zp2b22-ce0_1665770996_gg.jpg",
                     "descrição": "Fonte 650W, 80 Plus Bronze, PFC Ativo",
-                    "preço": "R$ 259,99"
+                    "preço": 259.99
                 }
             ]
         }
@@ -162,7 +162,7 @@
                     "nome": "I5-14600KF",
                     "descrição": "Processador Intel Core i5-14600KF com 14 núcleos e 20 threads.",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/497579/processador-intel-core-i5-14600kf-bx8071514600kf_1697723502_gg.jpg",
-                    "preço": "R$ 2.210,52"
+                    "preço": 2210.52
                 }
             ],
             "cooling": [
@@ -170,7 +170,7 @@
                     "nome": "Water Cooler 240mm",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/248205/water-cooler-gamer-rise-mode-argb-intel-e-amd-240mm-preto-rm-wcb-04-argb_1663778106_gg.jpg",
                     "descrição": "Water Cooler 240mm, sockets AMD/Intel.",
-                    "preço": "R$ 197.99"
+                    "preço": 197.99
                 }
             ],
             "motherboards": [
@@ -178,7 +178,7 @@
                     "nome": "B660",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/276321/placa-mae-gigabyte-b660m-aorus-pro-intel-lga-1700-matx-ddr4-m-2-nvme-b660m-aorus-pro-ddr4_1643917278_gg.jpg",
                     "descrição": "Placa Mãe B660M, socket intel LGA 1700.",
-                    "preço": "R$ 678,99"
+                    "preço": 678.99
                 }
             ],
             "rams": [
@@ -186,7 +186,7 @@
                     "nome": "2x 16GB DDR4 @3200MHz",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/480529/memoria-kingston-fury-beast-rgb-16gb-3200mhz-ddr4-cl16-preto-kf432c16bb12a-16_1698350317_gg.jpg",
                     "descrição": "Memória RAM 2 pentes de 16GB DDR4 de 3200MHz.",
-                    "preço": "R$ 299,99"
+                    "preço": 299.99
                 }
             ],
             "gpus": [
@@ -194,7 +194,7 @@
                     "nome": "RTX-4070",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/517739/placa-de-video-rtx-4070-ti-super-gigabyte-windforce-nvidia-geforce-16gb-gddr6-dlss-ray-tracing-gv-n407tswf3-16gd_1706015557_gg.jpg",
                     "descrição": "Placa de Video NVIDIA RTX 4070 de 12GB GDDR6X",
-                    "preço": "R$ 3.999,99"
+                    "preço": 3999.99
                 }
             ],
             "storages": [
@@ -202,7 +202,7 @@
                     "nome": "SSD NVMe 1TB Kingston NV2",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/380745/ssd-kingston-nv2-1-tb-m-2-2280-pcie-nvme-leitura-2-100-mb-s-e-gravacao-1-700-mb-s-snv2s-1000g_1666033119_gg.jpg",
                     "descrição": "Armazenamento SSD NVMe de 1TB",
-                    "preço": "R$ 368,99"
+                    "preço": 368.99
                 }
             ],
             "psu": [
@@ -210,7 +210,7 @@
                     "nome": "750W",
                     "image_url": "https://images.kabum.com.br/produtos/fotos/471344/fonte-xpg-kyber-750w-80-plus-gold-bivolt-preto-kyber750g-bkcbr_1698676190_gg.jpg",
                     "descrição": "Fonte 750W, 80 Plus Gold",
-                    "preço": "499,99"
+                    "preço": 499.99
                 }
             ]
         }

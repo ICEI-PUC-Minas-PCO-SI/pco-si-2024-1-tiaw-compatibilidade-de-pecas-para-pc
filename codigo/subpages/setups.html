@@ -20,8 +20,8 @@
 </head>
 
 <body>
-    <header class="header-content fix-width">
-        <div class="content">
+    <header class="header-content">
+        <div class="content fix-width">
             <a class="logo" href="../index.html">
                 <div class="logo-img">
                     <img src="../assets/images/landing/logo.png" alt="Logo">
@@ -68,36 +68,35 @@
             </div>
         </div>
     </header>
-    
-   <!---Segunda Parte--->
-   
-   <main>
+
+    <main>
         <img src="/codigo/assets/images/setups/Counter-Strike 2 (CS 2).jpeg" alt="Game" id="reset" width="100%"
             height="250px" class="rounded-3">
-        
-        <div id="reset" class="responsive-div d-flex justify-content-center align-items-center justify-content-around">
-            <div class="low d-flex bg-danger rounded-3">
+
+        <!---Button-->
+        <div id="reset" class="responsive-div d-flex justify-content-center align-items-center justify-content-around flex-wrap">
+            <div class="low d-flex bg-danger rounded-3"> <!-- SETUP LOW -->
                 <img src="/codigo/assets/images/setups/crowns 2.png" alt="" width="40%" height="auto"
                     class="rounded-circle bg-danger p-2">
                     <button id="setup-low" type="button" class="btn btn-danger" >
                     <h3 class="text-light">Setup<br>Low</h3>
                 </button>
             </div>
-            <div class="medio d-flex bg-warning rounded-3">
+            <div class="medio d-flex bg-warning rounded-3"> <!-- SETUP MEDIO -->
                 <img src="/codigo/assets/images/setups/crowns 2.png" alt="" width="40%" height="auto"
                     class="rounded-circle bg-warning p-2">
                 <button id="setup-medio" type="button" class="btn btn-warning">
                     <h3 class="text-light">Setup<br>Médio</h3>
                 </button>
             </div>
-            <div class="high d-flex bg-success rounded-3">
+            <div class="high d-flex bg-success rounded-3"> <!-- SETUP HIGH -->
                 <img src="/codigo/assets/images/setups/crowns 2.png" alt="" width="40%" height="auto"
                     class="rounded-circle bg-success p-2">
                 <button id="setup-high" type="button" class="btn btn-success">
                     <h3 class="text-light">Setup<br>High</h3>
                 </button>
             </div>
-            <div class="ultra d-flex bg-primary rounded-3">
+            <div class="ultra d-flex bg-primary rounded-3"> <!-- SETUP ULTRA -->
                 <img src="/codigo/assets/images/setups/crowns 2.png" alt="" width="40%" height="auto"
                     class="rounded-circle bg-primary p-2">
                 <button id="setup-ultra" type="button" class="btn btn-primary">
@@ -105,15 +104,40 @@
                 </button>
             </div>
         </div>
+        
+        <div class="component-main">
+            <section id="component-list-section">
+                <div id="reset" class="produto-lista justify-content-start align-items-center"> 
+                    <ul id="component-list" class="list-unstyled">
+                    </ul>
+                </div>
+            </section>
+                
+            <section id="total-checkout">
+                <div class="average-title">
+                    <strong>
+                        RESUMO
+                    </strong>
+                </div>
+                <div class="checkout">
+                    <ul id="average-list">
 
-        <div id="reset" class="produto-lista justify-content-start align-items-center"> 
-            <ul id="component-list" class="list-unstyled">
-            </ul>
-            </div>
-            
+                    </ul>
+                </div>
+                <div class="checkout-value">
+                    <div class="checkout-hr"></div>
+                    <p>
+                        <strong>Total: R$ <span id="average-total"></span></strong>
+                    </p>
+                    <p>
+                        <strong>Média/Peça: R$ <span id="average-value"></span></strong>
+                    </p>
+                </div>
+            </section>
+        </div>
     </main>
-
-    <script src="../scripts/menu-hamburger.js"></script>
+      
+    <script src="../scripts/menu_hamburger.js"></script>
 </body>
 
 </html>
