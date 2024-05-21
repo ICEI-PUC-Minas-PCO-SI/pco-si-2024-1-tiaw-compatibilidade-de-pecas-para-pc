@@ -1,4 +1,4 @@
-// Função para carregar o arquivo JSON
+ //Função para carregar o arquivo JSON
 async function fetchSetupJson() {
     const response = await fetch('/codigo/assets/data/setups.json'); // Carrega o arquivo JSON da pasta 'data'
     if (!response.ok) {
