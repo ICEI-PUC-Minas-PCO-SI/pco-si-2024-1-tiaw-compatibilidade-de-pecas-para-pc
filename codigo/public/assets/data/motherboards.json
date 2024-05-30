@@ -41,8 +41,7 @@
         "gpuInterface": "PCI-Express x16",
         "storageInterface": ["M2", "SATA"],
         "ramMinVelocity": 4800,
-        "ramMaxVelocity": 6400,
-        "wats": 0
+        "ramMaxVelocity": 6400
     },
     {
         "ID": 5,
@@ -53,8 +52,7 @@
         "gpuInterface": "PCI-Express x16",
         "storageInterface": ["M2", "SATA"],
         "ramMinVelocity": 4800,
-        "ramMaxVelocity": 6400,
-        "wats": 0
+        "ramMaxVelocity": 6400
     },
     {
         "ID": 6,
