@@ -10,7 +10,7 @@ const motherboardBtn = document.querySelector("#motherboard");
 const coolingBtn = document.querySelector("#psu");
 
 // Estado Inicial
-let setup = /* recoverSetupLS() || */ {
+let setup =  recoverSetupLS() ||  {
     totalPrice: 0,
     cpu: null,
     gpu: null,
@@ -19,9 +19,10 @@ let setup = /* recoverSetupLS() || */ {
     motherboard: null,
     cooling: null,
 }
-// window.addEventListener('DOMContentLoaded', () => {
-//     updateSetup();
-// });
+ window.addEventListener('DOMContentLoaded', () => {
+     updateSetup();
+     addBtnAlter();
+ });
 
 // Carregando os arquivos JSON
 const cpus = await getJSON('http://localhost:3000/cpu')
@@ -30,22 +31,6 @@ const rams = await getJSON('http://localhost:3000/ram')
 const storages = await getJSON('http://localhost:3000/storage')
 const motherboards = await getJSON('http://localhost:3000/motherboard')
 const cooling = await getJSON('http://localhost:3000/cooling')
-
-// function recoverSetupLS() {
-//     const setupString = localStorage.getItem('setup');
-//     return setupString ? JSON.parse(setupString) : null;
-// }
-
-// function updateSetup() {
-//     if (setup.cpu) {
-//         document.querySelector('.cpu-tr').innerHTML = buildInfoAboutComponent(setup.cpu, "CPU");
-//         gpuBtn.removeAttribute('disabled');
-//     }
-//     if (setup.gpu) {
-//         document.querySelector('.gpu-tr').innerHTML = buildInfoAboutComponent(setup.gpu, "Placa de Vídeo");
-//     }
-//     total.innerHTML = `Total: R$ ${priceParser(Math.round(setup.totalPrice))}`;
-// }
 
 // Funções para checar compatibilidade
 const verifyCompCPU = (cpu, mth) => cpu.socket === mth.socket
@@ -133,7 +118,8 @@ function handleSelection(item, title) {
     setup.totalPrice += item.price
     total.innerHTML = `Total: R$ ${priceParser(Math.round(setup.totalPrice))}`
 
-    // saveSetupLS()
+     saveSetupLS()
+     addBtnAlter()
 }
 
 function buildModal(title, items) {
@@ -183,26 +169,116 @@ function buildModal(title, items) {
 
     section.appendChild(container)
 }
+function recoverSetupLS() {
+    const setupString = localStorage.getItem('setup');
+    return setupString ? JSON.parse(setupString) : null;
+}
 
-// function saveSetupLS() {
-//     localStorage.setItem('setup', JSON.stringify(setup));
-// }
+function updateSetup() {
+   if (setup.cpu) {
+       document.querySelector('.cpu-tr').innerHTML = buildInfoAboutComponent(setup.cpu, "CPU");
+       gpuBtn.removeAttribute('disabled');
+   }
+   if (setup.gpu) {
+       document.querySelector('.gpu-tr').innerHTML = buildInfoAboutComponent(setup.gpu, "Placa de Vídeo");
+   }
+   if (setup.ram) {
+       document.querySelector('.ram-tr').innerHTML = buildInfoAboutComponent(setup.ram, "RAM");
+   }
+   if (setup.storage) {
+       document.querySelector('.storage-tr').innerHTML = buildInfoAboutComponent(setup.storage, "HD/SSD");
+   }
+   if (setup.motherboard) {
+       document.querySelector('.motherboard-tr').innerHTML = buildInfoAboutComponent(setup.motherboard, "Placa Mãe");
+   }
+   if (setup.cooling) {
+       document.querySelector('.psu-tr').innerHTML = buildInfoAboutComponent(setup.cooling, "Fonte");
+   }
+   total.innerHTML = `Total: R$ ${priceParser(Math.round(setup.totalPrice))}`;
+}
 
-// cleanBtn.addEventListener("click", () => {
+ function saveSetupLS() {
+     localStorage.setItem('setup', JSON.stringify(setup));
+ }
+ 
+ cleanBtn.addEventListener("click", () => {
+    
+    setup.cpu = null;
+    setup.gpu = null;
+    setup.ram = null;
+    setup.storage = null;
+    setup.motherboard = null;
+    setup.cooling = null;
+    setup.totalPrice = 0;
 
-//     setup.cpu = null;
-//     setup.gpu = null;
-//     setup.totalPrice = 0;
+    document.querySelector('.cpu-tr').innerHTML = "";
+    document.querySelector('.gpu-tr').innerHTML = "";
+    document.querySelector('.ram-tr').innerHTML = "";
+    document.querySelector('.storage-tr').innerHTML = "";
+    document.querySelector('.motherboard-tr').innerHTML = "";
+    document.querySelector('.psu-tr').innerHTML = "";
+    total.innerHTML = `Total: R$ 0,00`;
 
-//     gpuBtn.setAttribute('disabled', 'disabled');
+    gpuBtn.setAttribute('disabled', 'disabled');
+    cpuBtn.removeAttribute('disabled');
+    gpuBtn.removeAttribute('disabled');
 
-//     cpuBtn.removeAttribute('disabled');
-//     gpuBtn.removeAttribute('disabled');
+    saveSetupLS();
+    location.reload();
+});
 
-//     total.innerHTML = `Total: R$ 0,00`;
-//     saveSetupLS();
-//     location.reload();
-// });
+function infoComponent(item, title) {
+    let btnAlter = '';
+  
+    
+    if (title === "CPU" && setup.cpu) {
+      btnAlter = '<button class="alter-btn" data-type="CPU">Alterar</button>';
+    } else if (title === "Placa de Vídeo" && setup.gpu) {
+      btnAlter = '<button class="alter-btn" data-type="Placa de Vídeo">Alterar</button>';
+    } else if (title === "Memória RAM" && setup.ram) {
+      btnAlter = '<button class="alter-btn" data-type="Memória RAM">Alterar</button>';
+    } else if (title === "Armazenamento" && setup.storage) {
+      btnAlter = '<button class="alter-btn" data-type="Armazenamento">Alterar</button>';
+    } else if (title === "Placa-mãe" && setup.motherboard) {
+      btnAlter = '<button class="alter-btn" data-type="Placa-mãe">Alterar</button>';
+    } else if (title === "Fonte" && setup.psu) {
+      btnAlter = '<button class="alter-btn" data-type="Fonte">Alterar</button>';
+    }
+  
+    const structure = `
+      <td>${title}</td>
+      <td class="tr-info">
+        <img src=${item.img} alt="Item" />
+        <span>${item.name}</span>
+      </td>
+      <td>R$ ${priceParser(item.price)}</td>
+      <td class="alter-cell">${btnAlter}</td>`;
+  
+    return structure;
+  }
+
+function addBtnAlter() {
+    const alterButtons = document.querySelectorAll(".alter-btn");
+    alterButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const type = button.getAttribute("data-type");
+        console.log(`Alter button clicked for ${type}`);
+        if (type === "CPU") {
+          buildModal("CPU", cpus);
+        } else if (type === "Placa de Vídeo") {
+          buildModal("Placa de Vídeo", gpus);
+        } else if (type === "Memória RAM") {
+          buildModal("Memória RAM", rams);
+        } else if (type === "Armazenamento") {
+          buildModal("Armazenamento", storage);
+        } else if (type === "Placa-mãe") {
+          buildModal("Placa-mãe", motherboards);
+        } else if (type === "Fonte") {
+          buildModal("Fonte", psu);
+        }
+      });
+    });
+  }
 
 // Helpers
 function priceParser(price) {
