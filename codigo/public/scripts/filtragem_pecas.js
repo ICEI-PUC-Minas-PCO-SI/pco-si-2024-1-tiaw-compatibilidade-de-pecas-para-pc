@@ -12,7 +12,8 @@ const motherboardBtn = document.querySelector("#motherboard")
 const coolingBtn = document.querySelector("#psu")
 
 // Estado Inicial
-let setup = /* recoverSetupLS() || */ {
+let setup = recoverSetupLS() || {
+    errors: [],
     totalPrice: 0,
     totalWats: 0,
     cpu: null,
@@ -22,9 +23,10 @@ let setup = /* recoverSetupLS() || */ {
     motherboard: null,
     cooling: null,
 }
-// window.addEventListener('DOMContentLoaded', () => {
-//     updateSetup()
-// })
+
+window.addEventListener('DOMContentLoaded', () => {
+    loadJSONinLocalStorage()
+})
 
 // Carregando os arquivos JSON
 const cpus = await getJSON('http://localhost:3000/cpu')
@@ -33,22 +35,6 @@ const rams = await getJSON('http://localhost:3000/ram')
 const storages = await getJSON('http://localhost:3000/storage')
 const motherboards = await getJSON('http://localhost:3000/motherboard')
 const coolings = await getJSON('http://localhost:3000/cooling')
-
-// function recoverSetupLS() {
-//     const setupString = localStorage.getItem('setup')
-//     return setupString ? JSON.parse(setupString) : null
-// }
-
-// function updateSetup() {
-//     if (setup.cpu) {
-//         document.querySelector('.cpu-tr').innerHTML = buildInfoAboutComponent(setup.cpu, "CPU")
-//         gpuBtn.removeAttribute('disabled')
-//     }
-//     if (setup.gpu) {
-//         document.querySelector('.gpu-tr').innerHTML = buildInfoAboutComponent(setup.gpu, "Placa de Vídeo")
-//     }
-//     total.innerHTML = `Total: R$ ${priceParser(Math.round(setup.totalPrice))}`
-// }
 
 // Funções para checar compatibilidade
 const verifyCompCPU = (cpu, mth) => cpu.socket === mth.socket
@@ -60,18 +46,46 @@ const verifyCompSTR = (str, mth) => mth.storageInterface.includes(str.interface)
 const verifyCapacityPSU = (psu, sum) => psu.wats > sum
 
 // Funções Gerais
-function buildInfoAboutComponent(item, title) {
+function buildInfoAboutComponent(item, title, components, componentKey, compatibilityErrors) {
+    const tr = document.createElement('tr')
+
     const structure = `
-        <td >${title}</td>
+        <td colspan="2">${title}</td>
         <td class="tr-info">
             <img src=${item.img} alt="Item" />
             <span>${item.name}</span>
         </td>
         <td>R$ ${priceParser(item.price)}</td>
-        <td><button class="change-component">Alterar</button></td>
     `
 
-    return structure
+    const btn = document.createElement('button')
+    btn.innerText = 'Alterar'
+    btn.addEventListener('click', () => {
+        if (setup[componentKey].hasOwnProperty('wats') && componentKey !== 'cooling') setup.totalWats -= setup[componentKey].wats
+        setup.totalPrice -= setup[componentKey].price
+
+        compatibilityErrors[componentKey] = []
+        compatibilityBox.querySelectorAll(`li.${componentKey}-li`).forEach(el => el.remove())
+
+        buildModal(title, components)
+    })
+
+    const container = document.createElement('td')
+    container.appendChild(btn)
+
+    tr.innerHTML = structure
+    tr.classList.add('component-row', 'table-row')
+    tr.appendChild(container)
+
+    return tr
+}
+
+function updateComponentDisplay(selector, item, title, components, key, compatibilityErrors) {
+    const element = document.querySelector(selector)
+    element.innerHTML = ''
+
+    const container = buildInfoAboutComponent(item, title, components, key, compatibilityErrors)
+    Array.from(container.children).forEach(el => element.appendChild(el))
 }
 
 function handleSelection(item, title) {
@@ -81,23 +95,6 @@ function handleSelection(item, title) {
         ram: [],
         storage: [],
         cooling: []
-    }
-
-    const updateComponentDisplay = (selector, item, title) => {
-        const element = document.querySelector(selector)
-        element.innerHTML = buildInfoAboutComponent(item, title)
-    }
-
-    const addChangeComponentListener = (selector, modalTitle, components, componentKey) => {
-        document.querySelector(selector).querySelector('.change-component').addEventListener('click', () => {
-            if (setup[componentKey].hasOwnProperty('wats') && componentKey !== 'cooling') setup.totalWats -= setup[componentKey].wats
-            setup.totalPrice -= setup[componentKey].price
-
-            compatibilityErrors[componentKey] = []
-            compatibilityBox.querySelectorAll(`li.${componentKey}-li`).forEach(el => el.remove())
-
-            buildModal(modalTitle, components)
-        })
     }
 
     const checkCompatibility = (componentKey, item, motherboard, verifyFunction, motherboardTitle) => {
@@ -125,11 +122,13 @@ function handleSelection(item, title) {
 
     const checkPSUCapacity = (psu) => {
         if (!verifyCapacityPSU(psu, setup.totalWats)) {
-            compatibilityErrors['cooling'].push(`${psu.name}não tem capacidade para suprir o setup. MÁX - ${psu.wats} de Potência`)
+            compatibilityErrors['cooling'].push(`${psu.name} não tem capacidade para suprir o setup. MÁX - ${psu.wats} de Potência`)
         }
     }
 
     const handleCompatibilityErrors = (errors) => {
+        setup.errors = []
+
         Object.keys(errors).forEach(key => {
             errors[key].forEach(msg => {
                 const li = document.createElement('li')
@@ -138,6 +137,13 @@ function handleSelection(item, title) {
 
                 compatibilityBox.querySelector('ul').appendChild(li)
                 compatibilityBox.classList.remove('invisible')
+            })
+        })
+
+        compatibilityBox.querySelector('ul').querySelectorAll('li').forEach(el => {
+            setup.errors.push({
+                type: el.className,
+                msg: el.innerText,
             })
         })
 
@@ -151,7 +157,7 @@ function handleSelection(item, title) {
 
     const updateTotalWats = (wats) => {
         if (wats !== undefined) {
-            setup.totalWats += wats;
+            setup.totalWats += wats
         }
         watsSpan.innerHTML = `${Math.round(setup.totalWats * 100) / 100} Wats`
     }
@@ -160,8 +166,7 @@ function handleSelection(item, title) {
     const componentActions = {
         "CPU": () => {
             setup.cpu = item
-            updateComponentDisplay('.cpu-tr', item, title)
-            addChangeComponentListener('.cpu-tr', 'CPU', cpus, 'cpu')
+            updateComponentDisplay('.cpu-tr', item, title, cpus, 'cpu', compatibilityErrors)
             checkCompatibility('cpu', item, setup.motherboard, verifyCompCPU, 'Placa Mãe')
 
             if (setup.cooling !== null) {
@@ -171,8 +176,7 @@ function handleSelection(item, title) {
         },
         "Placa de Vídeo": () => {
             setup.gpu = item
-            updateComponentDisplay('.gpu-tr', item, title)
-            addChangeComponentListener('.gpu-tr', 'Placa de Vídeo', gpus, 'gpu')
+            updateComponentDisplay('.gpu-tr', item, title, gpus, 'gpu', compatibilityErrors)
             checkCompatibility('gpu', item, setup.motherboard, verifyCompGPU, 'Placa Mãe')
 
             if (setup.cooling !== null) {
@@ -182,8 +186,7 @@ function handleSelection(item, title) {
         },
         "RAM": () => {
             setup.ram = item
-            updateComponentDisplay('.ram-tr', item, title)
-            addChangeComponentListener('.ram-tr', 'RAM', rams, 'ram')
+            updateComponentDisplay('.ram-tr', item, title, rams, 'ram', compatibilityErrors)
             checkCompatibility('ram', item, setup.motherboard, verifyCompRAM, 'Placa Mãe')
 
             if (setup.cooling !== null) {
@@ -193,20 +196,17 @@ function handleSelection(item, title) {
         },
         "HD/SSD": () => {
             setup.storage = item
-            updateComponentDisplay('.storage-tr', item, title)
-            addChangeComponentListener('.storage-tr', 'HD/SSD', storages, 'storage')
+            updateComponentDisplay('.storage-tr', item, title, storages, 'storage', compatibilityErrors)
             checkCompatibility('storage', item, setup.motherboard, verifyCompSTR, 'Placa Mãe')
         },
         "Placa Mãe": () => {
             setup.motherboard = item
-            updateComponentDisplay('.motherboard-tr', item, title)
-            addChangeComponentListener('.motherboard-tr', 'Placa Mãe', motherboards, 'motherboard')
+            updateComponentDisplay('.motherboard-tr', item, title, motherboards, 'motherboard', compatibilityErrors)
             checkAllCompatibilities(item)
         },
         "Fonte": () => {
             setup.cooling = item
-            updateComponentDisplay('.psu-tr', item, title)
-            addChangeComponentListener('.psu-tr', 'Fonte', coolings, 'cooling')
+            updateComponentDisplay('.psu-tr', item, title, coolings, 'cooling', compatibilityErrors)
             checkPSUCapacity(item)
         }
     }
@@ -215,6 +215,8 @@ function handleSelection(item, title) {
     if (componentActions[title]) componentActions[title]()
     updateTotalPrice(item.price)
     handleCompatibilityErrors(compatibilityErrors)
+
+    saveSetupLS()
 }
 
 function buildModal(title, items) {
@@ -265,25 +267,65 @@ function buildModal(title, items) {
     section.appendChild(container)
 }
 
-// function saveSetupLS() {
-//     localStorage.setItem('setup', JSON.stringify(setup))
-// }
+// Local Storage
+function recoverSetupLS() {
+    const setupString = localStorage.getItem('setup')
+    return setupString ? JSON.parse(setupString) : null
+}
 
-// cleanBtn.addEventListener("click", () => {
+cleanBtn.addEventListener("click", () => {
+    setup.errors = []
+    setup.totalPrice = 0
+    setup.totalWats = 0
+    setup.cpu = null
+    setup.gpu = null
+    setup.ram = null
+    setup.storage = null
+    setup.motherboard = null
+    setup.cooling = null
 
-//     setup.cpu = null
-//     setup.gpu = null
-//     setup.totalPrice = 0
+    total.innerHTML = "Total:"
+    watsSpan.innerHTML = ""
 
-//     gpuBtn.setAttribute('disabled', 'disabled')
+    saveSetupLS()
+    location.reload()
+})
 
-//     cpuBtn.removeAttribute('disabled')
-//     gpuBtn.removeAttribute('disabled')
+function saveSetupLS() {
+    localStorage.setItem('setup', JSON.stringify(setup))
+}
 
-//     total.innerHTML = `Total: R$ 0,00`
-//     saveSetupLS()
-//     location.reload()
-// })
+async function loadJSONinLocalStorage() {
+    const cpus = await getJSON('http://localhost:3000/cpu')
+    const gpus = await getJSON('http://localhost:3000/gpu')
+    const rams = await getJSON('http://localhost:3000/ram')
+    const storages = await getJSON('http://localhost:3000/storage')
+    const motherboards = await getJSON('http://localhost:3000/motherboard')
+    const coolings = await getJSON('http://localhost:3000/cooling')
+
+    updateSetup(cpus, gpus, rams, storages, motherboards, coolings)
+}
+
+function updateSetup(cpus, gpus, rams, storages, motherboards, coolings) {
+    if (setup.cpu) updateComponentDisplay('.cpu-tr', setup.cpu, 'CPU', cpus, 'cpu', setup.errors)
+    if (setup.gpu) updateComponentDisplay('.gpu-tr', setup.gpu, 'Placa de Vídeo', gpus, 'gpu', setup.errors)
+    if (setup.ram) updateComponentDisplay('.ram-tr', setup.ram, 'RAM', rams, 'ram', setup.errors)
+    if (setup.storage) updateComponentDisplay('.storage-tr', setup.storage, 'HD/SSD', storages, 'storage', setup.errors)
+    if (setup.motherboard) updateComponentDisplay('.motherboard-tr', setup.motherboard, 'Placa Mãe', motherboards, 'motherboard', setup.errors)
+    if (setup.cooling) updateComponentDisplay('.psu-tr', setup.cooling, 'Fonte', coolings, 'cooling', setup.errors)
+
+    total.innerHTML = `Total: ${priceParser(Math.round(setup.totalPrice * 100) / 100)}`
+    watsSpan.innerHTML = `${setup.totalWats} Wats`
+
+    setup.errors.forEach(err => {
+        const li = document.createElement('li')
+        li.classList.add(err.type)
+        li.innerText = err.msg
+
+        compatibilityBox.querySelector('ul').appendChild(li)
+        compatibilityBox.classList.remove('invisible')
+    })
+}
 
 // Helpers
 function priceParser(price) {

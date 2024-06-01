@@ -4,13 +4,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.disclaimer {
-    margin-top: 30px;
-
-    font-size: 12px;
-    color: rgb(3, 11, 121);
-}
-
 .presentation-container {
     padding: 0 20px;
 
@@ -69,7 +62,6 @@ body {
 
     font-weight: 600;
 }
-
 
 .tr-info {
     display: flex;
