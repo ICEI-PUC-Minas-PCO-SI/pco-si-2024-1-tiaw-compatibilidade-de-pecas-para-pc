@@ -4,21 +4,21 @@
         "name": "Corsair CV650 650 W",
         "price": 389.99,	
         "img": "https://static.meupc.net/produto/fonte-corsair-cv-cv650-ew4Pa5-L.jpg",
-        "potency": 650
+        "wats": 650
     },
     {
         "ID": 2,
         "name": "AeroCool VX-350 350 W ATX12V",
         "price": 153.07,
         "img": "https://static.meupc.net/produto/fonte-aerocool-vx350-DBY6v6-L.jpg",
-        "potency": 350
+        "wats": 350
     },
     {
         "ID": 3,
         "name": "Redragon 400W ATX12V",
         "price": 182.50,
         "img": "https://static.meupc.net/produto/fonte-redragon-400w-fB8f4A-L.jpg",
-        "potency": 400
+        "wats": 400
     },
     
     {
@@ -26,14 +26,14 @@
         "name": "Fonte Corsair CV450 450 W",
         "price": 447.05,
         "img": "https://static.meupc.net/produto/fonte-corsair-cx-cv450450w80plusbronze-pcj42m-L.jpg",
-        "potency": 450
+        "wats": 450
     },
     {
         "ID": 5,
         "name": "Redragon RGPS 500 W",
         "price": 259.90,
         "img": "https://static.meupc.net/produto/fonte-redragon-rgps-rgps-Ar87J9-L.jpg",
-        "potency": 500
+        "wats": 500
     },
     
     {
@@ -41,7 +41,7 @@
         "name": "MSI MAG A550BN 550 W",
         "price": 269.99,
         "img": "https://static.meupc.net/produto/fonte-msi-maga550bn-d6pD7k-L.jpg",
-        "potency": 550
+        "wats": 550
     },
     
     {
@@ -49,7 +49,7 @@
         "name": "Redragon RGPS 600 W",
         "price": 443.90,
         "img": "https://static.meupc.net/produto/fonte-redragon-rgps-rgps-oPx97X-L.jpg",
-        "potency": 600
+        "wats": 600
     },
     
     {
@@ -57,7 +57,7 @@
         "name": "MSI MAG A650BN 650W",
         "price": 404.49,
         "img": "https://static.meupc.net/produto/fonte-msi-maga650bn650w-pe6YD5-L.jpg",
-        "potency": 650
+        "wats": 650
     },
     
     {
@@ -65,7 +65,7 @@
         "name": "Redragon RGPS 700 W",
         "price": 573.90,
         "img": "https://static.meupc.net/produto/fonte-redragon-rgps-rgps-hr8t5L-L.jpg",
-        "potency": 700
+        "wats": 700
     },
     
     {
@@ -73,35 +73,35 @@
         "name": "Corsair CX750M 750 W",
         "price": 705.72,
         "img": "https://static.meupc.net/produto/fonte-corsair-cxm-cx750m-hNkw98-L.jpg",
-        "potency": 750
+        "wats": 750
     },
     {
         "ID": 11,
         "name": "MSI MAG A850GL 850W",
         "price": 639.99,
         "img": "https://static.meupc.net/produto/fonte-msi-mag-maga850gl850w-ci6E5E-L.jpg",
-        "potency": 850
+        "wats": 850
     },
     {
         "ID": 12,
         "name": "Corsair RM1000X 1000 W",
         "price": 1148.77,
         "img": "https://static.meupc.net/produto/fonte-corsair-rmx-rm1000x-2Ng6aN-L.jpg",
-        "potency": 1000
+        "wats": 1000
     },
     {
         "ID": 13,
         "name": "Redragon 1300W",
         "price": 1449.99,
         "img": "https://static.meupc.net/produto/fonte-redragon-1300w-Dv78jm-L.jpg",
-        "potency": 1300
+        "wats": 1300
     },
     {
         "ID": 14,
         "name": "Corsair HX1500i 1500 W",
         "price": 3599,
         "img": "https://static.meupc.net/produto/fonte-corsair-hxi-hx1500i-b83TZA-L.jpg",
-        "potency": 1500
+        "wats": 1500
     }
     
 ]
