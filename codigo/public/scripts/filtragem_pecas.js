@@ -11,6 +11,11 @@ const storageBtn = document.querySelector("#storage")
 const motherboardBtn = document.querySelector("#motherboard")
 const coolingBtn = document.querySelector("#psu")
 
+const budgetInput = document.getElementById('budget');
+const setBudgetButton = document.getElementById('set-budget');
+const differenceSpan = document.getElementById('difference');
+const totalCostElement = document.querySelector('.total');
+
 // Estado Inicial
 let setup = recoverSetupLS() || {
     errors: [],
@@ -35,6 +40,20 @@ const rams = await getJSON('http://localhost:3000/ram')
 const storages = await getJSON('http://localhost:3000/storage')
 const motherboards = await getJSON('http://localhost:3000/motherboard')
 const coolings = await getJSON('http://localhost:3000/cooling')
+
+// Funções para checar orçamento
+let budget = 0
+
+const updateCosts = () => {
+    const difference = budget - setup.totalPrice;
+    differenceSpan.textContent = `R$ ${difference.toFixed(2)}`;
+    totalCostElement.textContent = `Total: R$ ${setup.totalPrice.toFixed(2)}`;
+};
+
+setBudgetButton.addEventListener('click', () => {
+    budget = parseFloat(budgetInput.value) || 0;
+    updateCosts();
+});
 
 // Funções para checar compatibilidade
 const verifyCompCPU = (cpu, mth) => cpu.socket === mth.socket
@@ -215,6 +234,7 @@ function handleSelection(item, title) {
     if (componentActions[title]) componentActions[title]()
     updateTotalPrice(item.price)
     handleCompatibilityErrors(compatibilityErrors)
+    updateCosts()
 
     saveSetupLS()
 }

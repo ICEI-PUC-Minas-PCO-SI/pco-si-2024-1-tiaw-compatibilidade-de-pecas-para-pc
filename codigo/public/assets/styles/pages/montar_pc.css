@@ -126,6 +126,43 @@ button:hover#clean-setup{
     flex-direction: column;
     gap: 14px;
 }
+.budget-section {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.budget-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.budget-input input {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.budget-input button {
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.budget-input button:hover {
+    filter: brightness(80%);
+}
+
+.difference {
+    margin-top: 10px;
+}
 
 @media (max-width: 675px) {
 
