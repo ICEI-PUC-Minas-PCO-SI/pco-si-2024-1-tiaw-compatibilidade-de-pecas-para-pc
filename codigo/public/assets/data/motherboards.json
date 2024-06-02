@@ -108,6 +108,18 @@
         "ramMaxVelocity": 4266
     },
     {
+        "ID": 9,
+        "name": "ASRock B660M-HDV",
+        "price": 1176.46,
+        "img": "https://www.asrock.com/mb/photo/B660M-HDV(M1).png",
+        "socket": "LGA 1700",
+        "gpuInterface": "PCI-Express x16",
+        "storageInterface": ["M2", "SATA"],
+        "ddr": "DDR4",
+        "ramMinVelocity": 2133,
+        "ramMaxVelocity": 4266
+    },
+    {
         "ID": 10,
         "name": "TGT H61 M.2",
         "price": 169.99,
