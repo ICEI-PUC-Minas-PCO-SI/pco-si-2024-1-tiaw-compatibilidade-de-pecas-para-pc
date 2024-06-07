@@ -286,10 +286,6 @@ function buildModal(title, items) {
 
     section.appendChild(container)
 }
-function recoverSetupLS() {
-    const setupString = localStorage.getItem('setup');
-    return setupString ? JSON.parse(setupString) : null;
-}
 
 // Local Storage
 function recoverSetupLS() {
