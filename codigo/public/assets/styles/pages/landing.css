@@ -63,7 +63,7 @@ body {
     z-index: 1;
 
     font-size: 22px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .p-text p {
@@ -99,7 +99,6 @@ body {
     flex: 1;
     gap: 20px;
     justify-content: space-between;
-
     padding: 30px 20px;
 }
 
@@ -147,7 +146,43 @@ body {
     align-items: center;
     gap: 5px;
 }
+.botao-css{
+    border-radius: 8px;
+    border: 3px solid rgb(44, 44, 44);
+    background-color: #fff;
+}
 
+.cssMod{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5000px;
+    background-color: rgba(255, 255, 255, 0.301);
+    text-align: justify;
+    z-index: 1000;
+    color: #ffffff;
+}
+.bg{
+background-color:rgba(43, 0, 43, 0.795);
+border-radius: 15px;
+box-sizing: border-box;
+padding: 20px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
 .component span {
     font-weight: 600;
     color: #202020;
