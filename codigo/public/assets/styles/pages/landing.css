@@ -151,13 +151,6 @@ body {
     border: 3px solid rgb(44, 44, 44);
     background-color: #fff;
 }
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
   
   .close:hover,
   .close:focus {
