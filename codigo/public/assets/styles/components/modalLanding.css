@@ -1,0 +1,15 @@
+.flex-CC{
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color: white;
+}
+
+.flex-item{
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+}

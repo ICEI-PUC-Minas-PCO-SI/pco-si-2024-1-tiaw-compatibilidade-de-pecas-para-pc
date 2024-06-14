@@ -50,8 +50,8 @@ function abremodalCPU() {
     let db = ler();
     let modal = db.videos[0];
 
-    mod = `<div class="cssMod">
-    <div class="bg">
+    mod = `<div class="flex-CC">
+    <div class="flex-item">
     <span class="close">&times;</span>
     <h1>O que é um processador?</h1>
     <p>Um processador, ou CPU, é o "cérebro" do computador, responsável por executar todas as instruções e comandos que fazem o computador funcionar. No contexto dos desktops para jogos, o processador desempenha um papel crucial, garantindo que os jogos rodem de maneira suave e rápida. Ele executa instruções, realiza cálculos matemáticos e lógicos, e gerencia tarefas, controlando quais são feitas e em que ordem.<br><br>
@@ -86,8 +86,8 @@ function abremodalGPU() {
     let db = ler();
     let modal = db.videos[1];
 
-    mod = `<div class="cssMod">
-    <div class="bg">
+    mod = `<div class="flex-CC">
+    <div class="flex-item">
     <span class="close">&times;</span>
     <h1>O que é uma placa de vídeo?</h1>
     <p>Uma GPU, ou unidade de processamento gráfico, é um componente crucial em desktops para jogos, responsável por renderizar imagens, vídeos e animações. Ela desempenha um papel vital ao garantir que os jogos rodem com gráficos de alta qualidade e com taxas de quadros suaves.<br><br>
@@ -121,8 +121,8 @@ function abremodalPlacaMae() {
     let db = ler();
     let modal = db.videos[2];
 
-    mod = `<div class="cssMod">
-    <div class="bg">
+    mod = `<div class="flex-CC">
+    <div class="flex-item">
     <span class="close">&times;</span>
     <h1>O que é uma placa mãe</h1>
     <p>A placa-mãe é um componente fundamental em desktops para jogos, funcionando como a espinha dorsal do computador. Ela conecta e permite a comunicação entre todos os outros componentes, como a CPU, GPU, memória RAM, discos rígidos, SSDs e dispositivos periféricos.<br><br>
@@ -156,8 +156,8 @@ function abremodalRAM(){
     let db = ler();
     let modal = db.videos[3];
 
-    mod = `<div class="cssMod">
-    <div class="bg">
+    mod = `<div class="flex-CC">
+    <div class="flex-item">
     <span class="close">&times;</span>
     <h1>O que é uma Memória RAM?</h1>
     <p>A memória RAM (Random Access Memory) é um componente essencial em desktops para jogos, responsável por armazenar temporariamente os dados que o processador e a GPU precisam acessar rapidamente. A RAM permite que os jogos carreguem texturas, modelos e outros dados de forma eficiente, contribuindo para uma experiência de jogo suave e sem atrasos.Mais RAM significa que o sistema pode lidar com mais dados ao mesmo tempo, o que é especialmente importante para jogos modernos que exigem muitos recursos.<br><br>
