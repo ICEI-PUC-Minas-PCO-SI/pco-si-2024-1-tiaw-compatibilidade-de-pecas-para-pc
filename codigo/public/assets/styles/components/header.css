@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
+.header-content {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background: #fff;
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
 .content {
     display: flex;
     align-items: center;
@@ -46,6 +55,56 @@
     gap: 40px;
 }
 
+.user-links {
+    display: flex;
+    gap: 15px;
+
+    margin: 0 10px;
+}
+
+.user-links a {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+
+    padding: 8px;
+    width: 100px;
+
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.user-links a:first-child {
+    background-color: var(--primary-color);
+    border: 0;
+    color: #fff
+}
+
+.user-links button {
+    font-family: 'Fredoka', sans-serif;
+
+    padding: 8px;
+    width: 100px;
+
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+
+    background-color: var(--primary-color);
+    color: #fff;
+
+    border: none;
+    border-radius: 12px;
+
+    cursor: pointer;
+}
+
+.user-links button:hover, .user-links a:hover {
+    filter: brightness(80%);
+}
+
 .link {
     display: flex;
     align-items: center;
@@ -60,20 +119,6 @@
     color: var(--primary-color);
 }
 
-.icon {
-    width: 30px;
-    height: 30px;
-    padding-right: 10px;
-    margin-right: 10px;
-
-    border-right: 1px solid rgba(149, 157, 165, 0.2);
-}
-
-.icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
 
 @keyframes slidein {
     from {
@@ -99,8 +144,35 @@
         font-size: 26px;
     }
 
-    .links {
+    .links, .user-links {
         display: none;
+    }
+
+    .user-links-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .user-links-mobile a {
+        text-align: left !important;
+        color: #fff !important;
+        font-weight: 500;
+
+        background-color: var(--primary-color);
+    }
+
+    .user-links-mobile button {
+        background-color: var(--primary-color);
+        border: none;
+        
+        text-align: left;
+
+        padding: 6px;
+        padding-left: 12px;
+
+        font-size: 22px;
+        font-weight: 500;
+        color: #fff;
     }
 
     .hamburger {
@@ -127,6 +199,10 @@
         
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         animation: slidein 400ms;
+    }
+
+    .mobile-links a:first-of-type {
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
     }
 
     .mobile-links a {

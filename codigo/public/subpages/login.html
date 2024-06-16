@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - PC Match</title>
+
+    <link rel="stylesheet" href="../assets/styles/reset.css">
+    <link rel="stylesheet" href="../assets/styles/components/header.css">
+    <link rel="stylesheet" href="../assets/styles/pages/login.css">
+</head>
+<body>
+    <section class="login-container">
+
+        <div class="login-box fix-width">
+            <a href="../index.html" class="logo">
+                <img src="../assets/images/landing/logo.png" alt="">
+            </a>
+
+            <form class="login-form">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" required placeholder="Email">
+
+                <label for="password">Senha</label>
+                <input id="password" type="password" name="password" required placeholder="Senha">
+                
+                <button type="submit" class="sub-form">Entrar</button>
+                <span class="login-error invisible"></span>
+            </form>
+        </div>
+    </section>
+
+    <script type="module" src="../config/firebase.js"></script>
+    <script type="module" src="../scripts/login.js"></script>
+</body>
+</html>

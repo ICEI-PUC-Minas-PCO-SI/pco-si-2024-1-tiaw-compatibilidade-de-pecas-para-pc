@@ -29,25 +29,27 @@
 
             <div class="links">
                 <a href="./subpages/montar_pc.html" class="link">
-                    <div class="icon">
-                        <img src="./assets/images/landing/montar-pc.png" alt="Ícone Montar PC">
-                    </div>
                     <span>MONTE SUA MÁQUINA</span>            
                 </a>
 
                 <a href="./subpages/setups.html" class="link">
-                    <div class="icon">
-                        <img src="./assets/images/landing/setups.png" alt="Ícone Montar PC">
-                    </div>
                     <span>SETUPS RECOMENDADOS</span>            
                 </a>
 
                 <a  href="./subpages/como_montar_pc.html" class="link">
-                    <div class="icon">
-                        <img src="./assets/images/landing/doc-montar-pc.png" alt="Ícone Montar PC">
-                    </div>
                     <span>COMO MONTAR</span>            
                 </a>
+            </div>
+
+            <div class="user-links">
+                <template id="user-links-loggedIn">
+                    <button class="logout-button">Sair</button>
+                  </template>
+                  
+                <template id="user-links-loggedOut">
+                    <a class="do-register" href="./subpages/register.html">Registrar</a>
+                    <a class="do-login" href="./subpages/login.html">Logar</a>
+                </template>    
             </div>
 
             <!-- Menu Hamburger -->
@@ -59,6 +61,9 @@
                     <h3>Links</h3>
                     <span class="close-hamburger">X</span>
                 </div>
+                
+                <div class="user-links-mobile"></div>
+
                 <a href="./subpages/montar_pc.html">Montar meu PC</a>
                 <a href="./subpages/setups.html">Setups Recomendados</a>
                 <a href="./subpages/como_montar_pc.html">Como montar meu PC</a>
@@ -172,6 +177,9 @@
             <a class="landing-link" href="./subpages/setups.html">CONFERIR SETUPS</a>
         </div>
     </section>
+
+    <script type="module" src="./config/firebase.js"></script>
+    <script type="module" src="./scripts/header_user.js"></script>
     <script src="./scripts/menu_hamburger.js"></script>
     <script defer src="./scripts/modal.js"></script>
 </body>
