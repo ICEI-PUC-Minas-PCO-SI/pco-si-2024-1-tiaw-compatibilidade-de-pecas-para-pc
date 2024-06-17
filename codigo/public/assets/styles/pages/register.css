@@ -4,7 +4,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.login-container {
+.register-container {
     padding-top: 100px;
     padding-bottom: 100px;
     
@@ -12,13 +12,13 @@ body {
     padding-right: 10px;
 }
 
-.login-box {
+.register-box {
     max-width: 480px !important;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-.login-box h3 {
+.register-box h3 {
     color: #222222;
 
     padding: 30px;
@@ -82,14 +82,14 @@ body {
     filter: brightness(80%);
 }
 
-.login-error {
+.register-error {
     font-size: 14px;
     margin-top: 5px;
-    color: #e14242; 
+    color: #e14242;
 }
 
 @media (max-width: 600px) {
-    .login-container {
+    .register-container {
         padding-top: 10px;
         padding-bottom: 10px;        
     } 
