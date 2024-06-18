@@ -56,7 +56,7 @@ const validateUsername = (username, usernameErr) => {
         return false
     }
     
-    const regex = /^[a-zA-Z0-9_.\s]+$/    
+    const regex = /^[a-zA-Z0-9_.]+$/   
     if (!regex.test(username)) {
         usernameErr.textContent = "Nome possui caracteres inválidos!"
         return false

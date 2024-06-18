@@ -78,7 +78,12 @@ body {
     border-radius: 10px;
 }
 
-button#clean-setup svg{
+.buttons-pc {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons-pc button svg{
     width: 20px;
     height: 20px;
     display: flex;
@@ -86,7 +91,7 @@ button#clean-setup svg{
     align-items: center;
 }
 
-button#clean-setup{
+.buttons-pc button {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -102,12 +107,12 @@ button#clean-setup{
     cursor: pointer;
 }
 
-button:disabled#clean-setup{
+.buttons-pc button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
 
-button:hover#clean-setup{
+.buttons-pc button:hover {
     filter: brightness(80%);
 }
 
