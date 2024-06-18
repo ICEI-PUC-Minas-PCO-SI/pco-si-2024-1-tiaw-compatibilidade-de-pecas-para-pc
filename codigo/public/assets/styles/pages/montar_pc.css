@@ -135,7 +135,6 @@ button:hover#clean-setup{
 }
 
 .budget-input {
-    display: flex;
     align-items: center;
     gap: 10px;
 }
