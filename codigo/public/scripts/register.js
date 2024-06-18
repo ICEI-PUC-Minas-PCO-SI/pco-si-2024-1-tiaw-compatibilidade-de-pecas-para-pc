@@ -135,8 +135,6 @@ const createUser = async (username, email, password, usernameErr, emailErr) => {
             uid,
             username,
             type: "USER",
-            setups: [],
-            review: ""
         })
 
         redirectIfLoggedIn()
