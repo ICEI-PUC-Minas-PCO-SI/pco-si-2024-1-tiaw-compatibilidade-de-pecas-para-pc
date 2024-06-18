@@ -52,7 +52,7 @@ const validateUsername = (username, usernameErr) => {
     let letters = 0
     for (let char of username) if (char.match(/[a-zA-Z]/)) letters++
     if (letters < 3) {
-        usernameErr.textContent = "Nome precisa ter pelo menos trẽs letras!"
+        usernameErr.textContent = "Nome precisa ter pelo menos três letras!"
         return false
     }
     
