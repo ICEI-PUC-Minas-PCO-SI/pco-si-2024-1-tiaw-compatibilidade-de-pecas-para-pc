@@ -179,6 +179,10 @@ body {
     width: 100%;
 }
 
+.private-field {
+    margin-bottom: 10px;
+}
+
 @media (max-width: 675px) {
 
 

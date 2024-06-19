@@ -7,6 +7,8 @@ const db = getFirestore()
 function createSetupCards(setups, container) {
     container.innerHTML = ""
     for (const userSetup of setups) {
+        if (userSetup.is_private) continue
+
         const setup = userSetup.setup
 
         const structure = `

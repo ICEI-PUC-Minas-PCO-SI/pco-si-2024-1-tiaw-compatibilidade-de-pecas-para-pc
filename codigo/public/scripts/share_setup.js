@@ -20,7 +20,7 @@ function getSetup() {
     return ["", setup]
 }
  
-async function addSetupToCollection(setup, setupName) {
+async function addSetupToCollection(setup, setupName, isPrivate) {
     const userUid = auth.currentUser.uid;
 
     // Pegando infos do user logado
@@ -44,6 +44,7 @@ async function addSetupToCollection(setup, setupName) {
                 slug,
                 name: setupName,
                 setup,
+                is_private: isPrivate,
                 created_at: new Date().toISOString()
             }
             await setDoc(setupsDocRef, shareSetup)
@@ -67,6 +68,11 @@ async function shareSetup() {
 
             <input id="setup-name" type="text" name="setup-name" required placeholder="Nome do Setup">
 
+            <div class="private-field">
+                <input id="is-private" type="checkbox" name="is-private" >
+                <label for="is-private">Privado</label>
+            </div>
+
             <div class="share-form-sender">
                 <button id="share-btn-form">Compartilhar</button>
                 <p class="msg"><\p>
@@ -83,6 +89,9 @@ async function shareSetup() {
     close.addEventListener("click", _ => {
         container.remove()
     })
+
+    // Private checkbox
+    const checkboxPrivate = container.querySelector("#is-private")
 
     // dando uma utilidade pro botão do modal
     const msg = container.querySelector(".msg")
@@ -115,7 +124,7 @@ async function shareSetup() {
             return
         }
 
-        err = await addSetupToCollection(setup, input.value)
+        err = await addSetupToCollection(setup, input.value, checkboxPrivate.checked)
         if (err != "") {
             msg.textContent = err
             btn.disabled = false
