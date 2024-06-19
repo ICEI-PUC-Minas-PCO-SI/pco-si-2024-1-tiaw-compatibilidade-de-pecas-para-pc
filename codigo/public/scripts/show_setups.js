@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     showMore.addEventListener("click", async () => {
         showMore.disabled = true
 
-        const nextQ = query(setupsRef, orderBy("name"), startAfter(lastVisible), limit(pcPerLoad))
+        const nextQ = query(setupsRef, orderBy("created_at"), startAfter(lastVisible), limit(pcPerLoad))
         const nextSetups = await getDocs(nextQ)
 
         if (nextSetups.empty) {

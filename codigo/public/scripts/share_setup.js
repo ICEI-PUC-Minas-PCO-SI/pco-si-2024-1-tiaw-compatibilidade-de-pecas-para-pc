@@ -43,7 +43,8 @@ async function addSetupToCollection(setup, setupName) {
                 owner: userInfo.data().username,
                 slug,
                 name: setupName,
-                setup
+                setup,
+                created_at: new Date().toISOString()
             }
             await setDoc(setupsDocRef, shareSetup)
 
