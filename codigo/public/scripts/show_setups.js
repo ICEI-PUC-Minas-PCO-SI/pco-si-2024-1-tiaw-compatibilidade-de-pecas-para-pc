@@ -1,13 +1,7 @@
+import { upperAll } from "../lib/text.js"
 import { getFirestore, collection, getDocs, query, orderBy, limit, startAfter, getCountFromServer } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js"
 
 const db = getFirestore()
-
-// Helpers
-const upperAll = text => {
-    return text.split(' ')
-               .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-               .join(' ')
-}
 
 // Funções Primarias
 function createSetupCards(setups, container) {
@@ -53,7 +47,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const container = document.querySelector(".cards")
     const showMore = document.querySelector("#load-more")
     const loader = document.querySelector(".loader")
-    loader.style.display = "block"
 
     const setups = []
     const pcPerLoad = 9

@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Como montar um PC - PC Match</title>
+    <title>Meu Perfil - PC Match</title>
 
     <link rel="stylesheet" href="../assets/styles/reset.css">
     <link rel="stylesheet" href="../assets/styles/components/header.css">
-    <link rel="stylesheet" href="../assets/styles/pages/como_montar_pc.css">
+    <link rel="stylesheet" href="../assets/styles/components/cards.css">
+    <link rel="stylesheet" href="../assets/styles/components/loading.css">
+    <link rel="stylesheet" href="../assets/styles/components/overlay.css">
+    <link rel="stylesheet" href="../assets/styles/components/modal.css">
+    <link rel="stylesheet" href="../assets/styles/pages/profile.css">
 </head>
 <body>
     <header class="header-content">
@@ -16,26 +20,27 @@
                 <div class="logo-img">
                     <img src="../assets/images/landing/logo.png" alt="Logo">
                 </div>
-                
+
                 <h2>PC MATCH</h2>
             </a>
 
             <div class="links">
                 <a href="./montar_pc.html" class="link">
-                    <span>MONTE SUA MÁQUINA</span>            
+                    <span>MONTE SUA MÁQUINA</span>
                 </a>
 
                 <a href="./setups.html" class="link">
-                    <span>SETUPS RECOMENDADOS</span>            
+                    <span>SETUPS RECOMENDADOS</span>
                 </a>
 
-                <a  href="./setups_comunidade.html" class="link">
-                    <span>SETUPS DA COMUNIDADE</span>            
+                <a href="./setups_comunidade.html" class="link">
+                    <span>SETUPS DA COMUNIDADE</span>
                 </a>
 
-                <a  href="./como_montar_pc.html" class="link">
-                    <span>COMO MONTAR</span>            
+                <a href="./como_montar_pc.html" class="link">
+                    <span>COMO MONTAR</span>
                 </a>
+
             </div>
 
             <div class="user-links">
@@ -70,8 +75,33 @@
         </div>
     </header>
 
+    <section class="presentation-profile-container">
+        <div class="presentation-profile fix-width">
+            <div class="user-pr">
+                <h1>Olá, <span id="uname"></span></h1>
+                <hr>
+            </div>
+
+            <button id="delete-pf">Deletar Conta</button>
+        </div>
+        <div class="overlay"></div>
+    </section>
+
+    <section class="profile-container">
+        <div class="profile-box fix-width">
+            <div class="profile-card">
+                <h2>Setups Salvos:</h2>
+                <div class="cards"></div>
+            </div>
+
+            <div class="loader"></div>
+        </div>
+
+    </section>
+
     <script type="module" src="../config/firebase.js"></script>
     <script type="module" src="../scripts/header_user.js"></script>
     <script src="../scripts/menu_hamburger.js"></script>
+    <script type="module" src="../scripts/profile.js"></script>
 </body>
 </html>

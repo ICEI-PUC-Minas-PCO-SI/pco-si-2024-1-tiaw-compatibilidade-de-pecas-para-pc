@@ -1,0 +1,93 @@
+.cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 480px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    height: 350px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 130px;
+    height: 100%;
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 16px;
+
+    background: #fafafa;
+}
+
+.card-info h3 {
+    font-size: 22px;
+    color: #242424;
+
+    margin-top: 8px;
+}
+
+.card-components {
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    margin-left: 16px;
+}
+
+.card-components li {
+    font-size: 11px;
+    color: #313131;
+    
+    margin: 6px 0;
+}
+
+.card-owner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-owner p:first-of-type {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.card-owner p span {
+    color: rgb(20, 21, 56);
+    font-weight: 500;
+}
+
+.card-owner p:last-of-type {
+    font-weight: 600;
+    font-size: 18px;
+    color: #37703b;
+}

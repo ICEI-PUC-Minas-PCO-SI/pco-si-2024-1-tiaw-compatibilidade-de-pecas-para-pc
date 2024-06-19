@@ -161,7 +161,7 @@
 }
 
 .msg {
-    color: #e14242;
+    color: var(--red);
     text-align: right;
     font-size: 14px;
 }

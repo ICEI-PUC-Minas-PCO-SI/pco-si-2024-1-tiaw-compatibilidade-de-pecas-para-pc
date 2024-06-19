@@ -85,7 +85,7 @@ body {
 .login-error {
     font-size: 14px;
     margin-top: 5px;
-    color: #e14242; 
+    color: var(--red); 
 }
 
 @media (max-width: 600px) {
