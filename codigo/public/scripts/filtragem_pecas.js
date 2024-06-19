@@ -11,10 +11,10 @@ const storageBtn = document.querySelector("#storage")
 const motherboardBtn = document.querySelector("#motherboard")
 const coolingBtn = document.querySelector("#psu")
 
-const budgetInput = document.getElementById('budget');
-const setBudgetButton = document.getElementById('set-budget');
-const differenceSpan = document.getElementById('difference');
-const totalCostElement = document.querySelector('.total');
+const budgetInput = document.getElementById('budget')
+const setBudgetButton = document.getElementById('set-budget')
+const differenceSpan = document.getElementById('difference')
+const totalCostElement = document.querySelector('.total')
 
 // Estado Inicial
 let setup = recoverSetupLS() || {
@@ -45,15 +45,15 @@ const coolings = await getJSON('http://localhost:3000/cooling')
 let budget = 0
 
 const updateCosts = () => {
-    const difference = budget - setup.totalPrice;
-    differenceSpan.textContent = `R$ ${difference.toFixed(2)}`;
-    totalCostElement.textContent = `Total: R$ ${setup.totalPrice.toFixed(2)}`;
-};
+    const difference = budget - setup.totalPrice
+    differenceSpan.textContent = `R$ ${difference.toFixed(2)}`
+    totalCostElement.textContent = `Total: R$ ${setup.totalPrice.toFixed(2)}`
+}
 
 setBudgetButton.addEventListener('click', () => {
-    budget = parseFloat(budgetInput.value) || 0;
-    updateCosts();
-});
+    budget = parseFloat(budgetInput.value) || 0
+    updateCosts()
+})
 
 // Funções para checar compatibilidade
 const verifyCompCPU = (cpu, mth) => cpu.socket === mth.socket
@@ -240,48 +240,87 @@ function handleSelection(item, title) {
 }
 
 function buildModal(title, items) {
-    const structure = `    
+    const structure = `
         <div class="modal-content">
             <div class="modal-info">
-                <h2>Selecione uma das peças para a ${title}</h2>
+                <h2>Selecione uma das peças para ${title}</h2>
                 <button class="close">X</button>
+            </div>
+            <div class="search-item">
+                <input id="item-searcher" type="text" placeholder="Digite o nome de uma peça..." />
             </div>
             <div class="items">
                 ${items.map(item => `
                     <div class="component">
                         <div class="component-all">
                             <div class="component-circle"></div> 
-                            <img src=${item.img} alt="Componente" />
+                            <img src="${item.img}" alt="Componente" />
                             <div class="component-info">
                                 <span class="component-name">${item.name}</span>
-                                <span class="component-wats">${item.wats !== undefined ? item.wats + " Wats" : ""}</span>
+                                ${item.wats !== undefined ? `<span class="component-wats">${item.wats} Wats</span>` : ''}
                                 <span class="component-price">R$ ${priceParser(item.price)}</span>
                             </div>
                         </div>
-
                         <button class="component-selector">SELECIONAR</button>
-                    </div>`                 ).join('')}
+                    </div>`
+                ).join('')}
             </div>
-        </div>
-    `
+        </div>`
 
     const container = document.createElement("div")
     container.classList.add("modal")
     container.innerHTML = structure
 
-    const btn = container.querySelector(".close")
-    btn.addEventListener("click", _ => {
-        container.remove()
-    })
+    const searchInput = container.querySelector("#item-searcher")
+    const itemsContainer = container.querySelector(".items")
 
-    const selectors = container.querySelectorAll(".component-selector")
-    selectors.forEach((selector, index) => {
-        selector.addEventListener('click', () => {
-            const selectedItem = items[index]
-            handleSelection(selectedItem, title)
+    function updateItems(filteredItems) {
+        itemsContainer.innerHTML = filteredItems.map(item => `
+            <div class="component">
+                <div class="component-all">
+                    <div class="component-circle"></div>
+                    <img src="${item.img}" alt="Componente" />
+                    <div class="component-info">
+                        <span class="component-name">${item.name}</span>
+                        ${item.wats !== undefined ? `<span class="component-wats">${item.wats} Wats</span>` : ''}
+                        <span class="component-price">R$ ${priceParser(item.price)}</span>
+                    </div>
+                </div>
+                <button class="component-selector">SELECIONAR</button>
+            </div>`
+        ).join('')
 
-            container.remove()
+        const selectors = itemsContainer.querySelectorAll(".component-selector")
+        selectors.forEach((selector, index) => {
+            selector.addEventListener('click', () => {
+                const selectedItem = filteredItems[index]
+                handleSelection(selectedItem, title)
+                container.remove()
+            })
         })
+    }
+
+    function filterItems(searchTerm) {
+        return items.filter(item =>
+            item.name.toLowerCase().includes(searchTerm.toLowerCase())
+        )
+    }
+
+    function handleSearchInput() {
+        const searchTerm = searchInput.value
+        const filteredItems = filterItems(searchTerm)
+        updateItems(filteredItems)
+    }
+
+    // setup inicial
+    updateItems(items)
+
+    // event listeners
+    searchInput.addEventListener("input", handleSearchInput)
+
+    const closeButton = container.querySelector(".close")
+    closeButton.addEventListener("click", () => {
+        container.remove()
     })
 
     section.appendChild(container)

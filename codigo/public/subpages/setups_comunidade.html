@@ -3,39 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - PC Match</title>
+    <title>Setups da Comunidade - PC Match</title>
 
     <link rel="stylesheet" href="../assets/styles/reset.css">
     <link rel="stylesheet" href="../assets/styles/components/header.css">
-    <link rel="stylesheet" href="../assets/styles/pages/login.css">
+    <link rel="stylesheet" href="../assets/styles/pages/setups_comunidade.css">
 </head>
 <body>
     <header class="header-content">
-        <div class="content  fix-width">
+        <div class="content fix-width">
             <a class="logo" href="../index.html">
                 <div class="logo-img">
                     <img src="../assets/images/landing/logo.png" alt="Logo">
                 </div>
-                
+
                 <h2>PC MATCH</h2>
             </a>
 
             <div class="links">
                 <a href="./montar_pc.html" class="link">
-                    <span>MONTE SUA MÁQUINA</span>            
+                    <span>MONTE SUA MÁQUINA</span>
                 </a>
 
                 <a href="./setups.html" class="link">
-                    <span>SETUPS RECOMENDADOS</span>            
+                    <span>SETUPS RECOMENDADOS</span>
                 </a>
 
                 <a href="./setups_comunidade.html" class="link">
                     <span>SETUPS DA COMUNIDADE</span>
                 </a>
 
-                <a  href="./como_montar_pc.html" class="link">
-                    <span>COMO MONTAR</span>            
+                <a href="./como_montar_pc.html" class="link">
+                    <span>COMO MONTAR</span>
                 </a>
+
             </div>
 
             <div class="user-links">
@@ -58,7 +59,7 @@
                     <h3>Links</h3>
                     <span class="close-hamburger">X</span>
                 </div>
-                
+
                 <div class="user-links-mobile"></div>
 
                 <a href="./montar_pc.html">Montar meu PC</a>
@@ -69,34 +70,21 @@
         </div>
     </header>
 
-    <section class="login-container">
-        <div class="login-box fix-width">
-            <h3 class="login-title">Entrar no PC Match</h3>
+    <section class="cards-container">
+        <div class="cards-box fix-width">
+            <div class="title">
+                <h2>Veja os Setups da Comunidade</h2>
+            </div>
+            <div class="cards"></div>
 
-            <form class="login-form">
-                <div class="fields">
-                    <div class="field">
-                        <label for="email">Email</label>
-                        <input id="email" type="email" name="email" required placeholder="Email">
-                    </div>
-
-                    <div class="field">
-                        <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" required placeholder="Senha">
-                    </div>
-                </div>
-                
-                <div class="submit-field">
-                    <button type="submit" class="sub-form">Entrar</button>
-                    <span class="login-error invisible"></span>
-                </div>
-            </form>
+            <button id="load-more" style="display: none;">Mostrar Mais</button>
+            <div class="loader"></div>
         </div>
     </section>
 
     <script type="module" src="../config/firebase.js"></script>
     <script type="module" src="../scripts/header_user.js"></script>
-    <script type="module" src="../scripts/menu_hamburger.js"></script>
-    <script type="module" src="../scripts/login.js"></script>
+    <script src="../scripts/menu_hamburger.js"></script>
+    <script type="module" src="../scripts/show_setups.js"></script>
 </body>
 </html>

@@ -168,6 +168,17 @@ body {
     margin-top: 10px;
 }
 
+.search-item input {
+    padding: 8px;
+    margin-bottom: 16px;
+    font-size: 18px;
+
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+    width: 100%;
+}
+
 @media (max-width: 675px) {
 
 

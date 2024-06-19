@@ -92,6 +92,7 @@ async function shareSetup() {
 
     btn.addEventListener("click", async _ => {
         btn.disabled = true
+        msg.textContent = ""
         msg.classList.remove("valid")
 
         let [err, setup] = getSetup()
@@ -107,8 +108,8 @@ async function shareSetup() {
             return
         }
 
-        if (input.value.length > 30) {
-            msg.textContent = "Nome do setup não pode passar de 30 caracteres!"
+        if (input.value.length > 25) {
+            msg.textContent = "Nome do setup não pode passar de 25 caracteres!"
             btn.disabled = false
             return
         }

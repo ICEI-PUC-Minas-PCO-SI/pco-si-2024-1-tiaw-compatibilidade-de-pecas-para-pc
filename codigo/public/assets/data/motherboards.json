@@ -130,5 +130,17 @@
         "ddr": "DDR3",
         "ramMinVelocity": 1066,
         "ramMaxVelocity": 1600
+    },
+    {
+        "ID": 11,
+        "name": "B560M PRO-E",
+        "price": 479.99,
+        "img": "https://images.kabum.com.br/produtos/fotos/280944/placa-mae-msi-b560m-pro-e-lga-1200-matx-ddr4_1646832447_g.jpg",
+        "socket": "LGA 1200",
+        "gpuInterface": "PCI-Express x16",
+        "storageInterface": ["M2", "SATA"],
+        "ddr": "DDR4",
+        "ramMinVelocity": 2133,
+        "ramMaxVelocity": 4800
     }
 ]

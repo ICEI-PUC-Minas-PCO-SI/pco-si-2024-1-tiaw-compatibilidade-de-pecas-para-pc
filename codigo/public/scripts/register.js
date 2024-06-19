@@ -44,8 +44,8 @@ const validateUsername = (username, usernameErr) => {
         return false
     }
 
-    if (username.length > 30) {
-        usernameErr.textContent = "Nome não pode passar de 30 caracteres!"
+    if (username.length > 24) {
+        usernameErr.textContent = "Nome não pode passar de 24 caracteres!"
         return false
     }
     
