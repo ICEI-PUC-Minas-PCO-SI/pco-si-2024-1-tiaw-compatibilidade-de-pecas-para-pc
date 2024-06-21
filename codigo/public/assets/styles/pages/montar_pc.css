@@ -183,6 +183,11 @@ body {
     margin-bottom: 10px;
 }
 
+.small-n {
+    font-size: 12px;
+    max-width: 140px;
+}
+
 @media (max-width: 675px) {
 
 
