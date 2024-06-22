@@ -6,8 +6,8 @@ body {
 
 .presentation-container {
     padding: 0 20px;
-
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .presentation-info {
@@ -78,7 +78,12 @@ body {
     border-radius: 10px;
 }
 
-button#clean-setup svg{
+.buttons-pc {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons-pc button svg{
     width: 20px;
     height: 20px;
     display: flex;
@@ -86,7 +91,7 @@ button#clean-setup svg{
     align-items: center;
 }
 
-button#clean-setup{
+.buttons-pc button {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -102,12 +107,12 @@ button#clean-setup{
     cursor: pointer;
 }
 
-button:disabled#clean-setup{
+.buttons-pc button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
 
-button:hover#clean-setup{
+.buttons-pc button:hover {
     filter: brightness(80%);
 }
 
@@ -135,7 +140,6 @@ button:hover#clean-setup{
 }
 
 .budget-input {
-    display: flex;
     align-items: center;
     gap: 10px;
 }
@@ -162,6 +166,26 @@ button:hover#clean-setup{
 
 .difference {
     margin-top: 10px;
+}
+
+.search-item input {
+    padding: 8px;
+    margin-bottom: 16px;
+    font-size: 18px;
+
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+    width: 100%;
+}
+
+.private-field {
+    margin-bottom: 10px;
+}
+
+.small-n {
+    font-size: 14px;
+    max-width: 140px;
 }
 
 @media (max-width: 675px) {

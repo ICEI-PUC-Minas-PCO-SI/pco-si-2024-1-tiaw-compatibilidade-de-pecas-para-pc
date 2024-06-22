@@ -262,6 +262,13 @@
         "img": "https://static.meupc.net/produto/placa-video-asrock-radeon-rx-7900-xtx-radeonrx7900xtx24gbphantomgaming-Bh6LN5-L.jpg",
         "interface": "PCI-Express x16",
         "wats": 300
+    },
+    {
+        "ID": 33,
+        "name": "Radeon RX 5500 XT 8 GB",
+        "price": 1428.99,
+        "img": "https://images.kabum.com.br/produtos/fotos/116161/placa-de-video-gigabyte-radeon-rx-5500-xt-d6-amd-ati-8g-gddr6-gv-r55xtd6-8gd_1597427104_gg.jpg",
+        "interface": "PCI-Express x16",
+        "wats": 450
     }
-    
 ]

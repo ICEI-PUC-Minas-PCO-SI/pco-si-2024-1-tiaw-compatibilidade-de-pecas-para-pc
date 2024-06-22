@@ -131,6 +131,45 @@
     filter: brightness(80%);
 }
 
+.modal-form {
+    background: #fff;
+    width: 450px;
+    padding: 30px;
+}
+
+#setup-name, #share-btn-form {
+    width: 100%;
+    padding: 6px;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+#share-btn-form {
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    background-color: var(--primary-color);
+
+    cursor: pointer;
+}
+
+#share-btn-form:hover, #share-btn-form:disabled {
+    filter: brightness(80%);
+}
+
+.msg {
+    color: var(--red);
+    text-align: right;
+    font-size: 14px;
+}
+
+.valid {
+    color: #407c45 !important;
+}
+
 @media (max-width: 675px) {
     .component-circle {
         display: none;

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Setups - PC Match</title>
 
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+
     <link rel="stylesheet" href="../assets/styles/reset.css">
     <link rel="stylesheet" href="../assets/styles/components/header.css">
     <link rel="stylesheet" href="../assets/styles/pages/setups.css">
@@ -31,38 +33,51 @@
 
             <div class="links">
                 <a href="./montar_pc.html" class="link">
-                    <div class="icon">
-                        <img src="../assets/images/landing/montar-pc.png" alt="Ícone Montar PC">
-                    </div>
                     <span>MONTE SUA MÁQUINA</span>
                 </a>
 
                 <a href="./setups.html" class="link">
-                    <div class="icon">
-                        <img src="../assets/images/landing/setups.png" alt="Ícone Montar PC">
-                    </div>
                     <span>SETUPS RECOMENDADOS</span>
                 </a>
 
+                <a  href="./setups_comunidade.html" class="link">
+                    <span>SETUPS DA COMUNIDADE</span>            
+                </a>
+
                 <a href="./como_montar_pc.html" class="link">
-                    <div class="icon">
-                        <img src="../assets/images/landing/doc-montar-pc.png" alt="Ícone Montar PC">
-                    </div>
                     <span>COMO MONTAR</span>
                 </a>
             </div>
 
+            <div class="user-links">
+                <template id="user-links-loggedIn">
+                    <a class="do-register" href="./profile.html">Perfil</a>
+                    <button class="logout-button">Sair</button>
+                  </template>
+                  
+                <template id="user-links-loggedOut">
+                    <a class="do-register" href="./register.html">Registrar</a>
+                    <a class="do-login" href="./login.html">Logar</a>
+                </template>    
+            </div>
+
              <!--Menu Hamburger---> 
             <div class="hamburger">
-                <img src="../assets/images/landing/list.svg" alt="">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
             <div class="mobile-links invisible">
                 <div class="title">
                     <h3>Links</h3>
                     <span class="close-hamburger">X</span>
                 </div>
+
+                <div class="user-links-mobile"></div>
+
                 <a href="./montar_pc.html">Montar meu PC</a>
                 <a href="./setups.html">Setups Recomendados</a>
+                <a href="./setups_comunidade.html">Setups da Comunidade</a>
                 <a href="./como_montar_pc.html">Como montar meu PC</a>
             </div>
         </div>
@@ -136,6 +151,8 @@
         </div>
     </main>
 
+    <script type="module" src="../config/firebase.js"></script>
+    <script type="module" src="../scripts/header_user.js"></script>
     <script src="../scripts/setups.js"></script>      
     <script src="../scripts/menu_hamburger.js"></script>
 </body>
