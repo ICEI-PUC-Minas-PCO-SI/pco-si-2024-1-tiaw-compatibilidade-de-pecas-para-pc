@@ -292,7 +292,6 @@ padding: 20px;
 
     .learn {
         flex-direction: column;
-        gap: 50px;
     }
 
     .learn-info, .learn-goto {

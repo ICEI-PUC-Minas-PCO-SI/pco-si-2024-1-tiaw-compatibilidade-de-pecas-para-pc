@@ -2,7 +2,7 @@
 
 .header-content {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    background: #fff;
+    background: var(--primary-dark);
 
     position: sticky;
     top: 0;
@@ -31,7 +31,7 @@
     margin-left: 20px;
     font-weight: 600;
     font-size: 22px;
-    color: var(--logo-color);
+    color: #fff;
 }
 
 .logo-img {
@@ -63,7 +63,7 @@
 }
 
 .user-links a {
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    border: 2px solid #dfdfdf;
     border-radius: 12px;
 
     text-align: center;
@@ -73,7 +73,7 @@
     padding: 8px;
     width: 100px;
 
-    color: rgba(0, 0, 0, 0.8);
+    color: #dfdfdf;
 }
 
 .user-links a:first-child {
@@ -110,7 +110,7 @@
     font-weight: 500;
 
     text-decoration: none;
-    color: #545454;
+    color: #c4bec0;
 
     transition: color 250ms ease;
 }
@@ -177,11 +177,24 @@
 
     .hamburger {
         display: flex;
-    }
-
-    .hamburger img {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         width: 50px;
         height: 50px;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        
+        background: #cdcdcd;
+        border-radius: 3px;
+        
+        z-index: 1;
     }
 
     .mobile-links {

@@ -357,7 +357,7 @@ function updateSetup(cpus, gpus, rams, storages, motherboards, coolings) {
     if (setup.cooling) updateComponentDisplay('.psu-tr', setup.cooling, 'Fonte', coolings, 'cooling')
 
     total.innerHTML = `Total: R$ ${priceParser(Math.round(setup.totalPrice * 100) / 100)}`
-    watsSpan.innerHTML = `${setup.totalWats} Wats`
+    watsSpan.innerHTML = `${Math.round(setup.totalWats * 100) / 100} Wats`
 }
 
 // Helpers
