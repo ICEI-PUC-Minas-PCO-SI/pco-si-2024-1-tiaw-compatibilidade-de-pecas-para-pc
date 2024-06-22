@@ -270,5 +270,13 @@
         "img": "https://images.kabum.com.br/produtos/fotos/116161/placa-de-video-gigabyte-radeon-rx-5500-xt-d6-amd-ati-8g-gddr6-gv-r55xtd6-8gd_1597427104_gg.jpg",
         "interface": "PCI-Express x16",
         "wats": 450
+    },
+    {
+        "ID": 34,
+        "name": "NVIDIA GeForce GT 610 2 GB",
+        "price": 199.90,
+        "img": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/150968/Placa-De-V-deo-Afox-Geforce-Gt610-2gb-Ddr3-64-Bits-Low-Profile-Hdmi-dvi-vga-Af610-2048d3l7-v5_1696444099_gg.jpg",
+        "interface": "PCI-Express 2.0 x16",
+        "wats": 200
     }
 ]
