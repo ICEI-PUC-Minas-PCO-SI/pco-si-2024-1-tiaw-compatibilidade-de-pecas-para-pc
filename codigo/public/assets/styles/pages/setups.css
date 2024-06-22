@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,8 +11,98 @@
     margin: 0px auto;
     max-width: 1196px;
     margin-top: 20px;
+    object-fit: cover;
 }
- 
+
+.MWII{
+    display: flex;
+    margin: 0px auto;
+    max-width: 1196px;
+    margin-top: 20px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.vava{
+    display: flex;
+    margin: 0px auto;
+    max-width: 1196px;
+    margin-top: 20px;
+    object-fit: cover;
+    border-radius: 20px;
+    object-position: 20% 12%;
+}
+
+.mine{
+    display: flex;
+    margin: 0px auto;
+    max-width: 1196px;
+    margin-top: 20px;
+    object-fit: cover;
+    border-radius: 20px;
+    object-position: 20% 62%;
+}
+.cyber{
+    display: flex;
+    margin: 0px auto;
+    max-width: 1196px;
+    margin-top: 20px;
+    object-fit: cover;
+    border-radius: 20px;
+    object-position: 20% 20%;
+}
+
+.botao-gamer {
+    font-family: 'Press Start 2P', cursive; /* Fonte estilo gamer */
+    font-size: 16px;
+    color: #ffffff;
+    background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    outline: none;
+    height: 100px;
+    width: 200px;
+    margin-top: 30px;
+  }
+
+  .botao-gamer:hover {
+    transform: scale(1.1);
+  }
+
+  .botao-gamer:active {
+    transform: scale(0.95);
+  }
+
+  #setup-low{
+    background: linear-gradient(135deg, #052349, #113e68, #052349);
+    color: #feff1c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+  }
+  #setup-medio{
+    background: linear-gradient(135deg, #212731, #41474e, #212731);
+    color: #e73543;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+  }
+  #setup-high{
+    background: linear-gradient(45deg, #12100c, #525457, #12100c);
+    color: #9aee15;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+  }
+  #setup-ultra{
+    background: linear-gradient(45deg, #bbbb00, #f0e800, #bbbb00);
+    color: #0999c5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+  }
+
 main {
     padding-top: 40px;
 }
