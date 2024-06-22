@@ -116,6 +116,10 @@ body {
     color: var(--primary-color);
 }
 
+.card {
+    max-width: 360px !important;
+}
+
 @media (max-width: 569px) {
     .presentation-profile {
         flex-direction: column;

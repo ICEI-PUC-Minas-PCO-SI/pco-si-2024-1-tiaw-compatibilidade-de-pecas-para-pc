@@ -12,7 +12,7 @@ function getSetup() {
     const setup = JSON.parse(localStorage.getItem("setup"))
     
     for(const [_, value] of Object.entries(setup)) {
-        if (value == null) return ["Não é possível compartilhar um setup faltando peças!"]
+        if (value == null || value.length < 1) return ["Não é possível compartilhar um setup faltando peças!"]
     }
     
     return ["", setup]

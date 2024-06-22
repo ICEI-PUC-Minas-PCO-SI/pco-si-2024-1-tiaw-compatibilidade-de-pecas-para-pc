@@ -190,6 +190,14 @@ function handleSelection(item, title) {
     if (title !== "Fonte") updateTotalWats(item.wats)
     if (componentActions[title]) componentActions[title]()
         
+
+    if (setup.cooling && setup.cooling.wats < setup.totalWats) {
+        setup.cooling = null
+            
+        saveSetupLS()
+        location.reload()
+    }
+
     updateTotalPrice(item.price)
     updateCosts()
     saveSetupLS()
@@ -274,6 +282,9 @@ function buildModal(title, items) {
                    (!setup.gpu || verifyCompGPU(setup.gpu, item)) &&
                    (!setup.ram || verifyCompRAM(setup.ram, item))
                 //    (!setup.storage || verifyCompSTR(setup.storage, item))
+        }
+        if (title === "Fonte") {
+            return verifyCapacityPSU(item, setup.totalWats)
         }
         return true
     }
