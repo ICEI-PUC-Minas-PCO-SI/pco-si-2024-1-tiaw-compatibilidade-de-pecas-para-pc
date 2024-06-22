@@ -32,6 +32,9 @@
     cursor: pointer;
     color: white;
   }
+  .close:hover {
+    color: white;
+  }
 
   .text-justify{
     text-align: justify;
