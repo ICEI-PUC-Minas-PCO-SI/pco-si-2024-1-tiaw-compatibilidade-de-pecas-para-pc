@@ -125,7 +125,7 @@
         "price": 169.99,
         "img": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/t/g/tgt-h61-m2.jpg",
         "socket": "LGA 1155",
-        "gpuInterface": "PCI-Express x16",
+        "gpuInterface": "PCI-Express 2.0 x16",
         "storageInterface": ["M2", "SATA"],
         "ddr": "DDR3",
         "ramMinVelocity": 1066,
