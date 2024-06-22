@@ -83,7 +83,10 @@ async function showSetups(setups) {
                     <li><strong>RAM</strong> - ${setup["ram"].name}</li>
                     <li><strong>PLACA-MÃE</strong> - ${setup["motherboard"].name}</li>
                     <li><strong>FONTE</strong> - ${setup["cooling"].name}</li>
-                    <li><strong>HD/SSD</strong> - ${setup["storage"].name}</li>
+                    <li><strong>HD/SSD -</strong></li>
+                    <ul>
+                       ${setup["storage"].map(st => `<li style="margin-left: 20px;">${st.name}</li>`).join(' ')}
+                    </ul>
                 </ul>
 
                 <div class="card-owner">

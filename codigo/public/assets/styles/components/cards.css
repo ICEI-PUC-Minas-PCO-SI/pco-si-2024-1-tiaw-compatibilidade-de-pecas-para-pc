@@ -44,6 +44,7 @@
 .card-info {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     flex: 1;
     padding: 16px;
 
@@ -90,4 +91,14 @@
     font-weight: 600;
     font-size: 18px;
     color: #37703b;
+}
+
+@media (max-width: 800px) {
+    .card {
+        max-width: none;
+    }
+
+    .cards {
+        justify-content: center;
+    }
 }
