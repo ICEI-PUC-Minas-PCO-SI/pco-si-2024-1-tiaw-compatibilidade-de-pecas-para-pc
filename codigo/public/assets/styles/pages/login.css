@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.login-box {
+    max-width: 480px !important;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.login-box h3 {
+    color: #222222;
+
+    padding: 30px;
+    font-size: 22px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.submit-field {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #fdfdfd;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px;
+}
+
+.submit-field span {
+    margin-top: 12px;
+    text-align: right;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.field input, .submit-field button {
+    padding: 12px;
+    font-size: 18px;
+
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.sub-form {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.sub-form:hover, .sub-form:disabled {
+    filter: brightness(80%);
+}
+
+.login-error {
+    font-size: 14px;
+    margin-top: 5px;
+    color: var(--red); 
+}
+
+@media (max-width: 600px) {
+    .login-container {
+        padding-top: 10px;
+        padding-bottom: 10px;        
+    } 
+}

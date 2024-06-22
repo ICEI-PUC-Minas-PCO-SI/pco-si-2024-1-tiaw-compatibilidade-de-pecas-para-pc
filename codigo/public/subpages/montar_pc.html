@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monte seu PC - PC Match</title>
 
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+
     <link rel="stylesheet" href="../assets/styles/reset.css">
     <link rel="stylesheet" href="../assets/styles/components/header.css">
     <link rel="stylesheet" href="../assets/styles/components/modal.css">
@@ -25,38 +27,51 @@
 
             <div class="links">
                 <a href="./montar_pc.html" class="link">
-                    <div class="icon">
-                        <img src="../assets/images/landing/montar-pc.png" alt="Ícone Montar PC">
-                    </div>
                     <span>MONTE SUA MÁQUINA</span>
                 </a>
 
                 <a href="./setups.html" class="link">
-                    <div class="icon">
-                        <img src="../assets/images/landing/setups.png" alt="Ícone Montar PC">
-                    </div>
                     <span>SETUPS RECOMENDADOS</span>
                 </a>
 
+                <a href="./setups_comunidade.html" class="link">
+                    <span>SETUPS DA COMUNIDADE</span>
+                </a>
+
                 <a href="./como_montar_pc.html" class="link">
-                    <div class="icon">
-                        <img src="../assets/images/landing/doc-montar-pc.png" alt="Ícone Montar PC">
-                    </div>
                     <span>COMO MONTAR</span>
                 </a>
             </div>
 
+            <div class="user-links">
+                <template id="user-links-loggedIn">
+                    <a class="do-register" href="./profile.html">Perfil</a>
+                    <button class="logout-button">Sair</button>
+                  </template>
+                  
+                <template id="user-links-loggedOut">
+                    <a class="do-register" href="./register.html">Registrar</a>
+                    <a class="do-login" href="./login.html">Logar</a>
+                </template>    
+            </div>
+
             <!-- Menu Hamburger -->
             <div class="hamburger">
-                <img src="../assets/images/landing/list.svg" alt="">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
             <div class="mobile-links invisible">
                 <div class="title">
                     <h3>Links</h3>
                     <span class="close-hamburger">X</span>
                 </div>
+
+                <div class="user-links-mobile"></div>
+
                 <a href="./montar_pc.html">Montar meu PC</a>
                 <a href="./setups.html">Setups Recomendados</a>
+                <a href="./setups_comunidade.html">Setups da Comunidade</a>
                 <a href="./como_montar_pc.html">Como montar meu PC</a>
             </div>
         </div>
@@ -71,8 +86,11 @@
                 <ul></ul>
             </div>
         </div>
-        
-        <button id="clean-setup">Limpar Setup<svg fill="#ffffff" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M831.24 280.772c5.657 0 10.24-4.583 10.24-10.24v-83.528c0-5.657-4.583-10.24-10.24-10.24H194.558a10.238 10.238 0 00-10.24 10.24v83.528c0 5.657 4.583 10.24 10.24 10.24H831.24zm0 40.96H194.558c-28.278 0-51.2-22.922-51.2-51.2v-83.528c0-28.278 22.922-51.2 51.2-51.2H831.24c28.278 0 51.2 22.922 51.2 51.2v83.528c0 28.278-22.922 51.2-51.2 51.2z"></path><path d="M806.809 304.688l-58.245 666.45c-.544 6.246-6.714 11.9-12.99 11.9H290.226c-6.276 0-12.447-5.654-12.99-11.893L218.99 304.688c-.985-11.268-10.917-19.604-22.185-18.619s-19.604 10.917-18.619 22.185l58.245 666.45c2.385 27.401 26.278 49.294 53.795 49.294h445.348c27.517 0 51.41-21.893 53.796-49.301l58.244-666.443c.985-11.268-7.351-21.201-18.619-22.185s-21.201 7.351-22.185 18.619zM422.02 155.082V51.3c0-5.726 4.601-10.342 10.24-10.342h161.28c5.639 0 10.24 4.617 10.24 10.342v103.782c0 11.311 9.169 20.48 20.48 20.48s20.48-9.169 20.48-20.48V51.3c0-28.316-22.908-51.302-51.2-51.302H432.26c-28.292 0-51.2 22.987-51.2 51.302v103.782c0 11.311 9.169 20.48 20.48 20.48s20.48-9.169 20.48-20.48z"></path><path d="M496.004 410.821v460.964c0 11.311 9.169 20.48 20.48 20.48s20.48-9.169 20.48-20.48V410.821c0-11.311-9.169-20.48-20.48-20.48s-20.48 9.169-20.48 20.48zm-192.435 1.767l39.936 460.964c.976 11.269 10.903 19.612 22.171 18.636s19.612-10.903 18.636-22.171l-39.936-460.964c-.976-11.269-10.903-19.612-22.171-18.636s-19.612 10.903-18.636 22.171zm377.856-3.535l-39.936 460.964c-.976 11.269 7.367 21.195 18.636 22.171s21.195-7.367 22.171-18.636l39.936-460.964c.976-11.269-7.367-21.195-18.636-22.171s-21.195 7.367-22.171 18.636z"></path></g></svg></button>
+    
+        <div class="buttons-pc">
+            <button id="clean-setup">Limpar Setup<svg fill="#ffffff" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M831.24 280.772c5.657 0 10.24-4.583 10.24-10.24v-83.528c0-5.657-4.583-10.24-10.24-10.24H194.558a10.238 10.238 0 00-10.24 10.24v83.528c0 5.657 4.583 10.24 10.24 10.24H831.24zm0 40.96H194.558c-28.278 0-51.2-22.922-51.2-51.2v-83.528c0-28.278 22.922-51.2 51.2-51.2H831.24c28.278 0 51.2 22.922 51.2 51.2v83.528c0 28.278-22.922 51.2-51.2 51.2z"></path><path d="M806.809 304.688l-58.245 666.45c-.544 6.246-6.714 11.9-12.99 11.9H290.226c-6.276 0-12.447-5.654-12.99-11.893L218.99 304.688c-.985-11.268-10.917-19.604-22.185-18.619s-19.604 10.917-18.619 22.185l58.245 666.45c2.385 27.401 26.278 49.294 53.795 49.294h445.348c27.517 0 51.41-21.893 53.796-49.301l58.244-666.443c.985-11.268-7.351-21.201-18.619-22.185s-21.201 7.351-22.185 18.619zM422.02 155.082V51.3c0-5.726 4.601-10.342 10.24-10.342h161.28c5.639 0 10.24 4.617 10.24 10.342v103.782c0 11.311 9.169 20.48 20.48 20.48s20.48-9.169 20.48-20.48V51.3c0-28.316-22.908-51.302-51.2-51.302H432.26c-28.292 0-51.2 22.987-51.2 51.302v103.782c0 11.311 9.169 20.48 20.48 20.48s20.48-9.169 20.48-20.48z"></path><path d="M496.004 410.821v460.964c0 11.311 9.169 20.48 20.48 20.48s20.48-9.169 20.48-20.48V410.821c0-11.311-9.169-20.48-20.48-20.48s-20.48 9.169-20.48 20.48zm-192.435 1.767l39.936 460.964c.976 11.269 10.903 19.612 22.171 18.636s19.612-10.903 18.636-22.171l-39.936-460.964c-.976-11.269-10.903-19.612-22.171-18.636s-19.612 10.903-18.636 22.171zm377.856-3.535l-39.936 460.964c-.976 11.269 7.367 21.195 18.636 22.171s21.195-7.367 22.171-18.636l39.936-460.964c.976-11.269-7.367-21.195-18.636-22.171s-21.195 7.367-22.171 18.636z"></path></g></svg></button>
+        </div>
+
         <section class="budget-section fix-width">
             <h2>Meta de Orçamento</h2>
             <div class="budget-input">
@@ -87,27 +105,27 @@
             <tbody>
                 <tr class="cpu-tr">
                     <td colspan="4">CPU</td>
-                    <td><button id="cpu">Adicionar</button></td>
+                    <td align="right"><button id="cpu">Adicionar</button></td>
                 </tr>
                 <tr class="gpu-tr">
                     <td colspan="4">Placa de Vídeo</td>
-                    <td><button id="gpu">Adicionar</button></td>
+                    <td align="right"><button id="gpu">Adicionar</button></td>
                 </tr>
                 <tr class="ram-tr">
                     <td colspan="4">RAM</td>
-                    <td><button id="ram">Adicionar</button></td>
+                    <td align="right"><button id="ram">Adicionar</button></td>
                 </tr>
                 <tr class="storage-tr">
                     <td colspan="4">HD/SSD</td>
-                    <td><button id="storage">Adicionar</button></td>
+                    <td align="right"><button id="storage">Adicionar</button></td>
                 </tr>
                 <tr class="motherboard-tr">
                     <td colspan="4">Placa Mãe</td>
-                    <td><button id="motherboard">Adicionar</button></td>
+                    <td align="right"><button id="motherboard">Adicionar</button></td>
                 </tr>
                 <tr class="psu-tr">
                     <td colspan="4">Fonte</td>
-                    <td><button id="psu">Adicionar</button></td>
+                    <td align="right"><button id="psu">Adicionar</button></td>
                 </tr>
             </tbody>
 
@@ -122,8 +140,11 @@
         </div>
     </section>
     
+    <script type="module" src="../config/firebase.js"></script>
+    <script type="module" src="../scripts/header_user.js"></script>
     <script src="../scripts/menu_hamburger.js"></script>
     <script type="module" src="../scripts/filtragem_pecas.js"></script>
+    <script type="module" src="../scripts/share_setup.js"></script>
 </body>
 
 </html>
