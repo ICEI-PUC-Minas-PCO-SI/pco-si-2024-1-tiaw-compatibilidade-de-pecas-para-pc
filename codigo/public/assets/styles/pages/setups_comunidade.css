@@ -39,3 +39,23 @@ body {
 #load-more:hover, #load-more:disabled {
     filter: brightness(80%);
 }
+
+#delete-setup {
+    padding: 10px;
+    font-weight: 600;
+    color: #fff;
+
+    background-color: var(--red);
+    border-radius: 12px;
+    border: none;
+
+    cursor: pointer;
+}
+
+#delete-setup {
+    margin-top: 20px;
+}
+
+#delete-setup:hover {
+    filter: brightness(80%);
+}
