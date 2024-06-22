@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     let lastVisible = null
 
     const setupsRef = collection(db, "community-setups")
-    const q = query(setupsRef, orderBy("name"), limit(pcPerLoad))
+    const q = query(setupsRef, orderBy("created_at", "desc"), limit(pcPerLoad))
 
     const counter = await getCountFromServer(setupsRef)
     const querySetups = await getDocs(q)
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     showMore.addEventListener("click", async () => {
         showMore.disabled = true
 
-        const nextQ = query(setupsRef, orderBy("created_at"), startAfter(lastVisible), limit(pcPerLoad))
+        const nextQ = query(setupsRef, orderBy("created_at", "desc"), startAfter(lastVisible), limit(pcPerLoad))
         const nextSetups = await getDocs(nextQ)
 
         if (nextSetups.empty) {

@@ -108,7 +108,7 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    gap: 30px;
+    gap: 20px;
 }
 
 .learn-info {
@@ -136,8 +136,10 @@ body {
     gap: 5px;
 }
 .botao-css{
+    cursor: pointer;
+
     border-radius: 8px;
-    border: 3px solid rgb(44, 44, 44);
+    border: none;
     background-color: #fff;
 }
 
