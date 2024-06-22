@@ -46,8 +46,13 @@ body {
 }
 
 .submit-field span {
-    margin-top: 12px;
-    text-align: right;
+    margin-top: 16px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.submit-field span a {
+    color: var(--primary-color);
 }
 
 .field {

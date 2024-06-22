@@ -23,74 +23,41 @@ const section = document.querySelector(".cards-container")
 
 // Funções Primarias
 function createSetupCards(setups, container, isAdmin) {
+    const generateStructure = (isAdmin, userSetup) => {
+        return `
+            <div class="card-img">
+                <div class="images">
+                    <img src=${userSetup.setup.cpu.img} alt="CPU" />
+                    <img src=${userSetup.setup.gpu.img} alt="PLACA" />
+                </div>
+            </div>
+            <div class="card-info">
+                <h3>${upperAll(userSetup.name)}</h3>
+                <ul class="card-components">
+                    <li><strong>CPU</strong> - ${userSetup.setup.cpu.name}</li>
+                    <li><strong>GPU</strong> - ${userSetup.setup.gpu.name}</li>
+                    <li><strong>RAM</strong> - ${userSetup.setup.ram.name}</li>
+                    <li><strong>PLACA-MÃE</strong> - ${userSetup.setup.motherboard.name}</li>
+                    <li><strong>FONTE</strong> - ${userSetup.setup.cooling.name}</li>
+                    <li><strong>HD/SSD -</strong></li>
+                    <ul>
+                        ${userSetup.setup.storage.map(st => `<li style="margin-left: 20px;">${st.name}</li>`).join(' ')}
+                    </ul>
+                </ul>
+                <div class="card-owner">
+                    <p>Feito por: <span>${userSetup.owner}</span></p>
+                    <p>R$ ${Math.round(userSetup.setup.totalPrice)}</p>
+                </div>
+                ${isAdmin ? '<button id="delete-setup">Deletar Setup</button>' : ''}
+            </div>
+        `
+    }
+
     container.innerHTML = ""
     for (const userSetup of setups) {
         if (userSetup.is_private) continue
 
-        const setup = userSetup.setup
-        let structure
-
-        if (!isAdmin) {
-            structure = `
-                <div class="card-img">
-                    <div class="images">
-                        <img src=${setup.cpu.img} alt="CPU" />
-                        <img src=${setup.gpu.img} alt="PLACA" />
-                    </div>
-                </div>
-                <div class="card-info">
-                    <h3>${upperAll(userSetup.name)}</h3>
-
-                    <ul class="card-components">
-                        <li><strong>CPU</strong> - ${setup["cpu"].name}</li>
-                        <li><strong>GPU</strong> - ${setup["gpu"].name}</li>
-                        <li><strong>RAM</strong> - ${setup["ram"].name}</li>
-                        <li><strong>PLACA-MÃE</strong> - ${setup["motherboard"].name}</li>
-                        <li><strong>FONTE</strong> - ${setup["cooling"].name}</li>
-                        <li><strong>HD/SSD -</strong></li>
-                        <ul>
-                        ${setup.storage.map(st => `<li style="margin-left: 20px;">${st.name}</li>`).join(' ')}
-                        </ul>
-                    </ul>
-
-                    <div class="card-owner">
-                        <p>Feito por: <span>${userSetup.owner}</span></p>
-                        <p>R$ ${Math.round(setup.totalPrice)}</p>
-                    </div> 
-                </div>
-            `
-        } else {
-            structure = `
-                <div class="card-img">
-                    <div class="images">
-                        <img src=${setup.cpu.img} alt="CPU" />
-                        <img src=${setup.gpu.img} alt="PLACA" />
-                    </div>
-                </div>
-                <div class="card-info">
-                    <h3>${upperAll(userSetup.name)}</h3>
-
-                    <ul class="card-components">
-                        <li><strong>CPU</strong> - ${setup["cpu"].name}</li>
-                        <li><strong>GPU</strong> - ${setup["gpu"].name}</li>
-                        <li><strong>RAM</strong> - ${setup["ram"].name}</li>
-                        <li><strong>PLACA-MÃE</strong> - ${setup["motherboard"].name}</li>
-                        <li><strong>FONTE</strong> - ${setup["cooling"].name}</li>
-                        <li><strong>HD/SSD -</strong></li>
-                        <ul>
-                        ${setup.storage.map(st => `<li style="margin-left: 20px;">${st.name}</li>`).join(' ')}
-                        </ul>
-                    </ul>
-
-                    <div class="card-owner">
-                        <p>Feito por: <span>${userSetup.owner}</span></p>
-                        <p>R$ ${Math.round(setup.totalPrice)}</p>
-                    </div> 
-
-                    <button id="delete-setup">Deletar Setup</button>
-                </div>
-            `
-        }
+        const structure = generateStructure(isAdmin, userSetup)
 
         const c = document.createElement("div")
         c.classList.add("card")
