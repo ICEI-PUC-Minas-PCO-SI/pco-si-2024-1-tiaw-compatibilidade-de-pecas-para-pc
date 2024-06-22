@@ -12,17 +12,13 @@ body {
     padding: 0 10px;
 }
 
-.title {
+.card-title {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     color: #242424;
     margin-top: 10px;
     margin-bottom: 30px;
 
     padding: 20px 0;
-}
-
-.title h2 {
-    width: 390px;
 }
 
 #load-more {
