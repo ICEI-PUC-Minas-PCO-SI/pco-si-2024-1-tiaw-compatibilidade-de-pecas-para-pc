@@ -20,7 +20,8 @@
     max-width: 1196px;
     margin-top: 20px;
     object-fit: cover;
-    border-radius: 20px;
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
 }
 
 .vava{
@@ -29,7 +30,8 @@
     max-width: 1196px;
     margin-top: 20px;
     object-fit: cover;
-    border-radius: 20px;
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
     object-position: 20% 12%;
 }
 
@@ -39,7 +41,8 @@
     max-width: 1196px;
     margin-top: 20px;
     object-fit: cover;
-    border-radius: 20px;
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
     object-position: 20% 62%;
 }
 .cyber{
@@ -48,12 +51,12 @@
     max-width: 1196px;
     margin-top: 20px;
     object-fit: cover;
-    border-radius: 20px;
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
     object-position: 20% 20%;
 }
 
 .botao-gamer {
-    font-family: 'Press Start 2P', cursive; /* Fonte estilo gamer */
     font-size: 16px;
     color: #ffffff;
     background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
@@ -72,6 +75,7 @@
 
   .botao-gamer:hover {
     transform: scale(1.1);
+
   }
 
   .botao-gamer:active {
@@ -79,29 +83,56 @@
   }
 
   #setup-low{
-    background: linear-gradient(135deg, #052349, #113e68, #052349);
-    color: #feff1c;
+    background:   #001799;
+    color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
+    border: none;
   }
   #setup-medio{
-    background: linear-gradient(135deg, #212731, #41474e, #212731);
-    color: #e73543;
+    background: #0a7c00;
+    color: #ffffff;
     font-family: 'Montserrat', sans-serif;
+    border: none;
     font-weight: 900;
   }
   #setup-high{
-    background: linear-gradient(45deg, #12100c, #525457, #12100c);
-    color: #9aee15;
+    background: #e27a18;
+    color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
+    border: none;
   }
   #setup-ultra{
-    background: linear-gradient(45deg, #bbbb00, #f0e800, #bbbb00);
-    color: #0999c5;
+    background: #b60707;
+    color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
+    border: none;
   }
+
+  
+    .pcideal {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: rgb(31, 31, 51); 
+    height: 50px;
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    margin: 0 auto;
+    width: 1196px;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+    max-width: 95%;
+}
+
+    
+  
 
 main {
     padding-top: 40px;
