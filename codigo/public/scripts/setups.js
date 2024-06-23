@@ -144,28 +144,28 @@ window.onload = function () {
 function carregaVideo1(){
     let imprime = '';
     imprime = `
-    <video src="/codigo/public/assets/video/Minecraft.mp4 " alt ="Game" id = "reset" width="95%" height="250px" class="mine" autoplay loop muted></video>
+    <video src="../assets/video/Minecraft.mp4 " alt ="Game" id = "reset" width="95%" height="250px" class="mine" autoplay loop muted></video>
     `
     document.getElementById('video').innerHTML=imprime;
 }
 function carregaVideo2(){
     let imprime = '';
     imprime = `
-    <video src="/codigo/public/assets/video/valorant.mp4" alt ="Game" id="reset" width="95%" height="250px" class="vava" autoplay loop muted></video> 
+    <video src="../assets/video/valorant.mp4" alt ="Game" id="reset" width="95%" height="250px" class="vava" autoplay loop muted></video> 
     `
     document.getElementById('video').innerHTML=imprime;
 }
 function carregaVideo3(){
     let imprime = '';
     imprime = `
-    <video src="/codigo/public/assets/video/MWII.mp4" alt ="Game" id = "reset" width="95%" height="250px" class="MWII" autoplay loop muted></video>
+    <video src="../assets/video/MWII.mp4" alt ="Game" id = "reset" width="95%" height="250px" class="MWII" autoplay loop muted></video>
     `
     document.getElementById('video').innerHTML=imprime;
 }
 function carregaVideo4(){
     let imprime = '';
     imprime = `
-    <video src="/codigo/public/assets/video/Cyberpunk.mp4" alt ="Game" id = "reset" width="95%" height="250px" class="cyber" autoplay loop muted></video>
+    <video src="../assets/video/Cyberpunk.mp4" alt ="Game" id = "reset" width="95%" height="250px" class="cyber" autoplay loop muted></video>
     `
     document.getElementById('video').innerHTML=imprime;
 }
