@@ -142,31 +142,6 @@ body {
     border: none;
     background-color: #fff;
 }
-
-.cssMod{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 5000px;
-    background-color: rgba(255, 255, 255, 0.301);
-    text-align: justify;
-    z-index: 1000;
-    color: #ffffff;
-}
-.bg{
-background-color:rgba(43, 0, 43, 0.795);
-border-radius: 15px;
-box-sizing: border-box;
-padding: 20px;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
   
   .close:hover,
   .close:focus {
