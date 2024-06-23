@@ -27,10 +27,10 @@
             ],
             "gpus": [
                 {
-                    "nome": "RTX-3060",
-                    "descrição": "Placa de Video NVIDIA RTX 3060 de 12GB GDDR6",
-                    "image_url": "https://images.kabum.com.br/produtos/fotos/511042/placa-de-video-rtx-3060-dual-oc-palit-nvidia-geforce-12gb-gddr6-rgb-192bit-g-sync-ray-tracing-dlss-ne63060t19k9-190ad_1701199931_gg.jpg",
-                    "preço": 1799.99
+                    "nome": "RTX-3050",
+                    "descrição": "Placa de Video NVIDIA RTX 3050 de 6GB GDDR6",
+                    "image_url": "https://images.kabum.com.br/produtos/fotos/520492/placa-de-video-rtx-3050-asus-o6g-dual-nvidia-geforce-dlss-ray-tracing-g-sync-90yv0k60-m0na00_1711648234_gg.jpg",
+                    "preço": 1199.99
                 }
             ],
             "storages": [
@@ -191,10 +191,10 @@
             ],
             "gpus": [
                 {
-                    "nome": "RTX-4070",
-                    "image_url": "https://images.kabum.com.br/produtos/fotos/517739/placa-de-video-rtx-4070-ti-super-gigabyte-windforce-nvidia-geforce-16gb-gddr6-dlss-ray-tracing-gv-n407tswf3-16gd_1706015557_gg.jpg",
-                    "descrição": "Placa de Video NVIDIA RTX 4070 de 12GB GDDR6X",
-                    "preço": 3999.99
+                    "nome": "RTX-4080 Super",
+                    "image_url": "https://images.kabum.com.br/produtos/fotos/520499/placa-de-video-asus-rtx-4080-s-tuf-o16g-gaming-argb-dlss-ray-trancing-90yv0ka0-m0na00_1712003035_gg.jpg",
+                    "descrição": "Placa de Video NVIDIA RTX 4080 Super de 16GB GDDR6X",
+                    "preço": 8689.99
                 }
             ],
             "storages": [

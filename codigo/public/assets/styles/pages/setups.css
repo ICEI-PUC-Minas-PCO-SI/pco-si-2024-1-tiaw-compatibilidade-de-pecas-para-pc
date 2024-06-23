@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,8 +11,129 @@
     margin: 0px auto;
     max-width: 1196px;
     margin-top: 20px;
+    object-fit: cover;
 }
- 
+
+.MWII{
+    display: flex;
+    margin: 0px auto;
+    max-width: 1196px;
+    margin-top: 20px;
+    object-fit: cover;
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+}
+
+.vava{
+    display: flex;
+    margin: 0px auto;
+    max-width: 1196px;
+    margin-top: 20px;
+    object-fit: cover;
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+    object-position: 20% 12%;
+}
+
+.mine{
+    display: flex;
+    margin: 0px auto;
+    max-width: 1196px;
+    margin-top: 20px;
+    object-fit: cover;
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+    object-position: 20% 62%;
+}
+.cyber{
+    display: flex;
+    margin: 0px auto;
+    max-width: 1196px;
+    margin-top: 20px;
+    object-fit: cover;
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+    object-position: 20% 20%;
+}
+
+.botao-gamer {
+    font-size: 16px;
+    color: #ffffff;
+    background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    outline: none;
+    height: 100px;
+    width: 200px;
+    margin-top: 30px;
+  }
+
+  .botao-gamer:hover {
+    transform: scale(1.1);
+
+  }
+
+  .botao-gamer:active {
+    transform: scale(0.95);
+  }
+
+  #setup-low{
+    background:   #001799;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    border: none;
+  }
+  #setup-medio{
+    background: #0a7c00;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    font-weight: 900;
+  }
+  #setup-high{
+    background: #e27a18;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    border: none;
+  }
+  #setup-ultra{
+    background: #b60707;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    border: none;
+  }
+
+  
+    .pcideal {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: rgb(31, 31, 51); 
+    height: 50px;
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    margin: 0 auto;
+    width: 1196px;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+    max-width: 95%;
+}
+
+    
+  
+
 main {
     padding-top: 40px;
 }
