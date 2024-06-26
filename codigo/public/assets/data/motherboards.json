@@ -9,7 +9,8 @@
         "storageInterface": ["M2", "SATA"],
         "ddr": "DDR4",
         "ramMinVelocity": 2133,
-        "ramMaxVelocity": 4266
+        "m2": 1,
+        "sata": 4
     },
     {
         "ID": 2,
@@ -21,7 +22,8 @@
         "storageInterface": ["M2", "SATA"],
         "ddr": "DDR4",
         "ramMinVelocity": 1866,
-        "ramMaxVelocity": 4400 
+        "m2": 2,
+        "sata": 6 
     },
     {
         "ID": 3,
@@ -33,7 +35,8 @@
         "storageInterface": ["M2", "SATA"],
         "ddr": "DDR4",
         "ramMinVelocity": 2133,
-        "ramMaxVelocity": 4000
+        "m2": 2,
+        "sata": 6
     },
     {
         "ID": 4,
@@ -45,7 +48,8 @@
         "storageInterface": ["M2", "SATA"],
         "ddr": "DDR5",
         "ramMinVelocity": 4800,
-        "ramMaxVelocity": 6400
+        "m2": 2,
+        "sata": 6
     },
     {
         "ID": 5,
@@ -57,7 +61,8 @@
         "storageInterface": ["M2", "SATA"],
         "ddr": "DDR5",
         "ramMinVelocity": 4800,
-        "ramMaxVelocity": 6400
+        "m2": 2,
+        "sata": 4
     },
     {
         "ID": 6,
@@ -69,7 +74,8 @@
         "storageInterface": ["M2", "SATA"],
         "ddr": "DDR4",
         "ramMinVelocity": 2133,
-        "ramMaxVelocity": 2400
+        "m2": 1,
+        "sata": 4
     },
     {
         "ID": 7,
@@ -81,7 +87,8 @@
         "storageInterface": ["M2", "SATA"],
         "ddr": "DDR4",
         "ramMinVelocity": 2133,
-        "ramMaxVelocity": 5333
+        "m2": 2,
+        "sata": 4
     },
     {
         "ID": 8,
@@ -93,7 +100,8 @@
         "storageInterface": ["M2", "SATA"],
         "ddr": "DDR4",
         "ramMinVelocity": 2133,
-        "ramMaxVelocity": 5000
+        "m2": 3,
+        "sata": 5
     },
     {
         "ID": 9,
@@ -105,7 +113,8 @@
         "storageInterface": ["M2", "SATA"],
         "ddr": "DDR4",
         "ramMinVelocity": 2133,
-        "ramMaxVelocity": 4266
+        "m2": 2,
+        "sata": 8
     },
     {
         "ID": 9,
@@ -117,7 +126,8 @@
         "storageInterface": ["M2", "SATA"],
         "ddr": "DDR4",
         "ramMinVelocity": 2133,
-        "ramMaxVelocity": 4266
+        "m2": 1,
+        "sata": 4
     },
     {
         "ID": 10,
@@ -129,7 +139,8 @@
         "storageInterface": ["M2", "SATA"],
         "ddr": "DDR3",
         "ramMinVelocity": 1066,
-        "ramMaxVelocity": 1600
+        "m2": 1,
+        "sata": 4
     },
     {
         "ID": 11,
@@ -141,6 +152,7 @@
         "storageInterface": ["M2", "SATA"],
         "ddr": "DDR4",
         "ramMinVelocity": 2133,
-        "ramMaxVelocity": 4800
+        "m2": 1,
+        "sata": 4
     }
 ]

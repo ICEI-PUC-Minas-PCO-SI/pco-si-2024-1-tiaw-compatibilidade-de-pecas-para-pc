@@ -48,20 +48,20 @@ const validateUsername = (username, usernameErr) => {
         usernameErr.textContent = "Nome não pode passar de 24 caracteres!"
         return false
     }
-    
+
     let letters = 0
     for (let char of username) if (char.match(/[a-zA-Z]/)) letters++
     if (letters < 3) {
         usernameErr.textContent = "Nome precisa ter pelo menos três letras!"
         return false
     }
-    
-    const regex = /^[a-zA-Z0-9_.]+$/   
+
+    const regex = /^[a-zA-Z0-9_.]+$/
     if (!regex.test(username)) {
         usernameErr.textContent = "Nome possui caracteres inválidos!"
         return false
     }
-    
+
     usernameErr.textContent = ""
     return true
 }
@@ -114,7 +114,7 @@ const validate = (username, email, password, confirmPassword, uErr, eErr, pErr, 
 }
 
 // Funções de validação do firebase
-const createUser = async (username, email, password, usernameErr, emailErr) => {    
+const createUser = async (username, email, password, usernameErr, emailErr) => {
     try {
         // Percorendo a coleção e verificando se o username já existe caso ela conter pelo menos um item
         const q = query(collection(db, 'users'), where("username", "==", username))
@@ -153,7 +153,7 @@ const createUser = async (username, email, password, usernameErr, emailErr) => {
 form.addEventListener('submit', async (e) => {
     e.preventDefault()
     subBtn.disabled = true
-    
+
     const username = usernameInput.value
     const email = emailInput.value
     const password = passwordInput.value
