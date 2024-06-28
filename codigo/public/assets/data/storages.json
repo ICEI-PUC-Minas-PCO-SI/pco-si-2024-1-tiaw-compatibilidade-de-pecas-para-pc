@@ -46,5 +46,60 @@
         "img": "https://static.meupc.net/produto/ssd-western-digital-wd-blue-wdblueblue500gbm22280-mQ3Mw7-L.jpg",
         "interface": "M2",
         "storage": 500
+    },{
+        "ID": 7,
+        "name": "Seagate HDD Surveillance HDD 3.5 5900 RPM",
+        "price": 298.17,
+        "img": "https://static.meupc.net/produto/hdd-seagate-surveillance-hdd-st1000vx001-cpHv72-L.jpg",
+        "interface": "SATA",
+        "storage": 1000
+    },
+    {
+        "ID": 8,
+        "name": "Seagate HDD Desktop HDD 3.5 5900 RPM",
+        "price": 679.00,
+        "img": "https://static.meupc.net/produto/hdd-seagate-desktop-hdd-st4000dm000-qqZj64-L.jpg",
+        "interface": "SATA",
+        "storage": 4000
+    },
+    {
+        "ID": 9,
+        "name": "Seagate HDD Archive HDD v2 3.5 5900 RPM",
+        "price": 780.66,
+        "img": "https://static.meupc.net/produto/hdd-seagate-archive-hdd-v2-st8000as0002-xj55KF-L.jpg",
+        "interface": "SATA",
+        "storage": 8000
+    },
+    {
+        "ID": 10,
+        "name": "Seagate HDD Desktop HDD 3.5 7200 RPM",
+        "price": 242.25,
+        "img": "https://static.meupc.net/produto/hdd-seagate-desktop-hdd-st1000dm003-dA88HA-L.jpg",
+        "interface": "SATA",
+        "storage": 1000
+    },
+    {
+        "ID": 11,
+        "name": "Seagate HDD Barracuda 3.5 7200 RPM",
+        "price": 365.90,
+        "img": "https://static.meupc.net/produto/hdd-7200-seagate-barracuda-barracuda1tb-efz49c-L.jpg",
+        "interface": "SATA",
+        "storage": 1000
+    },
+    {
+        "ID": 12,
+        "name": "Seagate HDD Pipeline HD 3.5 5900 RPM",
+        "price": 109.99,
+        "img": "https://static.meupc.net/produto/hdd-seagate-pipeline-hd-st3500414cs-b9cWX9-L.jpg",
+        "interface": "SATA",
+        "storage": 500
+    },
+    {
+        "ID": 13,
+        "name": "Seagate HDD Barracuda 3.5 7200 RPM",
+        "price": 419.99,
+        "img": "https://static.meupc.net/produto/hdd-seagate-skyhawk-barracuda2tb-wJ8e5F-L.jpg",
+        "interface": "SATA",
+        "storage": 2000
     }
 ]
