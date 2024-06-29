@@ -60,7 +60,29 @@ const verifyCompGPU = (gpu, mth) => gpu.interface === mth.gpuInterface
 const verifyCompRAM = (ram, mth) => 
     ram.type === mth.ddr && 
     ram.velocity >= mth.ramMinVelocity
-const verifyCompSTR = (str, mth) => mth.storageInterface.includes(str.interface)
+const verifyCompSTR = (str, mth) => {
+    if (str.length < 1) return true
+
+    const type = str.interface
+    const maxM2 = mth.m2
+    const maxSata = mth.sata
+    
+    let m2Count = 0
+    let sataCount = 0
+    for (let storage of setup.storage) {
+        if (storage.interface === "M2") m2Count++
+        if (storage.interface === "SATA") sataCount++
+    }
+    
+    if (type === "M2" && m2Count < maxM2) {
+        return true
+    }
+    if (type === "SATA" && sataCount < maxSata) {
+        return true
+    }
+    
+    return false
+}
 const verifyCapacityPSU = (psu, sum) => psu.wats > sum
 
 // Funções Gerais
@@ -75,7 +97,7 @@ function buildInfoAboutComponent(item, title, components, componentKey) {
             <td colspan="2">${title}</td>
             ${setup.storage.map((st, index) => 
             `
-                <td class="tr-info" style="justify-content: space-between;">
+                <td class="tr-info" style="justify-content: space-between">
                     <img src=${st.img} alt="Item" />
                     <span class="small-n">${st.name}</span>
                     <span>R$ ${priceParser(st.price)}</span>
@@ -116,11 +138,6 @@ function buildInfoAboutComponent(item, title, components, componentKey) {
     container.setAttribute('align', 'right')
     
     if (title === "HD/SSD") {
-
-        if (setup.storage.length > 2) {
-            btn.disabled = true
-        }
-    
         // removendo HD
         tr.querySelectorAll('.rm-el').forEach(button => {
             button.addEventListener('click', (e) => {
@@ -139,6 +156,8 @@ function buildInfoAboutComponent(item, title, components, componentKey) {
 }
 
 function updateComponentDisplay(selector, item, title, components, key) {
+    if (title == "Placa Mãe") storageBtn.disabled = false
+
     const element = document.querySelector(selector)
     element.innerHTML = ''
 
@@ -272,16 +291,15 @@ function buildModal(title, items) {
     }
 
     function isCompatible(item, title) {
-        // TO-DO - Validar compatibilidade do storage
         if (title === "CPU" && setup.motherboard) return verifyCompCPU(item, setup.motherboard)
         if (title === "Placa de Vídeo" && setup.motherboard) return verifyCompGPU(item, setup.motherboard)
         if (title === "RAM" && setup.motherboard) return verifyCompRAM(item, setup.motherboard)
-        // if (title === "HD/SSD" && setup.motherboard) return verifyCompSTR(item, setup.motherboard)
+        if (title === "HD/SSD" && setup.motherboard) return verifyCompSTR(item, setup.motherboard)
         if (title === "Placa Mãe") {
             return (!setup.cpu || verifyCompCPU(setup.cpu, item)) &&
-                   (!setup.gpu || verifyCompGPU(setup.gpu, item)) &&
-                   (!setup.ram || verifyCompRAM(setup.ram, item))
-                //    (!setup.storage || verifyCompSTR(setup.storage, item))
+                    (!setup.gpu || verifyCompGPU(setup.gpu, item)) &&
+                    (!setup.ram || verifyCompRAM(setup.ram, item)) &&
+                    (!setup.storage || verifyCompSTR(setup.storage, item))
         }
         if (title === "Fonte") {
             return verifyCapacityPSU(item, setup.totalWats)

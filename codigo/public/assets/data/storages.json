@@ -1,7 +1,7 @@
 [
     {
         "ID": 1,
-        "name": "Kingston SSD Nv2",
+        "name": "Kingston SSD Nv2 | 2TB - M2",
         "price": 689.99,
         "img": "https://static.meupc.net/produto/ssd-kingston-nv1-nv22tb-r2L88f-L.jpg",
         "interface": "M2",
@@ -9,7 +9,7 @@
     },
     {
         "ID": 2,
-        "name": "Kingston SSD A400 2.5",
+        "name": "Kingston SSD A400 2.5 | 240GB - SATA",
         "price": 148.99,
         "img": "https://static.meupc.net/produto/ssd-seagate-surveillance-hdd-sa400s37240g-BL47SR-L.jpg",
         "interface": "SATA",
@@ -17,7 +17,7 @@
     },
     {
         "ID": 3,
-        "name": "SanDisk SSD Plus 2.5",
+        "name": "SanDisk SSD Plus 2.5 | 1TB - SATA",
         "price": 399.99,
         "img": "https://static.meupc.net/produto/ssd-sandisk-plus-plus1tb-j26JAu-L.jpg",
         "interface": "SATA",
@@ -25,7 +25,7 @@
     },
     {
         "ID": 4,
-        "name": "Kingston SSD A400 2.5",
+        "name": "Kingston SSD A400 2.5 | 480GB - SATA",
         "price": 358.99,
         "img": "https://static.meupc.net/produto/ssd-kingston-a400-a400480gb-fPr69v-L.jpg",
         "interface": "SATA",
@@ -33,7 +33,7 @@
     },
     {
         "ID": 5,
-        "name": "Kingston SSD A400 M.2-2280",
+        "name": "Kingston SSD A400 M.2-2280 | 120GB - M2",
         "price": 150.49,
         "img": "https://static.meupc.net/produto/ssd-kingston-a400-a400120gb-e5n3Sd-L.jpg",
         "interface": "M2",
@@ -41,14 +41,14 @@
     },
     {
         "ID": 6,
-        "name": "Western Digital SSD WD Blue M.2-2280",
+        "name": "Western Digital SSD WD | 500GB - M2",
         "price": 408.62,
         "img": "https://static.meupc.net/produto/ssd-western-digital-wd-blue-wdblueblue500gbm22280-mQ3Mw7-L.jpg",
         "interface": "M2",
         "storage": 500
-    },{
+    {
         "ID": 7,
-        "name": "Seagate HDD Surveillance HDD 3.5 5900 RPM",
+        "name": "Seagate HDD Surveillance HDD | 1TB - SATA",
         "price": 298.17,
         "img": "https://static.meupc.net/produto/hdd-seagate-surveillance-hdd-st1000vx001-cpHv72-L.jpg",
         "interface": "SATA",
@@ -56,7 +56,7 @@
     },
     {
         "ID": 8,
-        "name": "Seagate HDD Desktop HDD 3.5 5900 RPM",
+        "name": "Seagate HDD Desktop HDD | 4TB - SATA",
         "price": 679.00,
         "img": "https://static.meupc.net/produto/hdd-seagate-desktop-hdd-st4000dm000-qqZj64-L.jpg",
         "interface": "SATA",
@@ -64,7 +64,7 @@
     },
     {
         "ID": 9,
-        "name": "Seagate HDD Archive HDD v2 3.5 5900 RPM",
+        "name": "Seagate HDD Archive HDD v2 | 8TB - SATA",
         "price": 780.66,
         "img": "https://static.meupc.net/produto/hdd-seagate-archive-hdd-v2-st8000as0002-xj55KF-L.jpg",
         "interface": "SATA",
@@ -72,7 +72,7 @@
     },
     {
         "ID": 10,
-        "name": "Seagate HDD Desktop HDD 3.5 7200 RPM",
+        "name": "Seagate HDD Desktop HDD | 1TB - SATA",
         "price": 242.25,
         "img": "https://static.meupc.net/produto/hdd-seagate-desktop-hdd-st1000dm003-dA88HA-L.jpg",
         "interface": "SATA",
@@ -80,7 +80,7 @@
     },
     {
         "ID": 11,
-        "name": "Seagate HDD Barracuda 3.5 7200 RPM",
+        "name": "Seagate HDD Barracuda | 1TB - SATA",
         "price": 365.90,
         "img": "https://static.meupc.net/produto/hdd-7200-seagate-barracuda-barracuda1tb-efz49c-L.jpg",
         "interface": "SATA",
@@ -96,7 +96,7 @@
     },
     {
         "ID": 13,
-        "name": "Seagate HDD Barracuda 3.5 7200 RPM",
+        "name": "Seagate HDD Barracuda | 2TB - SATA",
         "price": 419.99,
         "img": "https://static.meupc.net/produto/hdd-seagate-skyhawk-barracuda2tb-wJ8e5F-L.jpg",
         "interface": "SATA",

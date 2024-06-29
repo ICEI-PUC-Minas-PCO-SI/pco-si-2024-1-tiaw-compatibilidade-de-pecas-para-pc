@@ -2,6 +2,7 @@ import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/
 import { getFirestore, query, getDocs, getDoc, collection, where, deleteDoc, doc } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js"
 
 import { upperAll } from "../lib/text.js"
+import { confirmModal } from "../lib/confirm_modal.js"
 
 const auth = getAuth()
 const db = getFirestore()
@@ -10,35 +11,6 @@ const section = document.querySelector(".profile-container")
 const container = document.querySelector(".cards")
 const usernameP = document.querySelector("#uname")
 const loader = document.querySelector(".loader")
-
-function confirmModal(title, func) {
-    const structure = `
-        <div class="confirm-content">
-            <h2>${title}</h2>
-            <div class="confirm-buttons">
-                <button id="yes">SIM</button>
-                <button id="no">NÃO</button>
-            </div>
-        </div>
-    `
-
-    const container = document.createElement('div')
-    container.classList.add("modal")
-    container.innerHTML = structure
-
-    const yes = container.querySelector("#yes")
-    const no = container.querySelector("#no")
-
-    const wrappedFunc = () => {
-        func()
-        container.remove()
-    }
-
-    yes.addEventListener('click', wrappedFunc)
-    no.addEventListener('click', () => container.remove())
-
-    section.appendChild(container)
-}
 
 async function getSetups(uid) {
     const ref = collection(db, "community-setups")
@@ -114,7 +86,7 @@ async function showSetups(setups) {
                 }
             }
 
-            confirmModal(`Deseja deletar: "${userSetup.name}"?`, () => tryDelete())
+            confirmModal(`Deseja deletar: "${userSetup.name}"?`, () => tryDelete(), section)
         })
 
         container.appendChild(c)
@@ -141,11 +113,11 @@ async function renderProfile(uid, user) {
         // Username
         const username = await getUsername(uid)
         usernameP.textContent = username
-        
+
         // Renderizando button
         const deleteBtn = document.querySelector("#delete-pf")
         deleteBtn.addEventListener('click', () => 
-            confirmModal("Deseja mesmo deletar sua conta?", () => deleteUserAccount(user.uid, user)))
+            confirmModal("Deseja mesmo deletar sua conta?", () => deleteUserAccount(user.uid, user), section))
 
         // Renderizando Setups
         const setups = []

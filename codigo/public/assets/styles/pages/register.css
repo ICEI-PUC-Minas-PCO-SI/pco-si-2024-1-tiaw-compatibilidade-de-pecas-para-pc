@@ -1,10 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-
 .register-container {
+    background: #fff;
+
     padding-top: 100px;
     padding-bottom: 100px;
     
@@ -46,8 +42,13 @@ body {
 }
 
 .submit-field span {
-    margin-top: 12px;
-    text-align: right;
+    margin-top: 16px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.submit-field span a {
+    color: var(--primary-color);
 }
 
 .field {
