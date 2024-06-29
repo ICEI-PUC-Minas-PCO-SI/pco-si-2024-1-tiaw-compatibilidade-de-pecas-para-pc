@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-
 .cards-container {
     padding: 40px 0;
+    padding-bottom: 300px;
+
+    background: #fff;
 }
 
 .cards-box {
@@ -58,4 +55,10 @@ body {
 
 #delete-setup:hover {
     filter: brightness(80%);
+}
+
+@media (max-width: 1195px) {
+    .cards {
+        justify-content: center;
+    }
 }

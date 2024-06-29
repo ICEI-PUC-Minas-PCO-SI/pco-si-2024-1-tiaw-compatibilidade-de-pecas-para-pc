@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-body {
-    font-family: 'Montserrat', sans-serif;
+.all-container {
+    background-color: #fff;
 }
 
 .presentation-container {
     padding: 0 20px;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 120px;
 }
 
 .presentation-info {
