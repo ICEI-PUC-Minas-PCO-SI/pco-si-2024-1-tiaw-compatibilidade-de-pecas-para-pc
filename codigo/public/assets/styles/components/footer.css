@@ -36,6 +36,8 @@
 .contact div ul {
   font-size: 14px;
   color: #b6b6b6;
+
+  padding-left: 0 !important;
   
   list-style: none;
   display: flex;

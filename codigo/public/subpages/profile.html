@@ -1,175 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Perfil - PC Match</title>
 
-    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
 
-    <link rel="stylesheet" href="../assets/styles/reset.css">
-    <link rel="stylesheet" href="../assets/styles/components/header.css">
-    <link rel="stylesheet" href="../assets/styles/components/cards.css">
-    <link rel="stylesheet" href="../assets/styles/components/loading.css">
-    <link rel="stylesheet" href="../assets/styles/components/overlay.css">
-    <link rel="stylesheet" href="../assets/styles/components/modal.css">
-    <link rel="stylesheet" href="../assets/styles/pages/profile.css">
-    <link rel="stylesheet" href="../assets/styles/components/footer.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../assets/styles/reset.css" />
+    <link rel="stylesheet" href="../assets/styles/components/header.css" />
+    <link rel="stylesheet" href="../assets/styles/components/cards.css" />
+    <link rel="stylesheet" href="../assets/styles/components/loading.css" />
+    <link rel="stylesheet" href="../assets/styles/components/overlay.css" />
+    <link rel="stylesheet" href="../assets/styles/components/modal.css" />
+    <link rel="stylesheet" href="../assets/styles/pages/profile.css" />
+    <link rel="stylesheet" href="../assets/styles/components/footer.css" />
+  </head>
+  <body>
     <header class="header-content">
-        <div class="content fix-width">
-            <a class="logo" href="../index.html">
-                <div class="logo-img">
-                    <img src="../assets/images/landing/logo.png" alt="Logo">
-                </div>
+      <div class="content fix-width">
+        <a class="logo" href="../index.html">
+          <div class="logo-img">
+            <img src="../assets/images/landing/logo.png" alt="Logo" />
+          </div>
 
-                <h2>PC MATCH</h2>
-            </a>
+          <h2>PC MATCH</h2>
+        </a>
 
-            <div class="links">
-                <a href="./montar_pc.html" class="link">
-                    <span>MONTE SUA MÁQUINA</span>
-                </a>
+        <div class="links">
+          <a href="./montar_pc.html" class="link">
+            <span>MONTE SUA MÁQUINA</span>
+          </a>
 
-                <a href="./setups.html" class="link">
-                    <span>SETUPS RECOMENDADOS</span>
-                </a>
+          <a href="./setups.html" class="link">
+            <span>SETUPS RECOMENDADOS</span>
+          </a>
 
-                <a href="./setups_comunidade.html" class="link">
-                    <span>SETUPS DA COMUNIDADE</span>
-                </a>
+          <a href="./setups_comunidade.html" class="link">
+            <span>SETUPS DA COMUNIDADE</span>
+          </a>
 
-                <a href="./como_montar_pc.html" class="link">
-                    <span>COMO MONTAR</span>
-                </a>
-
-            </div>
-
-            <div class="user-links">
-                <template id="user-links-loggedIn">
-                    <a class="do-register" href="./profile.html">Perfil</a>
-                    <button class="logout-button">Sair</button>
-                  </template>
-                  
-                <template id="user-links-loggedOut">
-                    <a class="do-register" href="./register.html">Registrar</a>
-                    <a class="do-login" href="./login.html">Logar</a>
-                </template>    
-            </div>
-
-            <!-- Menu Hamburger -->
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="mobile-links invisible">
-                <div class="title">
-                    <h3>Links</h3>
-                    <span class="close-hamburger">X</span>
-                </div>
-
-                <div class="user-links-mobile"></div>
-
-                <a href="./montar_pc.html">Montar meu PC</a>
-                <a href="./setups.html">Setups Recomendados</a>
-                <a href="./setups_comunidade.html">Setups da Comunidade</a>
-                <a href="./como_montar_pc.html">Como montar meu PC</a>
-            </div>
+          <a href="./como_montar_pc.html" class="link">
+            <span>COMO MONTAR</span>
+          </a>
         </div>
+
+        <div class="user-links">
+          <template id="user-links-loggedIn">
+            <a class="do-register" href="./profile.html">Perfil</a>
+            <button class="logout-button">Sair</button>
+          </template>
+
+          <template id="user-links-loggedOut">
+            <a class="do-register" href="./register.html">Registrar</a>
+            <a class="do-login" href="./login.html">Logar</a>
+          </template>
+        </div>
+
+        <!-- Menu Hamburger -->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="mobile-links invisible">
+          <div class="title">
+            <h3>Links</h3>
+            <span class="close-hamburger">X</span>
+          </div>
+
+          <div class="user-links-mobile"></div>
+
+          <a href="./montar_pc.html">Montar meu PC</a>
+          <a href="./setups.html">Setups Recomendados</a>
+          <a href="./setups_comunidade.html">Setups da Comunidade</a>
+          <a href="./como_montar_pc.html">Como montar meu PC</a>
+        </div>
+      </div>
     </header>
 
     <section class="presentation-profile-container">
-        <div class="presentation-profile fix-width">
-            <div class="user-pr">
-                <h1>Olá, <span id="uname"></span></h1>
-                <hr>
-            </div>
-
-            <button id="delete-pf">Deletar Conta</button>
+      <div class="presentation-profile fix-width">
+        <div class="user-pr">
+          <h1>Olá, <span id="uname"></span></h1>
+          <hr />
         </div>
-        <div class="overlay"></div>
+
+        <button id="delete-pf">Deletar Conta</button>
+      </div>
+      <div class="overlay"></div>
     </section>
 
     <section class="profile-container">
-        <div class="profile-box fix-width">
-            <div class="profile-card">
-                <h2>Setups Salvos:</h2>
-                <div class="cards"></div>
-            </div>
-
-            <div class="loader"></div>
+      <div class="profile-box fix-width">
+        <div class="profile-card">
+          <h2>Setups Salvos:</h2>
+          <div class="cards"></div>
         </div>
 
+        <div class="loader"></div>
+      </div>
     </section>
 
     <footer class="footer-container">
-        <div class="footer-info fix-width">
-            <div class="footer-links">
-                <div class="footer-title">
-                    <span>2024</span>
-                    <h3>PC Match</h3>
-                </div>
+      <div class="footer-info fix-width">
+        <div class="footer-links">
+          <div class="footer-title">
+            <span>2024</span>
+            <h3>PC Match</h3>
+          </div>
 
-                <div class="contact">
-                    <div>
-                        <h4>SOBRE</h4>
-                        <ul>
-                            <li>Termos de uso</li>
-                            <li>Política de privacidade</li>
-                            <li>Preferências de cookies</li>
-                            <li>Imprensa</li>
-                            <li>Divulgação</li>
-                            <li>Anuncie</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>PÁGINAS</h4>
-                        <ul>
-                            <li><a href=".">Home</a></li>
-                            <li><a href="./montar_pc.html">Monte seu PC</a></li>
-                            <li><a href="./setups_comunidade.html">Setups da Comunidade</a></li>
-                            <li><a href="./setups.html">Setups Recomendados</a></li>
-                            <li><a href="./como_montar_pc.html">Como Montar</a></li>
-                            <li><a href="./register.html">Registro</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>HARDWARE</h4>
-                        <ul>
-                            <li>Processadores</li>
-                            <li>Coolers de Processador</li>
-                            <li>Placas de vídeo</li>
-                            <li>Placas-mãe</li>
-                            <li>Memórias</li>
-                            <li>Armazenamentos</li>
-                            <li>Gabinetes</li>
-                            <li>Fontes</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>PERIFÉRICOS / OUTROS</h4>
-                        <ul>
-                            <li>Monitores</li>
-                            <li>Mouses</li>
-                            <li>Teclados</li>
-                            <li>Fones de ouvido</li>
-                            <li>Mousepads</li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="contact">
+            <div>
+              <h4>SOBRE</h4>
+              <ul>
+                <li>Termos de uso</li>
+                <li>Política de privacidade</li>
+                <li>Preferências de cookies</li>
+                <li>Imprensa</li>
+                <li>Divulgação</li>
+                <li>Anuncie</li>
+              </ul>
             </div>
-
-            <div class="footer-review">
-                <span>pcmatch@pc.com © PC MATCH</span>
-                <p>Queremos ouvir você! Deixe seu feedback e sugestões de melhorias <a href="./review.html">clicando aqui</a>.</p>            </div>
+            <div>
+              <h4>PÁGINAS</h4>
+              <ul>
+                <li><a href=".">Home</a></li>
+                <li><a href="./montar_pc.html">Monte seu PC</a></li>
+                <li>
+                  <a href="./setups_comunidade.html">Setups da Comunidade</a>
+                </li>
+                <li><a href="./setups.html">Setups Recomendados</a></li>
+                <li><a href="./como_montar_pc.html">Como Montar</a></li>
+                <li><a href="./register.html">Registro</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>HARDWARE</h4>
+              <ul>
+                <li>Processadores</li>
+                <li>Coolers de Processador</li>
+                <li>Placas de vídeo</li>
+                <li>Placas-mãe</li>
+                <li>Memórias</li>
+                <li>Armazenamentos</li>
+                <li>Gabinetes</li>
+                <li>Fontes</li>
+              </ul>
+            </div>
+            <div>
+              <h4>PERIFÉRICOS / OUTROS</h4>
+              <ul>
+                <li>Monitores</li>
+                <li>Mouses</li>
+                <li>Teclados</li>
+                <li>Fones de ouvido</li>
+                <li>Mousepads</li>
+              </ul>
+            </div>
+          </div>
         </div>
+
+        <div class="footer-review">
+          <span>pcmatch@pc.com © PC MATCH</span>
+          <p>
+            Queremos ouvir você! Deixe seu feedback e sugestões de melhorias
+            <a href="./review.html">clicando aqui</a>.
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script type="module" src="../config/firebase.js"></script>
     <script type="module" src="../scripts/header_user.js"></script>
     <script src="../scripts/menu_hamburger.js"></script>
     <script type="module" src="../scripts/profile.js"></script>
-</body>
+  </body>
 </html>
