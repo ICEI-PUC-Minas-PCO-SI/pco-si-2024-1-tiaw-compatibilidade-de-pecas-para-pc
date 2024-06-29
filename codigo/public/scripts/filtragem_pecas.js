@@ -1,4 +1,4 @@
-import { deployUrl } from './deploy.js'
+import { deployUrl } from '../config/deploy.js'
 
 const section = document.querySelector('.presentation-container')
 const total = document.querySelector('.total')

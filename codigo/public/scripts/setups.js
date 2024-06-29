@@ -1,4 +1,4 @@
-import { deployUrl } from './deploy.js'
+import { deployUrl } from '../config/deploy.js'
 
 // Função para carregar o arquivo JSON e renderizar o setup padrão
 async function loadAndRenderDefaultSetup() {
