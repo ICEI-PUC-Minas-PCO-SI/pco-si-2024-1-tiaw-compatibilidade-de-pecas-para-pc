@@ -1,96 +1,118 @@
 .presentation-profile-container {
-    position: relative;
-    height: 170px;    
+  position: relative;
+  height: 170px;
 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../../images/landing/setup2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../images/landing/setup2.jpg');
 }
 
-.profile-box, .presentation-profile {
-    padding: 0 20px;
+.profile-box,
+.presentation-profile {
+  padding: 0 20px;
 }
 
 .presentation-profile {
-    padding-top: 45px;
-    position: inherit;
-    z-index: 1;
+  padding-top: 45px;
+  position: inherit;
+  z-index: 1;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .profile-container {
-    background: #fff;
+  background: #fff;
 
-    padding-bottom: 200px;
+  padding-bottom: 200px;
 }
 
 .user-pr {
-    width: 100%;
-    max-width: 300px;
+  width: 100%;
+  max-width: 300px;
 
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .user-pr h1 {
-    color: #fff;
+  color: #fff;
 }
 
 .user-pr hr {
-    border: 2px solid var(--primary-color);
+  border: 2px solid var(--primary-color);
 }
 
 .profile-box {
-    padding-top: 60px;
+  padding-top: 60px;
 }
 
 .cards {
-    margin: 50px 0;
-    justify-content: flex-start;
+  margin: 50px 0;
+  justify-content: flex-start;
 }
 
-#delete-pf, #delete-setup {
-    padding: 10px;
-    font-weight: 600;
-    color: #fff;
+#delete-pf,
+#delete-setup,
+.dashboard-link {
+  padding: 10px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
 
-    background-color: var(--red);
-    border-radius: 12px;
-    border: none;
+  font-size: 13px;
 
-    cursor: pointer;
+  background-color: var(--red);
+  border-radius: 12px;
+  border: none;
+
+  cursor: pointer;
+}
+
+.dashboard-link {
+  background-color: #245589;
+  text-decoration: none;
+}
+
+#delete-pf:hover,
+#delete-setup:hover,
+.dashboard-link:hover {
+  filter: brightness(80%);
 }
 
 #delete-setup {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .no-setups {
-    font-size: 16px;
-    font-weight: 400;
-    color: #3b3b3b;
+  font-size: 16px;
+  font-weight: 400;
+  color: #3b3b3b;
 }
 
 .no-setups a {
-    color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.pf-buttons {
+  display: flex;
+  gap: 10px;
 }
 
 .card {
-    max-width: 360px !important;
+  max-width: 360px !important;
 }
 
 @media (max-width: 569px) {
-    .presentation-profile {
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    
-    .user-pr {
-        font-size: 16px;
+  .presentation-profile {
+    flex-direction: column;
+    align-items: flex-end;
+  }
 
-        max-width: 100%;
-        margin-bottom: 12px;
-    }
+  .user-pr {
+    font-size: 16px;
+
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
 }

@@ -1,4 +1,8 @@
-import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-auth.js"
+import {
+  getAuth,
+  onAuthStateChanged,
+  signOut,
+} from 'https://www.gstatic.com/firebasejs/10.9.0/firebase-auth.js'
 
 // Alterando header se user estiver logado
 const auth = getAuth()
@@ -7,31 +11,31 @@ const loggedInTemplate = document.getElementById('user-links-loggedIn')
 const loggedOutTemplate = document.getElementById('user-links-loggedOut')
 
 function updateUserLinks(user) {
-    const userLinksContainer = document.querySelector('.user-links')
-    const mobileUserLinks = document.querySelector('.user-links-mobile')
-    userLinksContainer.innerHTML = ''
-    mobileUserLinks.innerHTML = ''
-  
-    const content = user
-      ? loggedInTemplate.content.cloneNode(true) 
-      : loggedOutTemplate.content.cloneNode(true)
+  const userLinksContainer = document.querySelector('.user-links')
+  const mobileUserLinks = document.querySelector('.user-links-mobile')
+  userLinksContainer.innerHTML = ''
+  mobileUserLinks.innerHTML = ''
 
-    userLinksContainer.appendChild(content.cloneNode(true))
-    mobileUserLinks.appendChild(content)
+  const content = user
+    ? loggedInTemplate.content.cloneNode(true)
+    : loggedOutTemplate.content.cloneNode(true)
 
-    if (user) {
-      const logoutButton = userLinksContainer.querySelector('.logout-button')
-      const logoutButtonMobile = mobileUserLinks.querySelector('.logout-button')
+  userLinksContainer.appendChild(content.cloneNode(true))
+  mobileUserLinks.appendChild(content)
 
-      const btns = [logoutButton, logoutButtonMobile]
+  if (user) {
+    const logoutButton = userLinksContainer.querySelector('.logout-button')
+    const logoutButtonMobile = mobileUserLinks.querySelector('.logout-button')
 
-      btns.forEach(btn => {
-        btn.addEventListener('click', async () => {
-          await signOut(auth)
-          location.reload()
-        })
+    const btns = [logoutButton, logoutButtonMobile]
+
+    btns.forEach(btn => {
+      btn.addEventListener('click', async () => {
+        await signOut(auth)
+        location.reload()
       })
-    }
+    })
   }
+}
 
 onAuthStateChanged(auth, updateUserLinks)

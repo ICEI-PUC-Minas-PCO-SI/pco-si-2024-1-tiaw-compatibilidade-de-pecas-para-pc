@@ -3,17 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Perfil - PC Match</title>
+    <title>Dashboard - PC Match</title>
 
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
 
     <link rel="stylesheet" href="../assets/styles/reset.css" />
     <link rel="stylesheet" href="../assets/styles/components/header.css" />
-    <link rel="stylesheet" href="../assets/styles/components/cards.css" />
-    <link rel="stylesheet" href="../assets/styles/components/loading.css" />
-    <link rel="stylesheet" href="../assets/styles/components/overlay.css" />
-    <link rel="stylesheet" href="../assets/styles/components/modal.css" />
-    <link rel="stylesheet" href="../assets/styles/pages/profile.css" />
+    <link rel="stylesheet" href="../assets/styles/pages/dashboard.css" />
     <link rel="stylesheet" href="../assets/styles/components/footer.css" />
   </head>
   <body>
@@ -79,28 +75,33 @@
       </div>
     </header>
 
-    <section class="presentation-profile-container">
-      <div class="presentation-profile fix-width">
-        <div class="user-pr">
-          <h1>Olá, <span id="uname"></span></h1>
-          <hr />
+    <section class="dashboard-container">
+      <div class="dashboard-info fix-width">
+        <div class="dashboard-field">
+          <h4>Peças mais populares dos Setups</h4>
+
+          <div class="dashboard-quantity"></div>
         </div>
 
-        <div class="pf-buttons">
-          <button id="delete-pf">Deletar Conta</button>
-        </div>
-      </div>
-      <div class="overlay"></div>
-    </section>
+        <div class="fields">
+          <div class="dashboard-field">
+            <h4>Avaliações</h4>
 
-    <section class="profile-container">
-      <div class="profile-box fix-width">
-        <div class="profile-card">
-          <h2>Setups Salvos:</h2>
-          <div class="cards"></div>
+            <div class="users-reviews"></div>
+          </div>
+
+          <div class="dashboard-field">
+            <h4>Usuários</h4>
+
+            <div class="users-info"></div>
+          </div>
         </div>
 
-        <div class="loader"></div>
+        <div class="dashboard-field">
+          <h4>Setups</h4>
+
+          <div class="setups"></div>
+        </div>
       </div>
     </section>
 
@@ -175,7 +176,7 @@
 
     <script type="module" src="../config/firebase.js"></script>
     <script type="module" src="../scripts/header_user.js"></script>
-    <script src="../scripts/menu_hamburger.js"></script>
-    <script type="module" src="../scripts/profile.js"></script>
+    <script type="module" src="../scripts/menu_hamburger.js"></script>
+    <script type="module" src="../scripts/admin_dashboard.js"></script>
   </body>
 </html>

@@ -149,6 +149,19 @@ async function renderProfile(uid, user) {
       ),
     )
 
+    // Renderizando button pra dashboard se user é admin
+    const ref = doc(db, 'users', uid)
+    const loggedUser = await getDoc(ref)
+
+    if (loggedUser.data().type == 'ADMIN') {
+      const dashAnchor = document.createElement('a')
+      dashAnchor.classList.add('dashboard-link')
+      dashAnchor.setAttribute('href', '../subpages/dashboard.html')
+      dashAnchor.textContent = 'Ver Dashboard'
+
+      document.querySelector('.pf-buttons').appendChild(dashAnchor)
+    }
+
     // Renderizando Setups
     const setups = []
     const userSetupsDocs = await getSetups(uid)
