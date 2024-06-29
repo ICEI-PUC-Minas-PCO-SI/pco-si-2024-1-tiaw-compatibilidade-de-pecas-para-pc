@@ -46,7 +46,6 @@
         "img": "https://static.meupc.net/produto/ssd-western-digital-wd-blue-wdblueblue500gbm22280-mQ3Mw7-L.jpg",
         "interface": "M2",
         "storage": 500
-    },
     {
         "ID": 7,
         "name": "Seagate HDD Surveillance HDD | 1TB - SATA",
@@ -89,7 +88,7 @@
     },
     {
         "ID": 12,
-        "name": "Seagate HDD Pipeline HD | 500GB - SATA",
+        "name": "Seagate HDD Pipeline HD 3.5 5900 RPM",
         "price": 109.99,
         "img": "https://static.meupc.net/produto/hdd-seagate-pipeline-hd-st3500414cs-b9cWX9-L.jpg",
         "interface": "SATA",
