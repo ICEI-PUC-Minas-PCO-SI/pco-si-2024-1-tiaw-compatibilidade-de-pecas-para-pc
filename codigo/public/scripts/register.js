@@ -134,6 +134,7 @@ const createUser = async (username, email, password, usernameErr, emailErr) => {
         await setDoc(userDocRef, {
             uid,
             username,
+            review: "",
             type: "USER",
         })
 

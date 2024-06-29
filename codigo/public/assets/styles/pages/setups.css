@@ -2,6 +2,10 @@
     list-style-type: none;
 }
 
+body {
+    background: var(--primary-dark) !important;
+}
+
 /* #reset{
     display: flex;
     margin: 0px auto;
@@ -9,6 +13,14 @@
     margin-top: 20px;
     object-fit: cover;
 } */
+
+main {
+    padding-bottom: 120px;
+}
+
+.main-container {
+    background: #fff;
+}
 
 .MWII{
     display: flex;

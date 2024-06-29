@@ -1,56 +1,53 @@
 //Função ler dados
 function ler() {
-    let local = localStorage.getItem('db');
+  let local = localStorage.getItem('db')
 
-    //Local Storage
-    let db = {
-        videos: [
-            {
-                id: 1,
-                title: "O que é um Processador",
-                thumbnail: "path/to/thumbnail1.jpg",
-                url: "https://www.youtube.com/embed/lxFtLVzsR-8"
-            },
-            {
-                id: 2,
-                title: "O que é uma Placa de Vídeos",
-                thumbnail: "path/to/thumbnail2.jpg",
-                url: "https://www.youtube.com/embed/RSJpkbB-Vdk"
-            },
-            {
-                id: 3,
-                title: "O que é placa mãe",
-                thumbnail: "path/to/thumbnail2.jpg",
-                url: "https://www.youtube.com/embed/HelOCtifcfo"
-            },
-            {
-                id: 4,
-                title: "O que é memória RAM",
-                thumbnail: "path/to/thumbnail2.jpg",
-                url: "https://www.youtube.com/embed/UAjK8iFCbMA"
-            }
-        ]
-    }
-if (local) {
-    db = JSON.parse(local);
+  //Local Storage
+  let db = {
+    videos: [
+      {
+        id: 1,
+        title: 'O que é um Processador',
+        thumbnail: 'path/to/thumbnail1.jpg',
+        url: 'https://www.youtube.com/embed/lxFtLVzsR-8',
+      },
+      {
+        id: 2,
+        title: 'O que é uma Placa de Vídeos',
+        thumbnail: 'path/to/thumbnail2.jpg',
+        url: 'https://www.youtube.com/embed/RSJpkbB-Vdk',
+      },
+      {
+        id: 3,
+        title: 'O que é placa mãe',
+        thumbnail: 'path/to/thumbnail2.jpg',
+        url: 'https://www.youtube.com/embed/HelOCtifcfo',
+      },
+      {
+        id: 4,
+        title: 'O que é memória RAM',
+        thumbnail: 'path/to/thumbnail2.jpg',
+        url: 'https://www.youtube.com/embed/UAjK8iFCbMA',
+      },
+    ],
+  }
+  if (local) {
+    db = JSON.parse(local)
+  }
+  return db
 }
-return db;
-}
-
-
-
 
 //Pega o botão CPU
-document.getElementById('btn-cpu').addEventListener('click', abremodalCPU);
+document.getElementById('btn-cpu').addEventListener('click', abremodalCPU)
 
 //MODAL CPU
 //Abre o modal CPU
 function abremodalCPU() {
-    let mod = '';
-    let db = ler();
-    let modal = db.videos[0];
+  let mod = ''
+  let db = ler()
+  let modal = db.videos[0]
 
-    mod = `<div class="modal-L">
+  mod = `<div class="modal-L">
     <div class="conteudoModal">
     <span class="close">&times;</span>
     <h1>O que é um processador?</h1><br>
@@ -65,31 +62,29 @@ function abremodalCPU() {
     </div>
     </div>
     `
-    document.querySelector('#modal-cpu').innerHTML = mod;
-    // Fechar modal
-    // Encontra o botão de fechar
-    var closeButton = document.querySelector(".close");
-    // Fecha o modal quando o botão de fechar é clicado
-    closeButton.addEventListener("click", function() {
-    mod = '';
-    document.querySelector('#modal-cpu').innerHTML = mod;
-    });
-
+  document.querySelector('#modal-cpu').innerHTML = mod
+  // Fechar modal
+  // Encontra o botão de fechar
+  var closeButton = document.querySelector('.close')
+  // Fecha o modal quando o botão de fechar é clicado
+  closeButton.addEventListener('click', function () {
+    mod = ''
+    document.querySelector('#modal-cpu').innerHTML = mod
+  })
 }
-
 
 //MODAL GPU
 //Pega o botão GPU
-document.getElementById('btn-gpu').addEventListener('click', abremodalGPU);
+document.getElementById('btn-gpu').addEventListener('click', abremodalGPU)
 
 //MODAL GPU
 //Abre o modal GPU
 function abremodalGPU() {
-    let mod = '';
-    let db = ler();
-    let modal = db.videos[1];
+  let mod = ''
+  let db = ler()
+  let modal = db.videos[1]
 
-    mod = `<div class="modal-L">
+  mod = `<div class="modal-L">
     <div class="conteudoModal">
     <span class="close">&times;</span>
     <h1>O que é uma placa de vídeo?</h1><br>
@@ -104,30 +99,31 @@ function abremodalGPU() {
     </div>
     </div>
     `
-    document.querySelector('#modal-cpu').innerHTML = mod;
-    // Fechar modal
-    // Encontra o botão de fechar
-    var closeButton = document.querySelector(".close");
-    // Fecha o modal quando o botão de fechar é clicado
-    closeButton.addEventListener("click", function() {
-    mod = '';
-    document.querySelector('#modal-cpu').innerHTML = mod;
-    });
-
+  document.querySelector('#modal-cpu').innerHTML = mod
+  // Fechar modal
+  // Encontra o botão de fechar
+  var closeButton = document.querySelector('.close')
+  // Fecha o modal quando o botão de fechar é clicado
+  closeButton.addEventListener('click', function () {
+    mod = ''
+    document.querySelector('#modal-cpu').innerHTML = mod
+  })
 }
 
 //Modal Placa-Mãe
 //Pega o botão Placa-mãe
-document.getElementById('btn-placa-mae').addEventListener('click', abremodalPlacaMae);
+document
+  .getElementById('btn-placa-mae')
+  .addEventListener('click', abremodalPlacaMae)
 
 //MODAL Placa-Mãe
 //Abre o modal Placa-Mãe
 function abremodalPlacaMae() {
-    let mod = '';
-    let db = ler();
-    let modal = db.videos[2];
+  let mod = ''
+  let db = ler()
+  let modal = db.videos[2]
 
-    mod = `<div class="modal-L">
+  mod = `<div class="modal-L">
     <div class="conteudoModal">
     <span class="close">&times;</span>   
     <h1>O que é uma placa mãe</h1><br>
@@ -142,30 +138,29 @@ function abremodalPlacaMae() {
     </div>
     </div>
     `
-    document.querySelector('#modal-cpu').innerHTML = mod;
-    // Fechar modal
-    // Encontra o botão de fechar
-    var closeButton = document.querySelector(".close");
-    // Fecha o modal quando o botão de fechar é clicado
-    closeButton.addEventListener("click", function() {
-    mod = '';
-    document.querySelector('#modal-cpu').innerHTML = mod;
-    });
-
+  document.querySelector('#modal-cpu').innerHTML = mod
+  // Fechar modal
+  // Encontra o botão de fechar
+  var closeButton = document.querySelector('.close')
+  // Fecha o modal quando o botão de fechar é clicado
+  closeButton.addEventListener('click', function () {
+    mod = ''
+    document.querySelector('#modal-cpu').innerHTML = mod
+  })
 }
 
 //Modal RAM
 //Pega o botão RAM
-document.getElementById("btn-ram").addEventListener('click', abremodalRAM);
+document.getElementById('btn-ram').addEventListener('click', abremodalRAM)
 
 //Modal RAM
 //Abre modal RAM
-function abremodalRAM(){
-    let mod = '';
-    let db = ler();
-    let modal = db.videos[3];
+function abremodalRAM() {
+  let mod = ''
+  let db = ler()
+  let modal = db.videos[3]
 
-    mod = `<div class="modal-L">
+  mod = `<div class="modal-L">
     <div class="conteudoModal">
     <span class="close">&times;</span>
     <h1>O que é uma Memória RAM?</h1><br>
@@ -178,13 +173,13 @@ function abremodalRAM(){
     </div>
     </div>
     `
-    document.querySelector('#modal-cpu').innerHTML = mod;
-    // Fechar modal
-    // Encontra o botão de fechar
-    var closeButton = document.querySelector(".close");
-    // Fecha o modal quando o botão de fechar é clicado
-    closeButton.addEventListener("click", function() {
-    mod = '';
-    document.querySelector('#modal-cpu').innerHTML = mod;
-    });
+  document.querySelector('#modal-cpu').innerHTML = mod
+  // Fechar modal
+  // Encontra o botão de fechar
+  var closeButton = document.querySelector('.close')
+  // Fecha o modal quando o botão de fechar é clicado
+  closeButton.addEventListener('click', function () {
+    mod = ''
+    document.querySelector('#modal-cpu').innerHTML = mod
+  })
 }

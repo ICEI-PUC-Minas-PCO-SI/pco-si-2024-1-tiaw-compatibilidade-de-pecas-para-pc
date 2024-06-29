@@ -1,0 +1,165 @@
+.dashboard-container {
+  background: #fff;
+}
+
+.dashboard-info {
+  padding: 0 20px;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.dashboard-info h1 {
+  font-size: 32px;
+}
+
+.dashboard-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  margin: 5px 0;
+}
+.dashboard-field h4 {
+  color: #1f1f1f;
+  padding: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-quantity {
+  display: flex;
+}
+
+.top-components {
+  padding: 20px;
+  height: 100%;
+}
+
+.top-components:nth-child(2) {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.top-components h3 {
+  color: #1f1f1f;
+  margin-bottom: 20px;
+}
+
+.top-components ol {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.top-li {
+  padding: 30px 0;
+
+  display: flex;
+  align-content: center;
+  gap: 12px;
+  height: 100px;
+}
+
+.top-li div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-size: 13px;
+}
+
+.top-li div p {
+  font-weight: 600;
+}
+
+.top-li div span span {
+  font-weight: 600;
+}
+
+.top-li img {
+  margin-right: 6px;
+  padding: 2px;
+
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.users-reviews {
+  display: flex;
+  flex-direction: column;
+}
+.review-card {
+  padding: 20px;
+}
+.review-card:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.review-card h3 {
+  color: #1f1f1f;
+  margin-bottom: 10px;
+}
+.review-card p {
+  color: #2a2a2a;
+  font-size: 12px;
+}
+
+.fields {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.setup-name {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 8px;
+}
+
+.setup-name span {
+  font-weight: 500;
+}
+
+.setup-name div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+#delete {
+  padding: 6px;
+  border: none;
+  border-radius: 8px;
+  background: var(--red);
+  color: #fff;
+
+  cursor: pointer;
+}
+
+#delete:hover {
+  filter: brightness(80%);
+}
+
+@media (max-width: 862px) {
+  .dashboard-quantity,
+  .fields {
+    flex-direction: column;
+  }
+
+  .setup-name {
+    font-size: 13px;
+  }
+
+  .setup-name div {
+    max-width: 100px;
+  }
+
+  .setup-name span {
+    text-align: right;
+  }
+}
