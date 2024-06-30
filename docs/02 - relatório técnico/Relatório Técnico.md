@@ -47,16 +47,15 @@ Os membros do grupo são:
   - [Divisão de Papéis](#divisão-de-papéis)
   - [Ferramentas](#ferramentas)
   - [Controle de Versão](#controle-de-versão)
-<!-- - [**############## SPRINT 1 ACABA AQUI #############**](#-sprint-1-acaba-aqui-)
 - [Projeto da Solução](#projeto-da-solução)
   - [Tecnologias Utilizadas](#tecnologias-utilizadas)
   - [Arquitetura da solução](#arquitetura-da-solução)
 - [Avaliação da Aplicação](#avaliação-da-aplicação)
   - [Plano de Testes](#plano-de-testes)
-  - [Ferramentas de Testes (Opcional)](#ferramentas-de-testes-opcional)
   - [Registros de Testes](#registros-de-testes)
 - [Referências](#referências)
--->
+
+&nbsp;
 
 # Introdução
 
@@ -412,83 +411,198 @@ Na Gestão de Código Fonte, utilizamos o GitHub para termos um livre acesso pel
 A estrutura das *branches* foi organizada com uma *branch* dedicada a cada membro do grupo, permitindo que a branch principal permaneça receptiva a mudanças através de *pull requests* dos integrantes.
 
 
-<!-- # **############## SPRINT 1 ACABA AQUI #############**
+## Projeto da Solução
 
+O PC Match se apresenta como uma plataforma online intuitiva e abrangente, projetada para simplificar a jornada de montagem do PC ideal. A plataforma oferece:
 
-# Projeto da Solução
-
-......  COLOQUE AQUI O SEU TEXTO ......
+- Teste de Compatibilidade: Ferramenta central que permite aos usuários selecionarem componentes e verificar instantaneamente a compatibilidade na montagem de um pc, evitando erros e garantindo um sistema funcional.
+- Guias e Tutoriais: Conteúdo educativo abrangente, incluindo tutoriais em vídeo, que explicam o papel de cada componente, auxiliando na escolha das peças certas para cada necessidade.
+- Setups Recomendados: Sugestões de configurações pré-definidas para diferentes perfis de usuário e orçamentos, agilizando o processo de decisão.
+- Informações Detalhadas: Especificações técnicas e comparativos de componentes, permitindo escolhas informadas e otimizadas.
+- Comunidade: Uma comunidade que pode compartilhar estilos de pc que lhe agrada a partir da montagem individual.
 
 ## Tecnologias Utilizadas
+tecnologias que foram utilizadas durante o projeto para a resolução do problema.
 
-......  COLOQUE AQUI O SEU TEXTO ......
+1 - Linguagem 
 
-> Descreva aqui qual(is) tecnologias você vai usar para resolver o seu
-> problema, ou seja, implementar a sua solução. Liste todas as
-> tecnologias envolvidas, linguagens a serem utilizadas, serviços web,
-> frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
-> Apresente também uma figura explicando como as tecnologias estão
-> relacionadas ou como uma interação do usuário com o sistema vai ser
-> conduzida, por onde ela passa até retornar uma resposta ao usuário.
-> 
-> Inclua os diagramas de User Flow, esboços criados pelo grupo
-> (stoyboards), além dos protótipos de telas (wireframes). Descreva cada
-> item textualmente comentando e complementando o que está apresentado
-> nas imagens.
+  - HTML5, CSS e JavaScript. Usados para fazer a integração de componentes dinamicos juntamente com a lógica para as principais funções da aplicação além da estilização.
+
+2 - Framework
+- Bootstrap (https://getbootstrap.com/) foi utilizado para a estilização de alguns componentes.
+
+3 - IDE
+
+  - Visual Studio Code, permite que desenvolva o código, em conjunto com as ferramentas do git tornando assim uma ferramenta que permite o compartilhamento do código no decorrer do projeto
+
+ 4 - Serviços web
+
+  - Para a integração segura de adiministrador e usuarios usamos o Firebase uma ferramenta que funciona como Backend-as-a-Service (BaaS),  seu funcionamento de login é da seguinte maneira:
+
+    - OAuth 2.0: Protocolo de autorização que permite que aplicativos de terceiros acessem recursos     protegidos em nome de um usuário, sem a necessidade de compartilhar suas credenciais de login.
+
+    - OpenID Connect: Camada de identidade construída sobre o OAuth 2.0, que permite que aplicativos verifiquem a identidade de um usuário e obtenham informações básicas do perfil.
+
+    - JSON Web Tokens (JWT): Formato compacto e autocontido para transmitir informações de forma segura entre partes. O Firebase utiliza JWTs para representar tokens de autenticação e ID tokens.
+
+    Gerando assim uma segurança maior para o desenvolvimento da aplicação tanto para os usuários quanto para os desenvolvedores.
+    
+&nbsp; 
+    <div align="center">
+  <img src="./images/tecnologias/firebase.png" alt="firebase" width="px" height="px" />
+  <p>Sistema de Token do Firebase (https://firebase.google.com/products/auth?hl=pt-br) </p>
+</div>
+
+User Flow
+- 
+
+    1 - Home page 
+
+  <div align="center">
+  <img src="./images/user-flow/home.png" alt="firebase" width="px" height="px" />
+  <p>Página de entrada do usuário, ele poderar navegar por todo o site por aqui, nesta página tem todas as funcionalidades que o site oferece.</p>
+  </div>
+
+    2 - Registro
+
+  <div align="center">
+  <img src="./images/user-flow/register.png" alt="registre" width="px" height="px" />
+  <p>Página de registro, registrando-se no site abre todas as funcionalidades de um úsuario comum.</p>
+  </div>
+
+    3 - Login
+
+  <div align="center">
+  <img src="./images/user-flow/login.png" alt="login" width="px" height="px" />
+  <p>Página de login, caso o usuário já tenha registro poderá logar e ter todas as funcionalidades ativa do site</p>
+  </div>
+
+    4 - Monte sua Máquina
+
+  <div align="center">
+  <img src="./images/user-flow/montar.png" alt="montar pc" width="px" height="px" />
+  <p>Página de montar seu pc compatível, a maior e principal funcionalidade do site, testar a compatibildade de cada componete montando uma máquina totalmente compativél, podendo colocar uma meta de orçamento, montar diversas máquinas e caso esteja logado podendo compartilhar de maneira privada ou pública para comunidade.</p>
+  </div>
+
+    5 - Setups da comunidade
+
+  <div align="center">
+  <img src="./images/user-flow/comunidade.png" alt="setups da comunidade" width="px" height="px" />
+  <p>Página dedicada a compartilhar todas as máquinas montadas por usuários da comunidade.</p>
+  </div>
+
+    6 - Setups Recomendados
+
+  <div align="center">
+  <img src="./images/user-flow/setups.png" alt="Setups Recomendados" width="px" height="px" />
+  <p>Página de setups montados pelos desenvolvedores do site, setups esses recomendados para cada tipo de uso, low, medium, high e ultra.</p>
+  </div>
+
+      7 - Setups Recomendados
+
+  <div align="center">
+  <img src="./images/user-flow/feedback.png" alt="Feedback" width="px" height="px" />
+  <p>Página que apenas usuários cadastrados e logados no site tem acesso, podendo compartilhar a sua no experiência com o site, dando sua opinião sobre a usabilidade do site.</p>
+  </div>
+
+    8 - Como Montar
+
+  <div align="center">
+  <img src="./images/user-flow/" alt="Como motar" width="px" height="px" />
+  <p>Página dedicada a ensinar os usuários como montar um computador pessoal, tendo informações importantes para cada detalhe da montagem.</p>
+  </div>
+  
 
 ## Arquitetura da solução
 
-......  COLOQUE AQUI O SEU TEXTO E O DIAGRAMA DE ARQUITETURA .......
+ <p>O usuário tem acesso as informações via inteface web que tem como linguagem o HTML5, JavaScript e CSS, como demonstrado no diagrama a baixo, com as interações tem a coleta de dados (collect Data) que gera as requisições (request) que são processadas pela parte lógica (contains app logic) que é apenas a linguagem dinamica (JavaScript) caso ela precise acessar algo interno ela tem interação com o ambiente web (Web Server) busca informações e retorna (response) e mostrando o resultado para o usuário (display Results).</p>
+  
 
-> Inclua um diagrama da solução e descreva os módulos e as tecnologias
-> que fazem parte da solução. Discorra sobre o diagrama.
-> 
-> **Exemplo do diagrama de Arquitetura**:
-> 
-> ![Exemplo de Arquitetura](images/arquitetura-exemplo.png)
+<div align="center">
+  <img src="./images/arquitetura.webp" alt="Arquitetura da solução" width="px" height="px" />
+ </div>
 
+&nbsp;
 
 # Avaliação da Aplicação
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Os testes foram feitos de maneira satisfatória com usuários independentes testando cada funcionalidade do site, a maioria deles tiveram avalições positivas dentro da avaliação por pares que foram dispostas por um meio de avaliação cruzadas aonde cada aluno teria 3 artefatos para serem avaliados. Abaixo estará os cenários de testes e seus respectivos comentarios pelos testes feitos.
 
-> Apresente os cenários de testes utilizados na realização dos testes da
-> sua aplicação. Escolha cenários de testes que demonstrem os requisitos
-> sendo satisfeitos.
+---
+&nbsp;
+
+ - Cenário de testes
+
+<div align="center">
+  <img src="./images/testes/salvamento.png" alt="salvamento" width="px" height="px" />
+ </div>
+
+ <div align="center">
+  <img src="./images/testes/avaliação-salvamento.png" alt="avaliação-salvamento" width="px" height="px" />
+ </div>
+
+ Aqui é um dos comentários feitos por usuários que testaram este artefato que era o salvamento dos compontes no localStorage e eu seu login.
+
+ &nbsp;
+
+---
+ <div align="center">
+  <img src="./images/testes/alterar.png" alt="salterar" width="px" height="px" />
+ </div>
+
+ <div align="center">
+  <img src="./images/testes/avaliação-alterar.png" alt="alterar" width="px" height="px" />
+ </div>
+
+ Comentários positivos do artefato que consistia em uma alteração de componentes dento do modal de seleção de cada componete. Critérios de avaliação esses que estão disponível logo a baixo 
+
+ &nbsp;
+
+---
+
+  <div align="center">
+  <img src="./images/testes/criterios.png" alt="criterios" width="px" height="px" />
+ </div>
+
+ Critérios disponibilados pelos professores da máteria para ser feito a avaliação dos artefatos.
+
+ &nbsp;
+
 
 ## Plano de Testes
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Os testes foram feitos direcionados aos possiveis usuários do site, disponibilizamos uma beta para alguns usuários testarem o site em 3 cénarios, desta maneira poderiamos ter mais acertividade nas correções.
 
-> Enumere quais cenários de testes foram selecionados para teste. Neste
-> tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo
-> de usuários que foi escolhido para participar do teste e as
-> ferramentas utilizadas.
-> 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
+      Cenário um de teste (registro)
 
-## Ferramentas de Testes (Opcional)
+  <div align="center">
+  <img src="./images/plano-de-teste/register.png" alt="criterios" width="px" height="px" />
+  </div>
 
-......  COLOQUE AQUI O SEU TEXTO ......
+ Usuário tenta resgistrar com informações divergentes do padrão como o e-mail inválido ou senhas diferentes.
 
-> Comente sobre as ferramentas de testes utilizadas.
-> 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+      Cenário dois de teste (compartilhamento)
 
+  <div align="center">
+  <img src="./images/plano-de-teste/compartilhamento.png" alt="criterios" width="px" height="px" />
+  </div>
+
+  Caso não tenha componentes completos o usuátio não pode compartilhar as máquinas montadas.
+
+      Cenário três de teste (Envio de feedback)
+
+  <div align="center">
+  <img src="./images/plano-de-teste/feedback.png" alt="criterios" width="px" height="px" />
+  </div>
+
+  No terceiro cénario era testar a funcionalidade de dar um feedback aos desenvolvedores, comnetando os testes feitos por eles. reviews enviados diretamente aos desenvolvedores.
 ## Registros de Testes
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Usamos as funcionalidades do site para registros de testes, todos os registros foram mantidos na dashboard do adiministrador como mostrado abaixo.
 
-> Discorra sobre os resultados do teste. Ressaltando pontos fortes e
-> fracos identificados na solução. Comente como o grupo pretende atacar
-> esses pontos nas próximas iterações. Apresente as falhas detectadas e
-> as melhorias geradas a partir dos resultados obtidos nos testes.
-
+  <div align="center">
+  <img src="./images/plano-de-teste/registros.png" alt="criterios" width="px" height="px" />
+  </div>
 
 # Referências
 
@@ -504,4 +618,4 @@ Figma. Disponível em: https://www.figma.com/file/Xql8McGAjdJcrYDj9NYZ1A/Compati
 
 > **Links Úteis**:
 > - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/) -->
+> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/) 
