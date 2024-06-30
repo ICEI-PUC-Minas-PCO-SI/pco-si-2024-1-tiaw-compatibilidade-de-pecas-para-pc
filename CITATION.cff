@@ -1,10 +1,10 @@
 <<<<<<< HEAD
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: 
-authors:
-  - family-names: 
-    given-names: 
+title: PC Match
+authors: Abner, Andry, Isaac, João, Luiz e Samuel.
+  - family-names: Versiani de Melo Penna
+    given-names: Luiz Fernando
   - family-names: 
     given-names: 
   - family-names: 
@@ -23,7 +23,7 @@ authors:
     affiliation: PUC Minas
     family-names: 
     given-names: 
-keywords:
+keywords: PC Gamer
   - 
   - 
 repository-code: 
