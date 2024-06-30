@@ -460,14 +460,14 @@ User Flow
 
   <div align="center">
   <img src="./images/user-flow/home.png" alt="firebase" width="px" height="px" />
-  <p>Página de entrada do usuário, ele poderar navegar por todo o site por aqui, nesta página tem todas as funcionalidades que o site oferece.</p>
+  <p>Página de entrada do usuário, ele poderá navegar por todo o site por aqui, nesta página tem todas as funcionalidades que o site oferece.</p>
   </div>
 
     2 - Registro
 
   <div align="center">
   <img src="./images/user-flow/register.png" alt="registre" width="px" height="px" />
-  <p>Página de registro, registrando-se no site abre todas as funcionalidades de um úsuario comum.</p>
+  <p>Página de registro, registrando-se no site abre todas as funcionalidades de um usuário comum.</p>
   </div>
 
     3 - Login
@@ -481,7 +481,7 @@ User Flow
 
   <div align="center">
   <img src="./images/user-flow/montar.png" alt="montar pc" width="px" height="px" />
-  <p>Página de montar seu pc compatível, a maior e principal funcionalidade do site, testar a compatibildade de cada componete montando uma máquina totalmente compativél, podendo colocar uma meta de orçamento, montar diversas máquinas e caso esteja logado podendo compartilhar de maneira privada ou pública para comunidade.</p>
+  <p>Página de montar seu pc compatível, a maior e principal funcionalidade do site, testar a ompatibilidade de cada componente montando uma máquina totalmente compatível, podendo colocar uma meta de orçamento, montar diversas máquinas e caso esteja logado podendo compartilhar de maneira privada ou pública para comunidade.</p>
   </div>
 
     5 - Setups da comunidade
@@ -515,7 +515,7 @@ User Flow
 
 ## Arquitetura da solução
 
- <p>O usuário tem acesso as informações via inteface web que tem como linguagem o HTML5, JavaScript e CSS, como demonstrado no diagrama a baixo, com as interações tem a coleta de dados (collect Data) que gera as requisições (request) que são processadas pela parte lógica (contains app logic) que é apenas a linguagem dinamica (JavaScript) caso ela precise acessar algo interno ela tem interação com o ambiente web (Web Server) busca informações e retorna (response) e mostrando o resultado para o usuário (display Results).</p>
+ <p>O usuário tem acesso ás informações via interface web que tem como linguagem o HTML5, JavaScript e CSS, como demonstrado no diagrama abaixo, com ás interações têm a coleta de dados (collect Data) que gera as requisições (request) que são processadas pela parte lógica (contains app logic) que é apenas a linguagem dinâmica (JavaScript) caso ela precise acessar algo interno ela tem interação com o ambiente web (Web Server) busca informações e retorna (response) e mostrando o resultado para o usuário (display Results).</p>
   
 
 <div align="center">
@@ -526,7 +526,7 @@ User Flow
 
 # Avaliação da Aplicação
 
-Os testes foram feitos de maneira satisfatória com usuários independentes testando cada funcionalidade do site, a maioria deles tiveram avalições positivas dentro da avaliação por pares que foram dispostas por um meio de avaliação cruzadas aonde cada aluno teria 3 artefatos para serem avaliados. Abaixo estará os cenários de testes e seus respectivos comentarios pelos testes feitos.
+Os testes foram feitos de maneira satisfatória com usuários independentes testando cada funcionalidade do site, a maioria deles tiveram avaliações positivas dentro da avaliação por pares que foram dispostas por um meio de avaliação cruzadas onde cada aluno teria 3 artefatos para serem avaliados. Abaixo estão os cenários de testes e seus respectivos comentários pelos testes feitos.
 
 ---
 &nbsp;
@@ -541,7 +541,7 @@ Os testes foram feitos de maneira satisfatória com usuários independentes test
   <img src="./images/testes/avaliação-salvamento.png" alt="avaliação-salvamento" width="px" height="px" />
  </div>
 
- Aqui é um dos comentários feitos por usuários que testaram este artefato que era o salvamento dos compontes no localStorage e eu seu login.
+ Aqui é um dos comentários feitos por usuários que testaram este artefato que era o salvamento dos componentes no localStorage e eu seu login.
 
  &nbsp;
 
@@ -554,7 +554,7 @@ Os testes foram feitos de maneira satisfatória com usuários independentes test
   <img src="./images/testes/avaliação-alterar.png" alt="alterar" width="px" height="px" />
  </div>
 
- Comentários positivos do artefato que consistia em uma alteração de componentes dento do modal de seleção de cada componete. Critérios de avaliação esses que estão disponível logo a baixo 
+ Comentários positivos do artefato que consistia em uma alteração de componentes dentro do modal de seleção de peças. Critérios de avaliação esses que estão disponível logo a baixo 
 
  &nbsp;
 
@@ -564,14 +564,14 @@ Os testes foram feitos de maneira satisfatória com usuários independentes test
   <img src="./images/testes/criterios.png" alt="criterios" width="px" height="px" />
  </div>
 
- Critérios disponibilados pelos professores da máteria para ser feito a avaliação dos artefatos.
+ Critérios disponibilizados pelos professores da matéria para ser feito a avaliação dos artefatos.
 
  &nbsp;
 
 
 ## Plano de Testes
 
-Os testes foram feitos direcionados aos possiveis usuários do site, disponibilizamos uma beta para alguns usuários testarem o site em 3 cénarios, desta maneira poderiamos ter mais acertividade nas correções.
+Os testes foram feitos direcionados aos possíveis usuários do site, disponibilizamos uma beta para alguns usuários testarem o site em 3 cenários, desta maneira poderíamos ter mais assertividade nas correções.
 
       Cenário um de teste (registro)
 
@@ -579,7 +579,7 @@ Os testes foram feitos direcionados aos possiveis usuários do site, disponibili
   <img src="./images/plano-de-teste/register.png" alt="criterios" width="px" height="px" />
   </div>
 
- Usuário tenta resgistrar com informações divergentes do padrão como o e-mail inválido ou senhas diferentes.
+ O usuário tenta registrar com informações divergentes do padrão como o e-mail inválido ou senhas diferentes.
 
       Cenário dois de teste (compartilhamento)
 
@@ -587,7 +587,7 @@ Os testes foram feitos direcionados aos possiveis usuários do site, disponibili
   <img src="./images/plano-de-teste/compartilhamento.png" alt="criterios" width="px" height="px" />
   </div>
 
-  Caso não tenha componentes completos o usuátio não pode compartilhar as máquinas montadas.
+Caso não tenha componentes completos, o usuátio não pode compartilhar as máquinas montadas
 
       Cenário três de teste (Envio de feedback)
 
@@ -595,11 +595,10 @@ Os testes foram feitos direcionados aos possiveis usuários do site, disponibili
   <img src="./images/plano-de-teste/feedback.png" alt="criterios" width="px" height="px" />
   </div>
 
-  No terceiro cénario era testar a funcionalidade de dar um feedback aos desenvolvedores, comnetando os testes feitos por eles. reviews enviados diretamente aos desenvolvedores.
+  No terceiro cenário era testar a funcionalidade de dar um feedback aos desenvolvedores, comentando os testes feitos por eles. reviews enviados diretamente aos desenvolvedores.
 ## Registros de Testes
 
-Usamos as funcionalidades do site para registros de testes, todos os registros foram mantidos na dashboard do adiministrador como mostrado abaixo.
-
+Usamos as funcionalidades do site para registros de testes, todos os registros foram mantidos na dashboard do administrador como mostrado abaixo.
   <div align="center">
   <img src="./images/plano-de-teste/registros.png" alt="criterios" width="px" height="px" />
   </div>
