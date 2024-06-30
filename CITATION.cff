@@ -5,61 +5,31 @@ title: PC Match
 authors: Abner, Andry, Isaac, João, Luiz e Samuel.
   - family-names: Versiani de Melo Penna
     given-names: Luiz Fernando
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: Pereira da Silveira
+    given-names: Andry Marques
+  - family-names: Souza Fernandes
+    given-names: Isaac
+  - family-names: Augusto Monteiro
+    given-names: Abner
+  - family-names: Oliveira Serra
+    given-names: João Paulo
+  - family-names: Andrade Neto
+    given-names: Samuel
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Soares Vieira de Vasconcelos
+    given-names: Amália
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Vielela Cardoso
+    given-names: Leonardo
 keywords: PC Gamer
   - 
   - 
-repository-code: 
+url: 'https://pc-match.vercel.app/index.html'
+repository-code: https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-compatibilidade-de-pecas-para-pc.git
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2022-07-14
-=======
-cff-version: 1.0.1
-message: Please cite this software using these metadata.
-title: 
-authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
-keywords:
-  - 
-  - 
-repository-code: 
-license: CC-BY-4.0
-version: 1.0.0
-date-released: 2022-07-14
+date-released: 2024-06-30
+
 >>>>>>> 576e4073eb686b7caee5801aac8f95491eb4d605
