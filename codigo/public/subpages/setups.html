@@ -1,160 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Setups - PC Match</title>
 
-    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
 
-    <link rel="stylesheet" href="../assets/styles/reset.css">
-    <link rel="stylesheet" href="../assets/styles/components/header.css">
-    <link rel="stylesheet" href="../assets/styles/pages/setups.css">
-    <link rel="stylesheet" href="../assets/styles/components/footer.css">
+    <link rel="stylesheet" href="../assets/styles/reset.css" />
+    <link rel="stylesheet" href="../assets/styles/components/header.css" />
+    <link rel="stylesheet" href="../assets/styles/pages/setups.css" />
+    <link rel="stylesheet" href="../assets/styles/components/footer.css" />
     <!--BootStrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-        <!--JavaScript-->
-        <script src="../scripts/setups.js"></script>
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!--JavaScript-->
+  </head>
 
-<body>
+  <body>
     <header class="header-content">
-        <div class="content fix-width">
-            <a class="logo" href="../index.html">
-                <div class="logo-img">
-                    <img src="../assets/images/landing/logo.png" alt="Logo">
-                </div>
+      <div class="content fix-width">
+        <a class="logo" href="../index.html">
+          <div class="logo-img">
+            <img src="../assets/images/landing/logo.png" alt="Logo" />
+          </div>
 
-                <h2>PC MATCH</h2>
-            </a>
+          <h2>PC MATCH</h2>
+        </a>
 
-            <div class="links">
-                <a href="./montar_pc.html" class="link">
-                    <span>MONTE SUA MÁQUINA</span>
-                </a>    
+        <div class="links">
+          <a href="./montar_pc.html" class="link">
+            <span>MONTE SUA MÁQUINA</span>
+          </a>
 
-                <a href="./setups.html" class="link">
-                    <span>SETUPS RECOMENDADOS</span>
-                </a>
-                
-                <a  href="./setups_comunidade.html" class="link">
-                    <span>SETUPS DA COMUNIDADE</span>            
-                </a>
+          <a href="./setups.html" class="link">
+            <span>SETUPS RECOMENDADOS</span>
+          </a>
 
-                <a href="./como_montar_pc.html" class="link">
-                    <span>COMO MONTAR</span>
-                </a>
-            </div>
+          <a href="./setups_comunidade.html" class="link">
+            <span>SETUPS DA COMUNIDADE</span>
+          </a>
 
-            <div class="user-links">
-                <template id="user-links-loggedIn">
-                    <a class="do-register" href="./profile.html">Perfil</a>
-                    <button class="logout-button">Sair</button>
-                  </template>
-                  
-                <template id="user-links-loggedOut">
-                    <a class="do-register" href="./register.html">Registrar</a>
-                    <a class="do-login" href="./login.html">Logar</a>
-                </template>    
-            </div>
-
-             <!--Menu Hamburger---> 
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="mobile-links invisible">
-                <div class="title">
-                    <h3>Links</h3>
-                    <span class="close-hamburger">X</span>
-                </div>
-
-                <div class="user-links-mobile"></div>
-
-                <a href="./montar_pc.html">Montar meu PC</a>
-                <a href="./setups.html">Setups Recomendados</a>
-                <a href="./setups_comunidade.html">Setups da Comunidade</a>
-                <a href="./como_montar_pc.html">Como montar meu PC</a>
-            </div>
+          <a href="./como_montar_pc.html" class="link">
+            <span>COMO MONTAR</span>
+          </a>
         </div>
+
+        <div class="user-links">
+          <template id="user-links-loggedIn">
+            <a class="do-register" href="./profile.html">Perfil</a>
+            <button class="logout-button">Sair</button>
+          </template>
+
+          <template id="user-links-loggedOut">
+            <a class="do-register" href="./register.html">Registrar</a>
+            <a class="do-login" href="./login.html">Logar</a>
+          </template>
+        </div>
+
+        <!--Menu Hamburger--->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="mobile-links invisible">
+          <div class="title">
+            <h3>Links</h3>
+            <span class="close-hamburger">X</span>
+          </div>
+
+          <div class="user-links-mobile"></div>
+
+          <a href="./montar_pc.html">Montar meu PC</a>
+          <a href="./setups.html">Setups Recomendados</a>
+          <a href="./setups_comunidade.html">Setups da Comunidade</a>
+          <a href="./como_montar_pc.html">Como montar meu PC</a>
+        </div>
+      </div>
     </header>
 
     <section class="main-container">
-        <main class="fix-width">
-            <div id="video">   
+      <main class="fix-width">
+        <div id="video"></div>
+        <!---Button-->
+        <h1 class="pcideal">Escolha seu PC ideal</h1>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-3 mb-2">
+              <button
+                id="setup-low"
+                class="btn btn-primary btn-block botao-gamer"
+              >
+                <img
+                  src="../assets/images/setups/Play.png"
+                  alt="control"
+                  width="20%"
+                />Setup Low
+              </button>
             </div>
-            <!---Button-->
-            <h1 class="pcideal">Escolha seu PC ideal</h1>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-md-3 mb-2">
-                        <button id="setup-low" class="btn btn-primary btn-block botao-gamer"><img src="../assets/images/setups/Play.png" alt="control" width="20%">Setup Low</button>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-3 mb-2">
-                        <button id="setup-medio" class="btn btn-primary btn-block botao-gamer"><img src="../assets/images/setups/Play.png" alt="control" width="20%">Setup Medium</button>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-3 mb-2">
-                        <button id="setup-high" class="btn btn-primary btn-block botao-gamer"><img src="../assets/images/setups/Play.png" alt="control" width="20%">Setup High</button>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-3 mb-2">
-                        <button id="setup-ultra" class="btn btn-primary btn-block botao-gamer"><img src="../assets/images/setups/medieval-white.png" alt="dragon" width="20%">Setup Ultra</button>
-                    </div>
-                </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-2">
+              <button
+                id="setup-medio"
+                class="btn btn-primary btn-block botao-gamer"
+              >
+                <img
+                  src="../assets/images/setups/Play.png"
+                  alt="control"
+                  width="20%"
+                />Setup Medium
+              </button>
             </div>
-            
-            
-            
-            
-            
-            
-            
-            <div class="component-main">
-                <section id="component-list-section">
-                    <div id="reset" class="produto-lista justify-content-start align-items-center"> 
-                        <ul id="component-list" class="list-unstyled">
-                        </ul>
-                    </div>
-                </section>
-                
-                
-                
-                
-                
-                
-            <section id="total-checkout">
-                <div class="average-title">
-                    <strong>
-                        RESUMO
-                    </strong>
-                </div>
-                <div class="checkout">
-                    <ul id="average-list">
-
-                    </ul>
-                </div>
-                <div class="checkout-value">
-                    <div class="checkout-hr"></div>
-                    <p>
-                        <strong>Total: R$ <span id="average-total"></span></strong>
-                    </p>
-                    <p>
-                        <strong>Média/Peça: R$ <span id="average-value"></span></strong>
-                    </p>
-                </div>
-            </section>
+            <div class="col-12 col-sm-6 col-md-3 mb-2">
+              <button
+                id="setup-high"
+                class="btn btn-primary btn-block botao-gamer"
+              >
+                <img
+                  src="../assets/images/setups/Play.png"
+                  alt="control"
+                  width="20%"
+                />Setup High
+              </button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-2">
+              <button
+                id="setup-ultra"
+                class="btn btn-primary btn-block botao-gamer"
+              >
+                <img
+                  src="../assets/images/setups/medieval-white.png"
+                  alt="dragon"
+                  width="20%"
+                />Setup Ultra
+              </button>
+            </div>
+          </div>
         </div>
-    </main>
-      
+
+        <div class="component-main">
+          <section id="component-list-section">
+            <div
+              id="reset"
+              class="produto-lista justify-content-start align-items-center"
+            >
+              <ul id="component-list" class="list-unstyled"></ul>
+            </div>
+          </section>
+
+          <section id="total-checkout">
+            <div class="average-title">
+              <strong> RESUMO </strong>
+            </div>
+            <div class="checkout">
+              <ul id="average-list"></ul>
+            </div>
+            <div class="checkout-value">
+              <div class="checkout-hr"></div>
+              <p>
+                <strong>Total: R$ <span id="average-total"></span></strong>
+              </p>
+              <p>
+                <strong>Média/Peça: R$ <span id="average-value"></span></strong>
+              </p>
+            </div>
+          </section>
+        </div>
+      </main>
+    </section>
+
+    <footer class="footer-container">
+      <div class="footer-info fix-width">
+        <div class="footer-links">
+          <div class="footer-title">
+            <span>2024</span>
+            <h3>PC Match</h3>
+          </div>
+
+          <div class="contact">
+            <div>
+              <h4>SOBRE</h4>
+              <ul>
+                <li>Termos de uso</li>
+                <li>Política de privacidade</li>
+                <li>Preferências de cookies</li>
+                <li>Imprensa</li>
+                <li>Divulgação</li>
+                <li>Anuncie</li>
+              </ul>
+            </div>
+            <div>
+              <h4>PÁGINAS</h4>
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./montar_pc.html">Monte seu PC</a></li>
+                <li>
+                  <a href="./setups_comunidade.html">Setups da Comunidade</a>
+                </li>
+                <li><a href="./setups.html">Setups Recomendados</a></li>
+                <li><a href="./como_montar_pc.html">Como Montar</a></li>
+                <li><a href="./register.html">Registro</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>HARDWARE</h4>
+              <ul>
+                <li>Processadores</li>
+                <li>Coolers de Processador</li>
+                <li>Placas de vídeo</li>
+                <li>Placas-mãe</li>
+                <li>Memórias</li>
+                <li>Armazenamentos</li>
+                <li>Gabinetes</li>
+                <li>Fontes</li>
+              </ul>
+            </div>
+            <div>
+              <h4>PERIFÉRICOS / OUTROS</h4>
+              <ul>
+                <li>Monitores</li>
+                <li>Mouses</li>
+                <li>Teclados</li>
+                <li>Fones de ouvido</li>
+                <li>Mousepads</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-review">
+          <span>pcmatch@pc.com © PC MATCH</span>
+          <p>
+            Queremos ouvir você! Deixe seu feedback e sugestões de melhorias
+            <a href="./review.html">clicando aqui</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
     <script type="module" src="../config/firebase.js"></script>
     <script type="module" src="../scripts/header_user.js"></script>
-    <script src="../scripts/setups.js"></script>      
+    <script type="module" src="../scripts/setups.js"></script>
     <script src="../scripts/menu_hamburger.js"></script>
-</body>
-
+  </body>
 </html>
