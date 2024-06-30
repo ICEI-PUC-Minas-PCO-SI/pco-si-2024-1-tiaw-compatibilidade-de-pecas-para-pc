@@ -2,7 +2,7 @@ main {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     background: white;
-    margin: 3em 0;
+    padding: 3em 0 5em;
 }
 
 main > div {
@@ -207,6 +207,14 @@ div.fp-img {
 }
 
 div.psu-slot {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin: 1em 0;
+}
+
+div.slot {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
