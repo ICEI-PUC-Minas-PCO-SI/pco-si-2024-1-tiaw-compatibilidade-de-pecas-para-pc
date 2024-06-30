@@ -1,5 +1,3 @@
-import { deployUrl } from '../config/deploy.js'
-
 const section = document.querySelector('.presentation-container')
 const total = document.querySelector('.total')
 const watsSpan = document.querySelector('.wats')
@@ -35,12 +33,12 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 // Carregando os arquivos JSON
-const cpus = await getJSON(deployUrl + '/cpu')
-const gpus = await getJSON(deployUrl + '/gpu')
-const rams = await getJSON(deployUrl + '/ram')
-const storages = await getJSON(deployUrl + '/storage')
-const motherboards = await getJSON(deployUrl + '/motherboard')
-const coolings = await getJSON(deployUrl + '/cooling')
+const cpus = await getJSON('http://localhost:3000/cpu')
+const gpus = await getJSON('http://localhost:3000/gpu')
+const rams = await getJSON('http://localhost:3000/ram')
+const storages = await getJSON('http://localhost:3000/storage')
+const motherboards = await getJSON('http://localhost:3000/motherboard')
+const coolings = await getJSON('http://localhost:3000/cooling')
 
 // Funções para checar orçamento
 let budget = 0
@@ -395,12 +393,12 @@ function saveSetupLS() {
 }
 
 async function loadJSONinLocalStorage() {
-  const cpus = await getJSON(deployUrl + '/cpu')
-  const gpus = await getJSON(deployUrl + '/gpu')
-  const rams = await getJSON(deployUrl + '/ram')
-  const storages = await getJSON(deployUrl + '/storage')
-  const motherboards = await getJSON(deployUrl + '/motherboard')
-  const coolings = await getJSON(deployUrl + '/cooling')
+  const cpus = await getJSON('http://localhost:3000/cpu')
+  const gpus = await getJSON('http://localhost:3000/gpu')
+  const rams = await getJSON('http://localhost:3000/ram')
+  const storages = await getJSON('http://localhost:3000/storage')
+  const motherboards = await getJSON('http://localhost:3000/motherboard')
+  const coolings = await getJSON('http://localhost:3000/cooling')
 
   updateSetup(cpus, gpus, rams, storages, motherboards, coolings)
 }

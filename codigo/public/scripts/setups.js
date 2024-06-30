@@ -1,5 +1,3 @@
-import { deployUrl } from '../config/deploy.js'
-
 // Função para carregar o arquivo JSON e renderizar o setup padrão
 async function loadAndRenderDefaultSetup() {
   try {
@@ -15,7 +13,7 @@ async function loadAndRenderDefaultSetup() {
 
 //Função para carregar o arquivo JSON
 async function fetchSetupJson() {
-  const response = await fetch(deployUrl + '/setup') // Carrega o arquivo JSON da pasta 'data'
+  const response = await fetch('http://localhost:3000/setup') // Carrega o arquivo JSON da pasta 'data'
   if (!response.ok) {
     throw new Error('Não foi possível carregar o arquivo JSON.')
   }
