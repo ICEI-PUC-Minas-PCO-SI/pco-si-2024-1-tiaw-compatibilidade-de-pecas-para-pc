@@ -1,0 +1,233 @@
+main {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    background: white;
+    margin: 3em 0;
+}
+
+main > div {
+    margin: auto;
+    width: 90%; /* Reduzindo para 90% para melhor adaptação */
+    max-width: 1200px; /* Limitando a largura máxima */
+}
+
+div.cpu-steps div,
+div.cooler-steps div,
+div.gpu-steps div,
+div.cut-ram-images,
+div.mb-ram-img {
+    width: 100%; 
+    margin: 1em 0; 
+}
+
+img.big-size {
+    width: 100%; 
+}
+
+a {
+    color: #EF9105;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+p {
+    margin: 0 0 1em 0;
+}
+
+h4 {
+    font-size: 1.5em;
+    margin: 1em 0 .5em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+main > div {
+    margin: auto;
+    width: 60%;
+}
+
+div.article-content div.article-title {
+    padding: .3em 0 1em 0;
+}
+
+div.article-title h3 { 
+    font-size: 2em;
+}
+
+div.list-info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.list-info div {
+    width: 50%;
+}
+
+.obs {
+    font-style: italic;
+    font-size: 15px;
+
+}
+
+.list {
+    margin: 0 3em;
+}
+
+div.cpu-mb {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    margin: 2em 0;
+}
+
+div.cpu-mb img {
+    width: 100%;
+}
+
+section.ref {
+    width: 80%;
+    font-size: .75em;
+    font-style: italic;
+    margin: 0 0 1em;
+}
+
+div.cpu-steps {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* padding: 0 2em;*/
+}
+
+div.cpu-steps div {
+    width: 30em;
+    margin: 1em 0;
+}
+
+div.attention strong {
+    font-size: 1.5em;
+}
+
+img.contain {
+    width: 100%;
+}
+
+img.size60 {
+    width: 60%;
+}
+
+img.big-size {
+    width: 23em;
+    margin: 10px;
+}
+
+div.cooler-steps {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+div.cooler-steps div {
+    margin: 2em;
+    width: 100%;
+}
+
+div.mb-ram-img img {
+    width: 40%;
+}
+
+div.mb-ram-img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.cut-ram-images {
+    margin: 2em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.cut-ram-images img {
+    width: 45%;
+}
+
+div.gpu-steps {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+div.gpu-steps div { 
+    margin: 2em;
+    width: 100%;
+}
+
+div.gpu-steps > div {
+    width: 100%;
+}
+
+div.gpu-steps div img {
+    margin: 1em;
+}
+
+.gpu-img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.line-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.line-list li {
+    padding: 2em;
+}
+
+div.fp-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#fpanel-direction {
+    width: 15em;
+}
+
+div.psu-slot {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin: 1em 0;
+}
+
+@media only screen and (max-width: 768px) {
+    main > div {
+        width: 95%; 
+    }
+
+    div.cpu-steps div,
+    div.cooler-steps div,
+    div.gpu-steps div,
+    div.cut-ram-images,
+    div.mb-ram-img {
+        margin: 0.5em 0; 
+    }
+
+    div.cpu-mb {
+        flex-wrap: wrap
+    }
+}
