@@ -508,19 +508,51 @@ User Flow
     8 - Como Montar
 
   <div align="center">
-  <img src="./images/user-flow/" alt="Como motar" width="px" height="px" />
+  <img src="./images/user-flow/como-montar.png" alt="Como motar" width="px" height="px" />
   <p>Página dedicada a ensinar os usuários como montar um computador pessoal, tendo informações importantes para cada detalhe da montagem.</p>
   </div>
   
 
 ## Arquitetura da solução
 
- <p>O usuário tem acesso ás informações via interface web que tem como linguagem o HTML5, JavaScript e CSS, como demonstrado no diagrama abaixo, com ás interações têm a coleta de dados (collect Data) que gera as requisições (request) que são processadas pela parte lógica (contains app logic) que é apenas a linguagem dinâmica (JavaScript) caso ela precise acessar algo interno ela tem interação com o ambiente web (Web Server) busca informações e retorna (response) e mostrando o resultado para o usuário (display Results).</p>
+ <p>Detalhes técnicos da solução implementadas no projeto, Arquitetura da solução, as
+estruturas de dados e as telas já implementadas.
+</p>
   
 
 <div align="center">
   <img src="./images/arquitetura.webp" alt="Arquitetura da solução" width="px" height="px" />
  </div>
+
+ A implementação inclui os seguintes módulos:
+
+  ---
+
+- Navegador: interface onde o sistema será apresentado a manipulado
+  - Páginas WEB: uma coleção de arquivos HTML, CSS, JS e imagens que
+implementam o sistema.
+  - Local Storage: armazenamento local do navegador.
+    - Setup: objeto JSON que é atualizado de acordo com a escolha de
+peças do usuário.
+    - User Key: token de sessão do usuário logado gerado pelo Firebase.
+- Hospedagem: local na Internet onde o front-end será mantido e acessado pelo
+navegador
+- JSON Server dos Comp.: local na Internet onde todos os componentes são pegos
+e consumidos pelo front-end.
+
+Hospedagem
+
+---
+
+O projeto utiliza a Vercel como ambiente de hospedagem do front-end e do JSON Server.
+Os respectivos links são:
+- Front-end: https://pc-match.vercel.app/
+- JSON Server: https://pc-match-server.vercel.app/
+
+Os repositórios que estão sendo utilizados para a host são:
+- https://github.com/isaacszf/PC-Match (foi feito um fork do projeto para configurar o
+deploy propriamente)
+- https://github.com/isaacszf/pc-match-server
 
 &nbsp;
 
