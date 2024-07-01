@@ -26,4 +26,20 @@ Permitir a criação fictícia de computadores.
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+### Rodando a Aplicação 🔨
+Para executar a aplicação em seu computador, siga as instruções abaixo. Primeiro, certifique-se de ter o [NodeJS](https://nodejs.org/en)  instalado. Em seguida, siga os passos:
+
+1. Abra o projeto em um terminal.
+2. Navegue até o diretório "codigo" com o seguinte comando:
+  ```bash
+  cd codigo
+  ```
+3. Instale as dependências do projeto com o seguinte comando:
+  ```bash
+  npm i
+  ```
+4. Rode o servidor local com o seguinte comando:
+  ```bash
+  npm run start
+  ```
+5. Acesse http://localhost:3000 em seu navegador
