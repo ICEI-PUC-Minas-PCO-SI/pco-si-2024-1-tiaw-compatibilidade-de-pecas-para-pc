@@ -29,7 +29,11 @@ keywords:
 - PC GAMER
 - PUC MINAS
 - Compatibilidade
-abstract: PC MATCH é uma aplicação web abrangente que oferece recursos valiosos para usuários que desejam montar ou atualizar seus computadores pessoais. Ao combinar ferramentas de verificação de compatibilidade, montagem virtual e uma comunidade online engajada, a plataforma simplifica o processo de construção de computadores personalizados e promove a colaboração entre os usuários.
-license: CC-BY-4.0
+abstract: >
+  PC MATCH é uma aplicação web abrangente que oferece recursos valiosos
+  para usuários que desejam montar ou atualizar seus computadores pessoais.
+  Ao combinar ferramentas de verificação de compatibilidade, montagem virtual
+  e uma comunidade online engajada, a plataforma simplifica o processo de construção
+  de computadores personalizados e promove a colaboração entre os usuários.license: CC-BY-4.0
 version: 1.0.0
 date-released: 2024-07-09
