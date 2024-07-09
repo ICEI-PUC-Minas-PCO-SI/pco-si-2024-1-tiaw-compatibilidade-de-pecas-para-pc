@@ -1,44 +1,40 @@
 cff-version: 1.0.1
 title: PC Match
-message: >-
-  If you use this software, please cite it using the
-  metadata from this file.
+message: If you use this software, please cite it using the metadata from this file.
 type: software
-authors: Abner, Andry, Isaac, João, Luiz e Samuel.
-  - family-names: Versiani de Melo Penna
-    given-names: Luiz Fernando
-  - family-names: Pereira da Silveira
-    given-names: Andry Marques
-  - family-names: Souza Fernandes
-    given-names: Isaac
-  - family-names: Augusto Monteiro
-    given-names: Abner
-  - family-names: Oliveira Serra
-    given-names: João Paulo
-  - family-names: Andrade Neto
-    given-names: Samuel
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: Soares Vieira de Vasconcelos
-    given-names: Amália
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: Vielela Cardoso
-    given-names: Leonardo
-  repository-code: >-
-   https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-compatibilidade-de-pecas-para-pc.git
-  url: 'https://pc-match.vercel.app/index.html'
-keywords: 
-  - PC GAMER
-  - PUC MINAS
-  - Compatibilidade
-abstract: >-
-  PC MATCH é uma aplicação web abrangente que oferece recursos valiosos
-  para usuários que desejam montar ou atualizar seus computadores pessoais.
-  Ao combinar ferramentas de verificação de compatibilidade, montagem virtual
-  e uma comunidade online engajada, a plataforma simplifica o processo de construção
-  de computadores personalizados e promove a colaboração entre os usuários.
+authors:
+- family-names: Versiani de Melo Penna
+  given-names: Luiz Fernando
+- family-names: Pereira da Silveira
+  given-names: Andry Marques
+- family-names: Souza Fernandes
+  given-names: Isaac
+- family-names: Augusto Monteiro
+  given-names: Abner
+- family-names: Oliveira Serra
+  given-names: João Paulo
+- family-names: Andrade Neto
+  given-names: Samuel
+- family-names: Soares Vieira de Vasconcelos
+  given-names: Amália
+  name-suffix: Professor
+  affiliation: PUC Minas
+- family-names: Vielela Cardoso
+  given-names: Leonardo
+  name-suffix: Professor
+  affiliation: PUC Minas
+repository-code: https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-compatibilidade-de-pecas-para-pc.git
+url: https://pc-match.vercel.app/index.html
+keywords:
+- PC GAMER
+- PUC MINAS
+- Compatibilidade
+abstract: PC MATCH é uma aplicação web abrangente que oferece recursos valiosos 
+para usuários que desejam montar ou atualizar seus computadores pessoais.
+Ao combinar ferramentas de verificação de compatibilidade, montagem virtual
+e uma comunidade online engajada, a plataforma simplifica o processo de construção
+de computadores personalizados e promove a colaboração entre os usuários.
 
 license: CC-BY-4.0
 version: 1.0.0
-date-released: '2024-07-09'
+date-released: 2024-07-09
